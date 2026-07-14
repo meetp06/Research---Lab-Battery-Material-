@@ -18,6 +18,7 @@ from opti_battery.monitor import rag, llm, store
 
 ROOT = Path(__file__).resolve().parents[3]
 RESEARCH_MD = ROOT / "RESEARCH.md"
+MEMORY_MD = ROOT / "MEMORY.md"
 RESULTS_JSON = ROOT / "research_results.json"
 
 
@@ -75,6 +76,10 @@ def reindex_knowledge() -> int:
     if RESEARCH_MD.exists():
         items.extend(_chunk_text(RESEARCH_MD.read_text(), "RESEARCH.md"))
 
+    # MEMORY.md (our project history and state)
+    if MEMORY_MD.exists():
+        items.extend(_chunk_text(MEMORY_MD.read_text(), "MEMORY.md"))
+
     return rag.index_knowledge(items)
 
 
@@ -86,16 +91,21 @@ def _fallback_context() -> str:
         lines.append(f"- {spec}: {champ.get('formula')} ({champ.get('material_id')})")
     if RESEARCH_MD.exists():
         lines.append("\nRESEARCH.md:\n" + RESEARCH_MD.read_text()[:2000])
+    if MEMORY_MD.exists():
+        lines.append("\nMEMORY.md:\n" + MEMORY_MD.read_text()[:2000])
     return "\n".join(lines)
 
 
 SYSTEM = (
     "You are the Opti-Battery project assistant. Answer questions about this "
-    "solid-state battery materials project using ONLY the provided context. "
-    "Be accurate and cautious: the materials are existing Materials Project "
-    "entries and all metrics are computed/DFT values, not lab-measured cells — "
-    "never claim a new element was discovered or a battery was built. If the "
-    "context does not contain the answer, say so plainly."
+    "solid-state battery materials project using the provided context. "
+    "If the user asks about general battery terminology (e.g. what an electrolyte formula is, "
+    "coulombic efficiency, etc.) or how the UI works, you may use your general knowledge "
+    "of battery chemistry to answer and explain it simply. "
+    "However, for specific material claims: be accurate and cautious. The materials are existing "
+    "Materials Project entries and all metrics are computed/DFT values — never claim a "
+    "new element was discovered or a battery was built in a lab. If asked a specific project question "
+    "that is not in the context, say so plainly."
 )
 
 

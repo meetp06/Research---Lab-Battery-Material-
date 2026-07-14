@@ -171,6 +171,26 @@
         button.submit-btn:hover {
             background-color: #333333;
         }
+        button.submit-btn:active {
+            transform: scale(0.96);
+            transition: transform 0.1s;
+        }
+        
+        .spinner {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border: 2px solid rgba(25, 118, 210, 0.3);
+            border-radius: 50%;
+            border-top-color: #1976d2;
+            animation: spin 1s ease-in-out infinite;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
         button.submit-btn:disabled {
             background-color: #cccccc;
             cursor: not-allowed;
@@ -862,9 +882,10 @@
                         mines recent arXiv papers as literature signals. Numbers are computed/DFT values —
                         this surfaces better existing materials, it does not discover new elements or build cells.
                     </p>
-                    <div style="margin-bottom: 20px;">
+                    <div style="margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
                         <button class="submit-btn" onclick="loadDiscovery()">Refresh Discovery Feed</button>
-                        <span id="discoveryLastScan" style="margin-left:12px; color:#888; font-size:13px;"></span>
+                        <button class="submit-btn" onclick="runScan()" style="background: #1976d2;">Run New Scan (Takes ~10 mins)</button>
+                        <span id="discoveryLastScan" style="color:#888; font-size:13px;"></span>
                     </div>
 
                     <div class="error-message" id="discoveryError"></div>
@@ -1039,6 +1060,28 @@
             } catch (e) {
                 log.removeChild(thinking);
                 appendChat("Assistant", "Request failed: " + e.message, "#c00");
+            }
+        }
+
+        async function runScan() {
+            const errEl = document.getElementById("discoveryError");
+            errEl.style.display = "block";
+            errEl.style.color = "#1976d2";
+            errEl.innerHTML = '<div style="display:flex; align-items:center;"><div class="spinner"></div> Launching background scan... please wait.</div>';
+            
+            try {
+                const res = await fetch("/api/run-scan", { method: "POST" });
+                const data = await res.json();
+                if (res.ok) {
+                    errEl.innerHTML = '<div style="display:flex; align-items:center;"><div class="spinner" style="border-top-color: #16a34a;"></div> ' + (data.status || "Scan launched successfully.") + '</div>';
+                    errEl.style.color = "#16a34a";
+                } else {
+                    errEl.textContent = "Error: " + (data.error || "Failed to start scan");
+                    errEl.style.color = "#d32f2f";
+                }
+            } catch (e) {
+                errEl.textContent = "Request failed: " + e.message;
+                errEl.style.color = "#d32f2f";
             }
         }
 

@@ -14,6 +14,7 @@ from opti_battery.core.synthesis import generate_cro_rfq
 from opti_battery.monitor import store as discovery_store
 from opti_battery.monitor.chatbot import answer as chatbot_answer
 
+SCAN_PROCESS = None
 
 TEMPLATE_PATH = Path(__file__).resolve().parent / "templates" / "index.html"
 RESEARCH_MD_PATH = Path(__file__).resolve().parents[3] / "RESEARCH.md"
@@ -107,11 +108,15 @@ class ServerHandler(BaseHTTPRequestHandler):
             self.end_headers()
             self.wfile.write(b"Not Found")
     def do_POST(self):
-        content_length = int(self.headers["Content-Length"])
-        post_data = self.rfile.read(content_length)
-        params = json.loads(post_data.decode("utf-8"))
+        content_length = int(self.headers.get("Content-Length", 0))
+        post_data = self.rfile.read(content_length) if content_length else b""
         
-        if self.path == "/api/stability":
+        try:
+            params = json.loads(post_data.decode("utf-8")) if post_data else {}
+        except Exception:
+            params = {}
+
+        if self.path == "/api/interface-stability":
             try:
                 electrolyte = params.get("electrolyte")
                 anode = params.get("anode")
@@ -217,6 +222,24 @@ class ServerHandler(BaseHTTPRequestHandler):
                 self.send_header("Content-type", "application/json")
                 self.end_headers()
                 self.wfile.write(json.dumps(result).encode("utf-8"))
+            except Exception as e:
+                self.send_response(400)
+                self.send_header("Content-type", "application/json")
+                self.end_headers()
+                self.wfile.write(json.dumps({"error": str(e)}).encode("utf-8"))
+        elif self.path == "/api/run-scan":
+            global SCAN_PROCESS
+            import subprocess
+            try:
+                if SCAN_PROCESS is not None and SCAN_PROCESS.poll() is None:
+                    raise ValueError("A scan is already running! Please wait for it to finish.")
+                monitor_script = Path(__file__).resolve().parents[3] / "run_monitor.py"
+                # Launch in background
+                SCAN_PROCESS = subprocess.Popen([sys.executable, str(monitor_script), "--papers"])
+                self.send_response(200)
+                self.send_header("Content-type", "application/json")
+                self.end_headers()
+                self.wfile.write(json.dumps({"status": "Scan started in background! This may take up to 10 minutes. Click 'Refresh Discovery Feed' later to see results."}).encode("utf-8"))
             except Exception as e:
                 self.send_response(400)
                 self.send_header("Content-type", "application/json")

@@ -1,5 +1,1979 @@
 [
   {
+    "timestamp": "2026-07-14T08:38:43.421930+00:00",
+    "type": "literature",
+    "title": "A Quantum Computing Approach to Simulating Corrosion Inhibition",
+    "published": "2024-12-01T20:03:38Z",
+    "url": "http://arxiv.org/abs/2412.00951v1",
+    "summary": "This work demonstrates a systematic implementation of hybrid quantum-classical computational methods for investigating corrosion inhibition mechanisms on aluminum surfaces. We present an integrated workflow combining density functional theory (DFT) with quantum algorithms through an active space embedding scheme, specifically applied to studying 1,2,4-Triazole and 1,2,4-Triazole-3-thiol inhibitors on Al111 surfaces. Our implementation leverages the ADAPT-VQE algorithm with benchmarking against c",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:38:43.421930+00:00",
+    "type": "literature",
+    "title": "AI-Assisted Rapid Crystal Structure Generation Towards a Target Local Environment",
+    "published": "2025-06-09T20:47:36Z",
+    "url": "http://arxiv.org/abs/2506.08224v2",
+    "summary": "In the field of material design, traditional crystal structure prediction approaches require extensive structural sampling through computationally expensive energy minimization methods using either force fields or quantum mechanical simulations. While emerging artificial intelligence (AI) generative models have shown great promise in generating realistic crystal structures more rapidly, most existing models fail to account for the unique symmetries and periodicity of crystalline materials, and t",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:38:43.421930+00:00",
+    "type": "literature",
+    "title": "LamiGauss: Pitching Radiative Gaussian for Sparse-View X-ray Laminography Reconstruction",
+    "published": "2025-09-17T09:53:47Z",
+    "url": "http://arxiv.org/abs/2509.13863v1",
+    "summary": "X-ray Computed Laminography (CL) is essential for non-destructive inspection of plate-like structures in applications such as microchips and composite battery materials, where traditional computed tomography (CT) struggles due to geometric constraints. However, reconstructing high-quality volumes from laminographic projections remains challenging, particularly under highly sparse-view acquisition conditions. In this paper, we propose a reconstruction algorithm, namely LamiGauss, that combines Ga",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:38:43.421930+00:00",
+    "type": "literature",
+    "title": "LacMaterial: Large Language Models as Analogical Chemists for Materials Discovery",
+    "published": "2025-10-25T14:25:26Z",
+    "url": "http://arxiv.org/abs/2510.22312v1",
+    "summary": "Analogical reasoning, the transfer of relational structures across contexts (e.g., planet is to sun as electron is to nucleus), is fundamental to scientific discovery. Yet human insight is often constrained by domain expertise and surface-level biases, limiting access to deeper, structure-driven analogies both within and across disciplines. Large language models (LLMs), trained on vast cross-domain data, present a promising yet underexplored tool for analogical reasoning in science. Here, we dem",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:38:43.421930+00:00",
+    "type": "literature",
+    "title": "On Electropolymerized Fingerprints and their Potential for Identification and Encryption",
+    "published": "2026-05-06T07:44:54Z",
+    "url": "http://arxiv.org/abs/2605.04599v1",
+    "summary": "While human technology is ruled by determinism, biological systems exploit a subtle balance of control and stochasticity. This balance, evident in the morphogenesis of textural patterns imprinted on leaves, fur or skin can help hierarchize organisms both as a representative of their species and as unique individuals. In this study, we identified that, by exploiting electrochemistry, it is possible to generate such versatile but specific textures, to imprint patterns of a conducting polymer on a ",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:38:43.421930+00:00",
+    "type": "literature",
+    "title": "The superite phase and phase transition inducing multiscale solidification microstructures and segregations in steels",
+    "published": "2026-05-09T02:29:47Z",
+    "url": "http://arxiv.org/abs/2605.08620v1",
+    "summary": "Based on classical concept, solidification of alloys is a direct transition from liquid phase to solid phase, by which dendrites and dendritic segregation are produced. Through in-situ and real time morphology observation and XRD test during solidification of three steels, a new superite phase featured as statistically oriented tiny structures was identified, and a general liquid-superite-solid phase transformation process is revealed. In the early solidification stage, the liquid alloys transit",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:38:43.421930+00:00",
+    "type": "literature",
+    "title": "Self-similar dendrites with finite boundary and P-sprouts",
+    "published": "2026-05-12T09:21:42Z",
+    "url": "http://arxiv.org/abs/2605.11833v3",
+    "summary": "Each self-similar dendrite K with a finite self-similar boundary defines a finite acyclic edge-labeled bipartite graph G, called the sprout of K. The paper shows that the sprout G determines the combinatorial properties of the dendrite K and its topological structure.",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:38:43.421930+00:00",
+    "type": "literature",
+    "title": "Perforated Neural Networks for Keyword Spotting",
+    "published": "2026-05-15T06:02:19Z",
+    "url": "http://arxiv.org/abs/2605.15647v1",
+    "summary": "Edge machine learning presents a unique set of constraints not encountered in cloud-scale model deployment: strict memory budgets, limited compute, and non-negotiable accuracy thresholds must all be satisfied simultaneously. Existing compression and optimization techniques can trade one resource for another, but rarely improve both accuracy and model size at the same time. This paper presents the application of Perforated Backpropagation to keyword spotting on the Edge Impulse platform, an exper",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:38:43.421930+00:00",
+    "type": "literature",
+    "title": "Normative Networks for Source Separation via Local Plasticity and Dendritic Computation",
+    "published": "2026-05-19T15:15:26Z",
+    "url": "http://arxiv.org/abs/2605.19965v2",
+    "summary": "Blind source separation (BSS) is a natural framework for studying how latent causes may be recovered from sensory mixtures, but deriving online and biologically plausible algorithms for structured (i.e., constrained to known domains) and potentially correlated sources remains challenging. Recent work has derived neural networks for BSS from maximization of an entropy measure, yet its online implementations involve complex and nonlocal recurrent dynamics. Motivated by this perspective, we propose",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:38:43.421930+00:00",
+    "type": "literature",
+    "title": "Dealloying by peritectic melting",
+    "published": "2026-05-25T13:30:22Z",
+    "url": "http://arxiv.org/abs/2605.25834v1",
+    "summary": "Peritectic melting of Ti--Ag has been shown experimentally to form bicontinuous structures, but the mechanism remains unclear. Here we use phase-field simulations to show that these structures arise from a morphological instability of liquid film migration in three dimensions: a Ti-rich solid growing through an Ag-rich liquid film develops a branched seaweed or dendritic structure whose side branches coalesce to form handles, generating a high-genus bicontinuous topology. A sharp-interface theor",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:38:43.421930+00:00",
+    "type": "literature",
+    "title": "Localization of Active Particles on Random Arrays of Parallel Filaments",
+    "published": "2026-05-29T19:19:05Z",
+    "url": "http://arxiv.org/abs/2606.00286v1",
+    "summary": "Quenched disorder in the environment can fundamentally alter transport dynamics in both active and passive systems. We explore how disordered arrays of filaments govern the distribution of intermittently moving particles which switch between diffusive and processive transport. Motivated by the mixed-polarity arrangements of parallel microtubules observed in mammalian dendrites, we show that such arrays tend to result in localization of particles at regions of convergent filament orientation. In ",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:38:43.421930+00:00",
+    "type": "literature",
+    "title": "Feature leakage and the identifiability of direct-dependency entropy models of neural activity",
+    "published": "2026-06-01T04:15:49Z",
+    "url": "http://arxiv.org/abs/2606.01661v1",
+    "summary": "Biological neurons receive thousands of synaptic inputs on branching, electrically excitable dendrites, yet population activity is often modeled with direct input-output rules in which each input contributes independently to a scalar drive. We study what successful prediction by such models does, and does not, reveal about neural computation. For conditional maximum-entropy models that match output rates and pairwise output-input coactivities, the entropy explained by a direct model is a predict",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:38:43.421930+00:00",
+    "type": "literature",
+    "title": "Construction and simulation of a path-valued model of dendrite development",
+    "published": "2026-06-02T11:56:38Z",
+    "url": "http://arxiv.org/abs/2606.03534v1",
+    "summary": "Neurons receive information through their dendrites. During development, when synaptic connections are forming, dendrites grow, retract, and branch. The resulting dendritic tree shapes the structure of the broader neural network. Crucially, retraction and branching make it necessary to track whole dendritic paths rather than only their endpoints. While this is handled implicitly in some existing simulations, here we construct an explicitly path-valued stochastic process for dendrite growth. Comb",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:38:43.421930+00:00",
+    "type": "literature",
+    "title": "NeuDW-CIM: a 65-nm 0.8-pJ/Sop Reconfigurable Neuromorphic Compute-in-Memory Macro with Nonlinear Dendrites and K-Winners",
+    "published": "2026-06-08T02:50:04Z",
+    "url": "http://arxiv.org/abs/2606.08947v1",
+    "summary": "This work presents NeuDW-CIM, a highly efficient neuromorphic Compute-in-Memory (CIM) macro for Spiking Neural Networks (SNNs) implemented in 65 nm CMOS. The design introduces a custom twin 9T bit-cell for ternary in-puts/weights and a reconfigurable non-linear In-Memory ADC (IMA). The macro supports two specialized modes: 1) Nonlinear Dendrite (NLD) mode, which utilizes reconfigurable IMA to emulate biological dendritic functions, achieving measured accuracies of 97.2% on N-MNIST and 95.5% on D",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:38:43.421930+00:00",
+    "type": "literature",
+    "title": "Bilinear gating of motor primitives: a principle linking dendritic computation to rapid goal-directed adaptation",
+    "published": "2026-06-09T14:03:24Z",
+    "url": "http://arxiv.org/abs/2606.10891v1",
+    "summary": "Movement requires the motor cortex to specify both \\emph{what} action to produce and \\emph{which goal} it serves, yet how individual neurons separate these factors is not understood. Here we show that in macaque motor cortex the \\emph{burst fraction} of a neuron, the proportion of its spikes emitted in high-frequency bursts, encodes reach direction far more selectively than its overall firing rate. This dissociation is highly consistent: it holds in every one of 12 recording sessions spanning th",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:38:43.421930+00:00",
+    "type": "literature",
+    "title": "A Robust Point Cloud Analysis Framework Inspired By Primary Visual Cortex",
+    "published": "2026-06-12T09:17:52Z",
+    "url": "http://arxiv.org/abs/2606.14292v1",
+    "summary": "Despite significant advancements in point cloud analysis, reducing energy consumption and improving robustness remain understudied, largely due to the inherent limitations of Convolutional Neural Networks (CNNs). To address this issue, we draw inspiration from the primary visual cortex and propose a Dendritic-Connected Continuous-Coupled Neural Network (DC-CCNN), a novel Brain-Inspired Neural Network (BINN) architecture for point cloud analysis. By combining discrete and continuous encoding, our",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:38:43.421930+00:00",
+    "type": "literature",
+    "title": "A nonlinear theory for chemotactic fronts of mixed populations",
+    "published": "2026-06-16T13:11:52Z",
+    "url": "http://arxiv.org/abs/2606.17891v1",
+    "summary": "Collective migration of heterogeneous cell populations is central to many biological and physiological processes, including development and immune response. Recent experimental and theoretical advances have shown how asymmetric interactions with self-generated chemical gradients shape the spatial distribution of distinct cell types within migrating collectives. However, the principles governing robust spatial organisation of heterogeneous cell populations remain poorly understood. Here, we use a",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:38:43.421930+00:00",
+    "type": "literature",
+    "title": "Soliton-like Waves in a Two-Dimensional Recurrent Spiking Neural Network with Weighted Spike-Timing-Dependent Plasticity",
+    "published": "2026-06-19T13:47:27Z",
+    "url": "http://arxiv.org/abs/2606.21432v1",
+    "summary": "We construct a minimal but biologically plausible spiking neuron model operating in discrete time, combining multiplicative spike-timing-dependent plasticity (WSTDP), divisive normalization of synaptic integration, homeostatic threshold adaptation, and a one-step refractory period. We show that this normalization admits a biologically plausible dendritic implementation in which each binary junction operates using only locally available information.   Assembling excitatory-inhibitory pairs of suc",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:38:43.421930+00:00",
+    "type": "literature",
+    "title": "A fully-decoupled arbitrarily high-order time-stepping scheme based on matrix diagonalization for the anisotropic phase-field dendritic crystal growth model",
+    "published": "2026-06-24T03:18:28Z",
+    "url": "http://arxiv.org/abs/2606.25345v1",
+    "summary": "We propose a fully-decoupled arbitrarily high-order time-stepping scheme for the anisotropic phase-field dendritic crystal growth model. The scheme combines an auxiliary-variable formulation with algebraically stable Runge-Kutta methods and satisfies a discrete energy dissipation law. To address the computational bottleneck arising from the coupled linear system in existing high-order schemes, a matrix diagonalization technique is introduced to transform the coupled linear elliptic system into a",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:38:43.421930+00:00",
+    "type": "literature",
+    "title": "A flexibility result for polynomial entropy of pointwise periodic homeomorphisms",
+    "published": "2026-06-26T17:26:45Z",
+    "url": "http://arxiv.org/abs/2606.28283v1",
+    "summary": "We construct a family of continua and pointwise periodic homeomorphisms realizing arbitrary polynomial entropy values in $[0,+\\infty]$. In particular, this provides examples of pointwise periodic homeomorphisms with positive polynomial entropy. This contrasts with the fact that pointwise periodic homeomorphisms on connected manifolds and local dendrites have zero polynomial entropy.",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:38:43.421930+00:00",
+    "type": "literature",
+    "title": "Dendritic In-Context Learning in a Single-Layer Spiking Neural Network",
+    "published": "2026-07-02T15:02:28Z",
+    "url": "http://arxiv.org/abs/2607.02283v1",
+    "summary": "In-context learning (ICL) operates via implicit gradient descent embedded in the forward pass of modern AI architectures -- Transformers, Mamba, state-space models, and MLPs. Capturing this capability in biologically plausible Spiking Neural Networks (SNNs) has remained an open challenge: existing SNNs fail the Garg-2022 benchmark at non-trivial task dimensions. We trace this failure to a structural assumption: prior SNN designs route adaptation through inference-time synaptic plasticity, viewin",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:38:43.421930+00:00",
+    "type": "literature",
+    "title": "From Stacking Disorder to Cubic Order: Ice Crystallization from Deeply Supercooled Water",
+    "published": "2026-07-03T16:22:11Z",
+    "url": "http://arxiv.org/abs/2607.03465v1",
+    "summary": "Crystallization far from equilibrium can generate morphologies that defy classical crystal habits, yet the microscopic mechanisms linking atomic-scale disorder to emergent macroscopic order remain elusive. Here we use in situ cryogenic transmission electron microscopy with a membrane-encapsulated microdroplet platform to directly visualize the freezing of deeply supercooled water at molecular resolution. We show that homogeneous nucleation produces stacking-disordered ice composed of mixed hexag",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:38:43.421930+00:00",
+    "type": "literature",
+    "title": "Shunting Inhibition and Dendritic Branching Shape Local Credit Assignment",
+    "published": "2026-07-03T18:43:16Z",
+    "url": "http://arxiv.org/abs/2607.03556v1",
+    "summary": "Biological neurons assign credit across branching dendrites, where synaptic drive, dendritic conductance, local voltage, and somatic teaching signals interact to shape synaptic plasticity. We study conductance-based dendritic networks with E/I synapse banks, shunting inhibition, and tree-structured branch-to-soma coupling, and examine when restricted somatic feedback can approximate compartment-specific backpropagated errors. Exact gradients factor into local eligibility x compartment error term",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:38:43.421930+00:00",
+    "type": "literature",
+    "title": "Measures of maximal entropy for Markovian dynamics on the Gehman dendrite",
+    "published": "2026-07-06T19:57:26Z",
+    "url": "http://arxiv.org/abs/2607.05602v1",
+    "summary": "We study transitive dynamical systems on the Gehman dendrite $\\mathcal{G}$ for which the endpoint set $\\mathrm{End}(\\mathcal{G})$ is invariant. Our goal is to approximate such systems by maps whose measure-theoretic behaviour at maximal entropy is governed by an explicit countable Markov structure. We introduce a class of Markovian maps, encode their dynamics by countable Markov graphs, and use the criteria of Vere-Jones, Gurevich, Salama and Ruette to control the existence of measures of maxima",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:38:43.421930+00:00",
+    "type": "literature",
+    "title": "Orthogonal Dendritic Intrinsic Networks: An Architecture for Significance-Ordered, Orthogonal Latent Spaces",
+    "published": "2026-07-06T21:51:01Z",
+    "url": "http://arxiv.org/abs/2607.05653v1",
+    "summary": "Principal Component Analysis or PCA-like properties (orthogonality, variance ranking) are seldom realized in deep autoencoder architectures. In this work, we present ODIN (Orthogonal Dendritic Intrinsic Network), a novel autoencoder architecture that recovers PCA-like latent structure in a fully non-linear regime. By incorporating a set of geometric constraints directly into the training objective, ODIN encourages latent dimensions to be mutually orthogonal and ordered by explained variance, mir",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:38:43.421930+00:00",
+    "type": "literature",
+    "title": "PulseBat: A field-accessible dataset for second-life battery diagnostics from realistic histories using multidimensional rapid pulse test",
+    "published": "2025-02-24T05:10:04Z",
+    "url": "http://arxiv.org/abs/2502.16848v1",
+    "summary": "As electric vehicles (EVs) approach the end of their operational life, their batteries retain significant economic value and present promising opportunities for second-life use and material recycling. This is particularly compelling for Global South and other underdeveloped regions, where reliable energy storage is vital to addressing critical challenges posed by weak and even nonexistent power grid and energy infrastructures. However, despite this potential, widespread adoption has been hindere",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:38:43.421930+00:00",
+    "type": "literature",
+    "title": "Meta-analysis of Life Cycle Assessments for Li-Ion Batteries Production Emissions",
+    "published": "2025-06-05T19:27:53Z",
+    "url": "http://arxiv.org/abs/2506.05531v1",
+    "summary": "This paper investigates the environmental impact of Li-Ion batteries by quantifying manufacturing-related emissions and analyzing how electricity mix and production scale affect emission intensity. To this end, we conduct a meta-analysis of life cycle assessments on lithium-ion batteries published over the past two decades, categorizing them by year, battery chemistry, functional unit, system boundaries, and electricity mix. We then carry out a cradle-to-gate assessment for a nickel manganese co",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:38:43.421930+00:00",
+    "type": "literature",
+    "title": "Integrating electronic structure into generative modeling of inorganic materials",
+    "published": "2025-11-18T08:03:01Z",
+    "url": "http://arxiv.org/abs/2511.14228v1",
+    "summary": "Recent advances in generative models have introduced a new paradigm for the inverse design of inorganic materials, enabling the discovery of new crystalline structures with desired properties. However, existing generative models focus solely on structural aspects of materials during generation, while overlooking the underlying electronic behavior that fundamentally governs materials' stability and functionality. In this work, we present ChargeDIFF, the first generative model for inorganic materi",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:38:43.421930+00:00",
+    "type": "literature",
+    "title": "Visualizing Crystallization Dynamics and Transformation Pathways of Disordered Rocksalt Oxides During Thermally Activated Sol-Gel Synthesis",
+    "published": "2026-04-27T19:29:44Z",
+    "url": "http://arxiv.org/abs/2604.24941v1",
+    "summary": "Sol-gel synthesis is a wet-chemical processing route for the fabrication of functional materials offering control over composition, morphology, and microstructure at relatively low processing temperatures compared to conventional solid-state synthesis methods. While the sol-gel process initiates with intermixed molecular precursors, the transformation pathways at the early nucleation stage are insufficiently understood. Here, the chemical and structural transformation of disordered rocksalt (DRX",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:38:43.421930+00:00",
+    "type": "literature",
+    "title": "Orientation Mapping via Dictionary Indexing of AC-STEM Kikuchi patterns using Open-source Software",
+    "published": "2026-06-24T14:56:56Z",
+    "url": "http://arxiv.org/abs/2606.25911v2",
+    "summary": "The properties of polycrystalline materials are strongly influenced by the spatial arrangement and orientations of individual grains within the microstructure, making nanoscale characterization of grain orientation essential. This is also often the case for small grains in the nm regime explored using scanning transmission electron microscopy (STEM). Automated crystal orientation mapping (ACOM) is traditionally performed using spot-like diffraction patterns. In contrast, orientation mapping base",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:38:43.421930+00:00",
+    "type": "literature",
+    "title": "The effects of strong correlations on the band structure of Ag$_{8}$SnSe$_{6}$ argyrodite",
+    "published": "2016-12-21T15:49:45Z",
+    "url": "http://arxiv.org/abs/1612.07200v1",
+    "summary": "The electronic energy band spectra, as well as partial and total density of electronic states of the crystal argyrodite Ag$_{8}$SnSe$_{6}$ have been evaluated within the projector augmented waves (PAW) approach by means of the ABINIT code. The one-electron energies have been evaluated using two functionals for exchange-correlation energy. The first one is the generalized gradient approximation (GGA) approach. The second one is the hybrid functional PBE0 composed of the semilocal GGA part and Har",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:38:43.421930+00:00",
+    "type": "literature",
+    "title": "A Low Temperature Structural Transition in Canfieldite, Ag$_8$SnS$_6$, Single Crystals",
+    "published": "2021-10-14T16:30:16Z",
+    "url": "http://arxiv.org/abs/2110.07508v1",
+    "summary": "Canfieldite, Ag$_8$SnS$_6$, is a semiconducting mineral notable for its high ionic conductivity, photosensitivity, and low thermal conductivity. We report the solution growth of large single crystals of Ag$_8$SnS$_6$ of mass up to 1 g from a ternary Ag-Sn-S melt. On cooling from high temperature, Ag$_8$SnS$_6$ undergoes a known cubic (F-43m) to orthorhombic (Pna2$_1$) phase transition at $\\approx$ 460 K. By studying the magnetization and thermal expansion between 5-300 K, we discover a second st",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:38:43.421930+00:00",
+    "type": "literature",
+    "title": "Discovery of the high thermoelectric performance in low-cost Cu8SiSxSe6-x argyrodites",
+    "published": "2023-07-04T12:24:24Z",
+    "url": "http://arxiv.org/abs/2307.01682v1",
+    "summary": "Cu-based argyrodites have gained much attention as a new class of thermoelectric materials for energy harvesting. However, the phase transition occurring in these materials and low energy conversion performance limited their broad application in thermoelectric converters. In this work, we disclose a newly discovered highly efficient Cu8SiSxSe6-x argyrodite with stabilized high-symmetry cubic phase at above 282 K opening the practical potential of this material for the mid-temperature region appl",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:38:43.421930+00:00",
+    "type": "literature",
+    "title": "Positive temperature-dependent thermal conductivity induced by wavelike phonons in complex Ag-based argyrodites",
+    "published": "2024-02-20T03:55:48Z",
+    "url": "http://arxiv.org/abs/2402.12699v2",
+    "summary": "The phonon transport mechanisms and the anomalous temperature-dependent lattice thermal conductivities (kL) in Ag-based argyrodites have not been fully understood. Herein, we systematically study the phonon thermal transport of five Ag-based crystalline argyrodites Ag7PS6, Ag7AsS6, Ag8SnS6, Ag8GeS6 and Ag9GaS6 utilizing perturbation theory and the unified theory thermal transport model. Our results show that, as the complexity of the unit cell increases, the proportion of the population terms fa",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:38:43.421930+00:00",
+    "type": "literature",
+    "title": "Thermal Transport in Ag8TS6 (T= Si, Ge, Sn) Argyrodites: An Integrated Experimental, Quantum-Chemical, and Computational Modelling Study",
+    "published": "2025-10-27T09:13:38Z",
+    "url": "http://arxiv.org/abs/2510.23133v1",
+    "summary": "Argyrodite-type Ag-based sulfides combine exceptionally low lattice thermal and high ionic conductivity, making them promising candidates for thermoelectric and solid-state energy applications. In this work, we studied Ag8TS6 (T= Si, Ge, Sn) argyrodite family by combining chemical-bonding analysis, lattice vibrational properties simulation, and experimental measurements to investigate their structural and thermal transport properties. Furthermore, we propose a two-channel lattice-dynamics model ",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:38:43.421930+00:00",
+    "type": "literature",
+    "title": "Online State Estimation for a Physics-Based Lithium-Sulfur Battery Model",
+    "published": "2020-10-26T01:46:32Z",
+    "url": "http://arxiv.org/abs/2010.13277v1",
+    "summary": "This article examines the problem of Lithium-Sulfur (Li-S) battery state estimation. Such estimation is important for the online management of this energy-dense chemistry. The literature uses equivalent circuit models (ECMs) for Li-S state estimation. This article's main goal is to perform estimation using a physics-based model instead. This approach is attractive because it furnishes online estimates of the masses of individual species in a given Li-S cell. The estimation is performed using an ",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:38:43.421930+00:00",
+    "type": "literature",
+    "title": "Parameter Identification and Sensitivity Analysis for Zero-dimensional Physics-based Lithium-Sulfur Battery Models",
+    "published": "2020-11-05T20:06:36Z",
+    "url": "http://arxiv.org/abs/2011.03078v2",
+    "summary": "This paper examines the problem of estimating the parameters of a Lithium-Sulfur (LiS) battery from experimental cycling data. LiS batteries are attractive compared to traditional Lithium-Ion batteries, thanks largely to their potential to provide higher energy densities. The literature presents a number of different LiS battery models, with different fidelities and complexities. This includes both higher-fidelity diffusion-reaction models as well as \"zero-dimensional\" models that neglect diffus",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:38:43.421930+00:00",
+    "type": "literature",
+    "title": "State Estimation for a Zero-Dimensional Electrochemical Model of Lithium-Sulfur Batteries",
+    "published": "2021-01-25T21:51:28Z",
+    "url": "http://arxiv.org/abs/2101.10436v1",
+    "summary": "Lithium-sulfur (Li-S) batteries have become one of the most attractive alternatives over conventional Li-ion batteries due to their high theoretical specific energy density (2500 Wh/kg for Li-S vs. $\\sim$250 Wh/kg for Li-ion). Accurate state estimation in Li-S batteries is urgently needed for safe and efficient operation. To the best of the authors' knowledge, electrochemical model-based observers have not been reported for Li-S batteries, primarily due to the complex dynamics that make state ob",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:38:43.421930+00:00",
+    "type": "literature",
+    "title": "Environmental assessment of a new generation battery: The magnesium-sulfur system",
+    "published": "2021-04-08T14:18:49Z",
+    "url": "http://arxiv.org/abs/2104.03794v2",
+    "summary": "As environmental concerns mostly drive the electrification of our economy and the corresponding increase in demand for battery storage systems, information about the potential environmental impacts of the different battery systems is required. However, this kind of information is scarce for emerging post-lithium systems such as the magnesium-sulfur (MgS) battery. Therefore, we use life cycle assessment following a cradle-to-gate perspective to quantify the cumulative energy demand and potential ",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:38:43.421930+00:00",
+    "type": "literature",
+    "title": "Combined Airborne Wind and Photovoltaic Energy System for Martian Habitats",
+    "published": "2021-04-19T06:33:52Z",
+    "url": "http://arxiv.org/abs/2104.09506v2",
+    "summary": "Generating renewable energy on Mars is technologically challenging. Firstly, because compared to Earth, key energy resources such as solar and wind are weak as a result of very low atmospheric pressure and low solar irradiation. Secondly, because of the harsh environmental conditions, the required high degree of automation and the exceptional effort and costs to transport material to the planet. Like on Earth, it is crucial to combine complementary resources for an effective renewable energy sol",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Text-to-Battery Recipe: A language modeling-based protocol for automatic battery recipe extraction and retrieval",
+    "published": "2024-07-22T08:15:02Z",
+    "url": "http://arxiv.org/abs/2407.15459v1",
+    "summary": "Recent studies have increasingly applied natural language processing (NLP) to automatically extract experimental research data from the extensive battery materials literature. Despite the complex process involved in battery manufacturing -- from material synthesis to cell assembly -- there has been no comprehensive study systematically organizing this information. In response, we propose a language modeling-based protocol, Text-to-Battery Recipe (T2BR), for the automatic extraction of end-to-end",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Improving Electrolyte Performance for Target Cathode Loading Using Interpretable Data-Driven Approach",
+    "published": "2024-09-03T15:33:25Z",
+    "url": "http://arxiv.org/abs/2409.01989v1",
+    "summary": "Higher loading of active electrode materials is desired in batteries, especially those based on conversion reactions, for enhanced energy density and cost efficiency. However, increasing active material loading in electrodes can cause significant performance depreciation due to internal resistance, shuttling, and parasitic side reactions, which can be alleviated to a certain extent by a compatible design of electrolytes. In this work, a data-driven approach is leveraged to find a high-performing",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Machine learning assisted screening of metal binary alloys for anode materials",
+    "published": "2024-09-15T01:56:09Z",
+    "url": "http://arxiv.org/abs/2409.09583v1",
+    "summary": "In the dynamic and rapidly advancing battery field, alloy anode materials are a focal point due to their superior electrochemical performance. Traditional screening methods are inefficient and time-consuming. Our research introduces a machine learning-assisted strategy to expedite the discovery and optimization of these materials. We compiled a vast dataset from the MP and AFLOW databases, encompassing tens of thousands of alloy compositions and properties. Utilizing a CGCNN, we accurately predi",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Early-Cycle Internal Impedance Enables ML-Based Battery Cycle Life Predictions Across Manufacturers",
+    "published": "2024-10-05T17:04:25Z",
+    "url": "http://arxiv.org/abs/2410.05326v2",
+    "summary": "Predicting the end-of-life (EOL) of lithium-ion batteries across different manufacturers presents significant challenges due to variations in electrode materials, manufacturing processes, cell formats, and a lack of generally available data. Methods that construct features solely on voltage-capacity profile data typically fail to generalize across cell chemistries. This study introduces a methodology that combines traditional voltage-capacity features with Direct Current Internal Resistance (DCI",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "NN-AE-VQE: Neural network parameter prediction on autoencoded variational quantum eigensolvers",
+    "published": "2024-11-23T23:09:22Z",
+    "url": "http://arxiv.org/abs/2411.15667v2",
+    "summary": "A longstanding computational challenge is the accurate simulation of many-body particle systems. Especially for deriving key characteristics of high-impact but complex systems such as battery materials and high entropy alloys (HEA). While simple models allow for simulations of the required scale, these methods often fail to capture the complex dynamics that determine the characteristics. A long-theorized approach is to use quantum computers for this purpose, which allows for a more efficient enc",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Data-driven development of cycle prediction models for lithium metal batteries using multi modal mining",
+    "published": "2024-11-26T17:37:12Z",
+    "url": "http://arxiv.org/abs/2411.17625v1",
+    "summary": "Recent advances in data-driven research have shown great potential in understanding the intricate relationships between materials and their performances. Herein, we introduce a novel multi modal data-driven approach employing an Automatic Battery data Collector (ABC) that integrates a large language model (LLM) with an automatic graph mining tool, Material Graph Digitizer (MatGD). This platform enables state-of-the-art accurate extraction of battery material data and cyclability performance metr",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "AI-Driven Discovery of High Performance Polymer Electrodes for Next-Generation Batteries",
+    "published": "2025-02-19T17:32:17Z",
+    "url": "http://arxiv.org/abs/2502.13899v1",
+    "summary": "The use of transition group metals in electric batteries requires extensive usage of critical elements like lithium, cobalt and nickel, which poses significant environmental challenges. Replacing these metals with redox-active organic materials offers a promising alternative, thereby reducing the carbon footprint of batteries by one order of magnitude. However, this approach faces critical obstacles, including the limited availability of suitable redox-active organic materials and issues such as",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Advancing our Understanding of Optoionic Effects for the Design of Solar Batteries: A Theoretical Perspective",
+    "published": "2025-03-10T15:39:00Z",
+    "url": "http://arxiv.org/abs/2503.07460v1",
+    "summary": "Optoionics, a promising new field that aims at controlling ion dynamics using light, links photovoltaic power generation with electrochemical charge storage. This has the potential to drive and accelerate the energy revolution by utilizing materials that integrate the functionality of batteriesand photovoltaic cells. Finding, optimizing, and customizing these materials is a complex task, though. Computational modeling can play a crucial role in guiding and speeding up these processes, particular",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Integrating Density Functional Theory with Deep Neural Networks for Accurate Voltage Prediction in Alkali-Metal-Ion Battery Materials",
+    "published": "2025-03-17T11:15:31Z",
+    "url": "http://arxiv.org/abs/2503.13067v3",
+    "summary": "Accurate prediction of the voltage of battery materials plays a pivotal role in the advancement of energy storage technologies and the rational design of high-performance cathode materials. In this work, we present a deep neural network (DNN) model, built using PyTorch, to estimate the average voltage of cathode materials across Li-ion, Na-ion, and other alkali-metal-ion batteries. The model is trained on an extensive dataset from the Materials Project, incorporating a wide range of specific str",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Observing Nucleation and Crystallization of Rocksalt LiF from Molten State through Molecular Dynamics Simulations with Refined Machine-Learned Force Field",
+    "published": "2025-04-17T05:52:51Z",
+    "url": "http://arxiv.org/abs/2504.12668v2",
+    "summary": "Lithium fluoride (LiF) is a critical component for stabilizing lithium metal anode and high-voltage cathodes towards the next-generation high-energy-density lithium batteries. Recent modeling study reported the formation of wurtzite LiF below about 550 K (J. Am. Chem. Soc. 2023, 145, 1327-1333), in contrast to experimental observation of rocksalt LiF under ambient conditions. To address this discrepancy, we employ molecular dynamics (MD) simulations with a refined machine-learned force field (ML",
+    "claim": {
+      "material": "LiF",
+      "metric": "formation temperature",
+      "value": "550",
+      "unit": "K"
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Accelerating Battery Material Optimization through iterative Machine Learning",
+    "published": "2025-05-12T11:45:02Z",
+    "url": "http://arxiv.org/abs/2505.18162v1",
+    "summary": "The performance of battery materials is determined by their composition and the processing conditions employed during commercial-scale fabrication, where raw materials undergo complex processing steps with various additives to yield final products. As the complexity of these parameters expands with the development of industry, conventional one-factor-at-a-time (OFAT) experiment becomes old fashioned. While domain expertise aids in parameter optimization, this traditional approach becomes increas",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Uncovering coupled ionic-polaronic dynamics and interfacial enhancement in Li$_x$FePO$_4$",
+    "published": "2025-07-08T03:10:41Z",
+    "url": "http://arxiv.org/abs/2507.05626v1",
+    "summary": "Understanding and controlling coupled ionic-polaronic dynamics is crucial for optimizing electrochemical performance in battery materials. However, studying such coupled dynamics remains challenging due to the intricate interplay between Li-ion configurations, polaron charge ordering, and lattice vibrations. Here, we develop a fine-tuned machine-learned force field (MLFF) for Li$_x$FePO$_4$ that captures coupled ion-polaron behavior. Our simulations reveal picosecond-scale polaron flips occurrin",
+    "claim": {
+      "material": "Li$_x$FePO$_4$",
+      "metric": "polaron flip time",
+      "value": "picosecond-scale",
+      "unit": "s"
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "A literature-derived dataset of migration barriers for quantifying ionic transport in battery materials",
+    "published": "2025-08-08T17:06:12Z",
+    "url": "http://arxiv.org/abs/2508.06459v1",
+    "summary": "The rate performance of any electrode or solid electrolyte material used in a battery is critically dependent on the migration barrier ($E_m$) governing the motion of the intercalant ion, which is a difficult-to-estimate quantity both experimentally and computationally. The foundation for constructing and validating accurate machine learning (ML) models that are capable of predicting $E_m$, and hence accelerating the discovery of novel electrodes and solid electrolytes, lies in the availability ",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Deep Learning Assisted Prediction of Electrochemical Lithiation State in Spinel Lithium Titanium Oxide Thin Films",
+    "published": "2025-11-19T04:31:50Z",
+    "url": "http://arxiv.org/abs/2511.15109v1",
+    "summary": "Machine Learning (ML) and Deep Learning (DL) based framework have evolved rapidly and generated considerable interests for predicting the properties of materials. In this work, we utilize ML-DL framework to predict the electrochemical lithiation state and associated electrical conductivity of spinel Li4Ti5O12 (LTO) thin films using Raman spectroscopy data. Raman spectroscopy, with its rapid, non-destructive, and high-resolution capabilities, is leveraged to monitor dynamic electrochemical change",
+    "claim": {
+      "material": "Li4Ti5O12 (LTO)",
+      "metric": null,
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Evaluation of Foundational Machine Learned Interatomic Potentials for Migration Barrier Predictions",
+    "published": "2025-12-03T10:25:45Z",
+    "url": "http://arxiv.org/abs/2512.03642v1",
+    "summary": "Fast, and accurate prediction of ionic migration barriers ($E_m$) is crucial for designing next-generation battery materials that combine high energy density with facile ion transport. Given the computational costs associated with estimating $E_m$ using conventional density functional theory (DFT) based nudged elastic band (NEB) calculations, we benchmark the accuracy in $E_m$ and geometry predictions of five foundational machine learned interatomic potentials (MLIPs), which can potentially acce",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Tracking the Lithiation State of Li$_x$Si from Machine-Learned XPS Binding Energies",
+    "published": "2026-02-26T14:09:00Z",
+    "url": "http://arxiv.org/abs/2602.23028v1",
+    "summary": "X-ray Photoelectron Spectroscopy (XPS) is a powerful technique to probe chemical states and interfacial processes in battery materials, but a quantitative interpretation is often hindered by the complex, heterogeneous microstructures that form during operation and dominate electrochemical cycling. Silicon based anodes represent a paradigmatic example in Li batteries, as (de)lithiation proceeds through the formation of strongly disordered Li$_x$Si phases and crystal-amorphous transformations that",
+    "claim": {
+      "material": "Li$_x$Si",
+      "metric": null,
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "High-Throughput-Screening Workflow for Predicting Volume Changes by Ion Intercalation in Battery Materials",
+    "published": "2026-03-11T10:45:04Z",
+    "url": "http://arxiv.org/abs/2603.10631v2",
+    "summary": "Mechanical stresses and strains developing locally within the microstructure of active ion-battery-electrode materials during charge-discharge cycles can compromise their long-term stability. In this context, crystalline compounds exhibiting low volume changes are of particular interest. Atomistic simulations can be employed to quantify the volume change of the crystal structure upon intercalation and deintercalation of ions and to elucidate the local mechanisms underlying the global structural ",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Computational references are not experiments: pre-registered validation of machine-learned sodium-cathode voltages",
+    "published": "2026-06-19T07:51:30Z",
+    "url": "http://arxiv.org/abs/2606.23725v2",
+    "summary": "Machine-learning screens for battery materials are trained and judged almost entirely against computed reference voltages, and those references carry their own systematic errors. We report a case in which this matters quantitatively: our own screening stack (a graph-network voltage screen, a prior-art triage layer, and a local PBE+U bench) fails pre-registered validation against experiment-anchored literature values. Verdict thresholds, failure modes, and the primary metric were committed before",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Conditional spinodal decomposition in Li-Mg anodes for lithium metal batteries",
+    "published": "2026-06-11T05:52:01Z",
+    "url": "http://arxiv.org/abs/2606.12932v1",
+    "summary": "The development of batteries with high energy density, short charging times and use of sustainable materials is critical for decarbonization. Magnesium (Mg)-based anodes for lithium (Li) metal batteries promote homogeneous Li plating, thereby avoiding the formation of Li dendrites that cause short circuits and battery failure. However, microstructural modifications induced by Li-alloying and their influence on battery operation remain elusive. Here, we unveil the previously unknown formation of ",
+    "claim": {
+      "material": "Mg",
+      "metric": null,
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "TODD-Graphene: A Novel Porous 2D Carbon Allotrope for High-Performance Lithium-Ion Batteries",
+    "published": "2023-11-17T18:46:45Z",
+    "url": "http://arxiv.org/abs/2311.10704v1",
+    "summary": "The class of 2D carbon allotropes has garnered significant attention due to its exceptional optoelectronic and mechanical properties, crucial for diverse device applications, such as energy storage. This study employs density functional theory calculations, ab initio molecular dynamics (AIMD), and classical reactive (ReaxFF) molecular dynamics (MD) simulations to introduce TODD-Graphene, a novel 2D planar carbon allotrope with a porous structure composed of 3-8-10-12 carbon rings. TODD-G exhibit",
+    "claim": {
+      "material": "TODD-Graphene",
+      "metric": null,
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Reduction of Anisotropic Volume Expansion and the Optimization of Specific Charge Capacity in Lithiated Silicon Nanowires",
+    "published": "2024-02-29T18:25:23Z",
+    "url": "http://arxiv.org/abs/2402.19428v1",
+    "summary": "This computational research study analyzes the increase of the specific charge capacity that comes with the reduction of the anisotropic volume expansion during lithium ion insertion within silicon nanowires. This research paper is a continuation from previous work that studied the expansion rate and volume increase. It has been determined that when the lithium ion concentration is decreased by regulating the amount of Li ion flux, the lithium ions to silicon atoms ratio, represented by x, decre",
+    "claim": {
+      "material": "Lithiated Silicon Nanowires",
+      "metric": "specific charge capacity",
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Comparison of Different Elastic Strain Definitions for Largely Deformed SEI of Chemo-Mechanically Coupled Silicon Battery Particles",
+    "published": "2024-04-02T12:16:35Z",
+    "url": "http://arxiv.org/abs/2404.01884v2",
+    "summary": "Amorphous silicon is a highly promising anode material for next-generation lithium-ion batteries. Large volume changes of the silicon particle have a critical effect on the surrounding solid-electrolyte interphase (SEI) due to repeated fracture and healing during cycling. Based on a thermodynamically consistent chemo-elasto-plastic continuum model we investigate the stress development inside the particle and the SEI. Using the example of a particle with SEI, we apply a higher order finite elemen",
+    "claim": {
+      "material": "amorphous silicon",
+      "metric": null,
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Electric field enhances the electronic and diffusion properties of penta-graphene nanoribbons for application in lithium-ion batteries: a first-principles study",
+    "published": "2024-06-18T23:00:44Z",
+    "url": "http://arxiv.org/abs/2406.13096v2",
+    "summary": "Enhancing the electronic and diffusion properties of lithium-ion batteries is crucial for improving the performance of the fast-growing energy storage devices. Recently, fast-charging capability of commercial-like lithium-ion anodes with the least modification of the current manufactoring technology is of great interest. Here we use first principles methods with density functional theory and the climbing image-nudged elastic band method to evaluate the impact of an external electric field on the",
+    "claim": {
+      "material": "penta-graphene nanoribbons",
+      "metric": null,
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Operando monitoring of strain field distribution in lithium battery anode via ultra-high spatial resolution optical frequency domain reflectometer",
+    "published": "2024-07-03T05:39:30Z",
+    "url": "http://arxiv.org/abs/2407.02817v1",
+    "summary": "The cycling performance of lithium-ion batteries is closely related to the expansion effect of anode materials during charge and discharge processes. Studying the mechanical field evolution of anode materials is crucial for evaluating battery per-formance. Here, we propose a phase-sensitive ultra-high spatial resolution optical frequency domain reflectometry tech-nique, in which the test fiber is embedded into the anode of a lithium-ion battery to monitor the mechanical evolution of the anode ma",
+    "claim": {
+      "material": "anode",
+      "metric": null,
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "TPDH-Graphene as a New Anodic Material for Lithium Ion Battery: DFT-Based Investigations",
+    "published": "2024-07-05T18:03:04Z",
+    "url": "http://arxiv.org/abs/2407.04788v1",
+    "summary": "The potential of tetra-penta-deca-hexagonal graphene (TPDH-gr), a recently proposed 2D carbon allotrope as an anodic material in lithium ion batteries (LIB), was investigated through density functional theory (DFT) calculations. The results indicate that Li-atom adsorption is moderate (around 0.70 eV), allowing for easy desorption. Moreover, energy barrier, diffusion coefficient, and open circuit voltage (OCV) calculations show rapid Li atom diffusion on the TPDH-gr surface, stable intercalation",
+    "claim": {
+      "material": "TPDH-gr",
+      "metric": "Li-atom adsorption energy",
+      "value": 0.7,
+      "unit": "eV"
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Preparation and electrochemical properties of nitrogen-doped starch hard carbon anode materials for lithium-ion battery",
+    "published": "2024-07-21T11:06:03Z",
+    "url": "http://arxiv.org/abs/2407.20255v1",
+    "summary": "Here, we report the synthesis of hard carbon materials(CSH) made from corn starch and their application as an anode in lithium-ion batteries. The study shows that the Microstructure and electrochemical properties of CSHs are affected by nitrogen doping. It is found that nitrogen is embedded in the carbon layer with graphite nitrogen, pyridine nitrogen, and pyrrole nitrogen, so as to the surface morphology was changed and reduced the disorder of the materials. The electrochemical test results sho",
+    "claim": {
+      "material": "nitrogen-doped starch hard carbon",
+      "metric": null,
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Slow Voltage Relaxation of Silicon Nanoparticles with a Chemo-Mechanical Core-Shell Model",
+    "published": "2024-08-02T08:31:38Z",
+    "url": "http://arxiv.org/abs/2408.01106v1",
+    "summary": "Silicon presents itself as a high-capacity anode material for lithium-ion batteries with a promising future. The high ability for lithiation comes along with massive volume changes and a problematic voltage hysteresis, causing reduced efficiency, detrimental heat generation, and a complicated state-of-charge estimation. During slow cycling, amorphous silicon nanoparticles show a larger voltage hysteresis than after relaxation periods. Interestingly, the voltage relaxes for at least several days,",
+    "claim": {
+      "material": "amorphous silicon nanoparticles",
+      "metric": "voltage hysteresis",
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Structural, Electronic, and Li-ion Adsorption Properties of PolyPyGY Explored by First-Principles and Machine Learning Simulations: A New Multi-Ringed 2D Carbon Allotrope",
+    "published": "2024-12-10T18:51:02Z",
+    "url": "http://arxiv.org/abs/2412.07753v1",
+    "summary": "Two-dimensional (2D) carbon materials have been intensively investigated because of their distinctive structural framework and electronic behaviors as alternatives in energy conversion and storage applications. This study proposes a novel 2D carbon allotrope, Polymerized Pyracyclene Graphyne (PolyPyGY), characterized by a multi-ringed structure with 4-, 5-, 6-, 8-, and 16-membered rings comprising a porous structure. Using first-principles calculations and machine-learning techniques, we explore",
+    "claim": {
+      "material": "PolyPyGY",
+      "metric": null,
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "First-Principles and Machine Learning Insights into the Design of DOTT-Carbon and its Lithium-Ion Storage Capacity",
+    "published": "2025-01-09T14:56:36Z",
+    "url": "http://arxiv.org/abs/2501.05294v1",
+    "summary": "Two-dimensional (2D) carbon-based materials are promising candidates for developing more efficient green energy conversion and storage technologies. This study presents a new 2D carbon allotrope, DOTT-Carbon, characterized by its distinctive and multi-ring structure featuring 12-, 8-, 4-, and 3-membered rings of carbon atoms. We explore its structural, mechanical, and lithium-ion storage properties by employing density functional theory and machine learning simulations. Phonon calculations confi",
+    "claim": {
+      "material": "DOTT-Carbon",
+      "metric": null,
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Iron-Arsenide monolayer as an anode materials for Lithium-ion batteries: A first-principles study",
+    "published": "2025-01-25T09:58:14Z",
+    "url": "http://arxiv.org/abs/2501.15161v1",
+    "summary": "This theoretical investigation delves into the structural, electronic, and electrochemical properties of two hexagonal iron-arsenide monolayers, 1T-FeAs and 1H-FeAs, focusing on their potential as anode materials for Lithium-ion batteries. Previous studies have highlighted the ferromagnetic nature of 1T-FeAs at room temperature.Our calculations reveal that both phases exhibit metallic behaviour with spin-polarized electronic band structures. Electrochemical studies show that the 1T-FeAs monolaye",
+    "claim": {
+      "material": "1T-FeAs",
+      "metric": null,
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Theoretical study of \u03b4-5 boron monolayer as an anode material for Li and non-Li ion batteries",
+    "published": "2025-01-25T10:05:51Z",
+    "url": "http://arxiv.org/abs/2501.15162v1",
+    "summary": "We have studied the electrochemical performance of the delta-5 boron monolayer as an anode material for alkali metal (AM) and alkali earth metal (AEM) ion batteries using density functional theory simulations. The electronic properties, adsorption, diffusion rate, and storage behavior of various metal atoms (M) in the \u03b4-5 boron monolayer are explored. Our study shows that the delta-5 boron monolayer possesses high electrical conductivity and a low activation barrier for electron and metal ion tr",
+    "claim": {
+      "material": "\u03b4-5 boron monolayer",
+      "metric": "activation barrier",
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Insights into Nb2C and Nb2CO2 as high-performance anodes for sodium- and lithium-ion batteries: An ab initio investigation",
+    "published": "2025-04-11T20:13:19Z",
+    "url": "http://arxiv.org/abs/2504.08953v1",
+    "summary": "In this study, we employ first-principles density functional theory (DFT) calculations to investigate the electrochemical properties of Nb2C and Nb2CO2 MXenes as potential anode materials for sodium-ion (SIBs) and lithium-ion batteries (LIBs). Our findings reveal that Li and Na intercalation primarily modifies the electronic properties of Nb2C without inducing significant structural distortions, as indicated by Raman intensity variations. Adsorption energy calculations show that the T4 and H3 si",
+    "claim": {
+      "material": "Nb2C",
+      "metric": null,
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "HOP-graphene: A high-capacity anode for Li/Na-ion batteries unveiled by first-principles calculations",
+    "published": "2025-05-07T21:10:40Z",
+    "url": "http://arxiv.org/abs/2505.04804v1",
+    "summary": "The growing demand for efficient energy storage has driven the search for advanced anode materials for lithium- and sodium-ion batteries (LIBs and SIBs). In this context, we report the application of HOP-graphene (a 5-6-8-membered 2D carbon framework) as a high-performance anode material for LIBs and SIBs using density functional theory simulations. Diffusion studies reveal low energy barriers of 0.70 eV for Li and 0.39 eV for Na, indicating superior mobility at room temperature compared to othe",
+    "claim": {
+      "material": "HOP-graphene",
+      "metric": "energy barrier for Na diffusion",
+      "value": 0.39,
+      "unit": "eV"
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Athos-Graphene: Computational Discovery of an Art-Inspired 2D Carbon Anode for Lithium-Ion Batteries",
+    "published": "2025-05-07T21:21:32Z",
+    "url": "http://arxiv.org/abs/2505.04810v1",
+    "summary": "Two-dimensional (2D) carbon allotropes have attracted growing interest for their structural versatility and potential in energy storage and nanoelectronics. We propose Athos-Graphene (AG), a novel 2D carbon allotrope inspired by the geometric patterns of Brazilian artist Athos Bulc\u00e3o. Designed using density functional theory, AG features a periodic structure with high thermodynamic and thermal stability, as evidenced by a low cohesive energy of -7.96 eV/atom, the absence of imaginary phonon mode",
+    "claim": {
+      "material": "Athos-Graphene",
+      "metric": "cohesive energy",
+      "value": -7.96,
+      "unit": "eV/atom"
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Super high capacity of silicon carbon anode over 6500 mAh g-1 for lithium battery",
+    "published": "2025-07-03T15:13:46Z",
+    "url": "http://arxiv.org/abs/2507.02704v1",
+    "summary": "As silicon is approaching its theoretical limit for the anode materials in lithium battery, searching for a higher limit is indispensable. Herein, we demonstrate the possible of achieving ultrahigh capacity over 6500 mAh g-1 in silicon-carbon composites. Considering the numerous defects inside the silicon nanostructures, it is deduced the formation of quasi-Bose Einstein condensation should be possible, which can lead to the low viscosity flow of lithium-ions through the anode. At a charge-disch",
+    "claim": {
+      "material": "silicon-carbon composites",
+      "metric": "capacity",
+      "value": 6500,
+      "unit": "mAh g-1"
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Modelling Carbon Coated Silicon Anodes for Lithium-Ion Batteries and the Influence of Contact Area on Rate Performance",
+    "published": "2025-09-17T13:16:17Z",
+    "url": "http://arxiv.org/abs/2509.13947v2",
+    "summary": "Silicon is a promising anode material for next-generation lithium-ion batteries due to its exceptionally high specific capacity (3600 mAh g$^{-1}$), significantly exceeding that of conventional graphite. However, its practical application is hindered by substantial volume expansion (300-400%) during lithiation, leading to mechanical degradation and capacity fade. A graphite-coated silicon core-shell structure has been proposed to mitigate these issues by combining silicon's capacity with graphit",
+    "claim": {
+      "material": "Silicon",
+      "metric": "specific capacity",
+      "value": 3600,
+      "unit": "mAh g^-1"
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Avalanche-like lithium intercalation and intraparticle correlations in graphite",
+    "published": "2025-09-25T11:55:50Z",
+    "url": "http://arxiv.org/abs/2509.21047v1",
+    "summary": "Graphite is the most widely used anode material in lithium-ion batteries with over 98% market share. However, despite its first application over 30 years ago, the lithium insertion processes and associated dynamics in graphite remain poorly understood, especially for the dilute stages. A fundamental understanding of how the symmetry-breaking phase transitions occur pseudo-continuously under operating conditions is still lacking. Here, we provide a unified picture of ion intercalation dynamics du",
+    "claim": {
+      "material": "graphite",
+      "metric": null,
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "From cathode to anode: Understanding lithium loss in 21700-type Ni-rich NCM||Graphite-SiOx cells",
+    "published": "2025-11-08T07:27:26Z",
+    "url": "http://arxiv.org/abs/2511.05892v2",
+    "summary": "Moving to larger cell formats in lithium-ion batteries increases overall useable energy but introduces inhomogeneities that influence aging. This study investigates degradation in 21700-type cells with NCM cathodes and graphite/SiOx anodes under cyclic aging, using in operando neutron diffraction, neutron depth profiling, and X-ray computed tomography. Prolonged cycling causes lithium loss, observed on the cathode side as reduced NCM unit cell change during cycling. On the anode side, this loss ",
+    "claim": {
+      "material": "NCM",
+      "metric": "lithium loss",
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Role of Wadsley Defects and Cation Disorder to Enhance MoNb12O33 Diffusion",
+    "published": "2025-11-12T18:14:18Z",
+    "url": "http://arxiv.org/abs/2511.09521v1",
+    "summary": "Wadsley-Roth (WR) niobates have emerged as high-rate anode materials that can combine rapid ionic diffusion with good electronic conductivity. WR compounds have been defect-enhanced by limited annealing, however, such materials often contain multiple types of defects. In particular, both Wadsley defects (variable block size) and transition metal disorder have the potential to modify transport rates, however the corresponding effects are not well understood mechanistically. Here, MoNb12O33 (MNO) ",
+    "claim": {
+      "material": "MoNb12O33",
+      "metric": "ionic diffusion",
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Probing the Liquid Solid Interfaces of 2D SnSe MXene Battery Anodes at the Nanoscale",
+    "published": "2025-11-13T13:05:57Z",
+    "url": "http://arxiv.org/abs/2511.10278v1",
+    "summary": "Understanding degradation processes in lithium ion batteries is essential for improving long term performance and advancing sustainable energy technologies. Tin selenide (SnSe) has emerged as a promising anode material due to the high theoretical capacity of tin. Unlike conventional intercalation based electrodes, SnSe undergoes conversion and alloying reactions with lithium to form Li4.4Sn, Sn, and Li2Se, enabling high lithium storage but inducing large volume changes that cause mechanical inst",
+    "claim": {
+      "material": "SnSe",
+      "metric": "theoretical capacity",
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Probing Anharmonic Lattice Dynamics and Thermal Transport in Layered Perovskite LiYTiO4 Anode",
+    "published": "2025-12-07T18:22:58Z",
+    "url": "http://arxiv.org/abs/2512.06954v1",
+    "summary": "Layered perovskite lithium yttrium titanate ($\\rm LiYTiO_4$) has recently emerged as a promising low-potential, ultrahigh-rate intercalation-type anode material for lithium-ion batteries; however, its lattice dynamics and thermal transport properties remain poorly understood, limiting a complete evaluation of its practical potential. Here, we combine experimental measurements with theoretical modeling to systematically investigate the anharmonic lattice dynamics and heat transport in $\\rm LiYTiO",
+    "claim": {
+      "material": "LiYTiO4",
+      "metric": null,
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Electrochemical Performance of Gold Monolayers for Lithium-Ion Batteries: A First Principles Study",
+    "published": "2026-04-14T11:06:37Z",
+    "url": "http://arxiv.org/abs/2604.12583v2",
+    "summary": "Being motivated by recent synthesis of a monolayer of gold, named goldene, from the nano-laminated ternary ceramic phase of Ti3AuC2, we are proposing two phases of goldene viz. goldene-I and goldene-II as anode material for Lithium-Ion batteries using first principles study. This innovative goldene-I monolayer, composed of triangular motifs of gold atoms, exhibits remarkable properties owing to its unique geometric configuration and intrinsic stability. In contrast, a theoretical structure known",
+    "claim": {
+      "material": "goldene-I",
+      "metric": null,
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Tailoring Mechanical Properties of Germanium Anodes via Metal Incorporation for Improved Cycle Stability",
+    "published": "2026-05-01T00:14:57Z",
+    "url": "http://arxiv.org/abs/2605.00304v1",
+    "summary": "Achieving long-term stability in high-capacity lithium-ion battery anodes remains a critical challenge. In this study, we present a materials-intrinsic strategy for extending the cycle life of Ge, a promising next-generation anode material, through trace doping with metal elements. We systematically investigated the effects of small additions of various metals and found that elements with large atomic size, particularly Yb, markedly improved the cycling stability without sacrificing the initial ",
+    "claim": {
+      "material": "Ge",
+      "metric": "cycle stability",
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Local doping of an oxide semiconductor by voltage-driven splitting of anti-Frenkel defects",
+    "published": "2025-02-11T20:54:41Z",
+    "url": "http://arxiv.org/abs/2502.07947v1",
+    "summary": "Layered oxides exhibit high ionic mobility and chemical flexibility, attracting interest as cathode materials for lithium-ion batteries and the pairing of hydrogen production and carbon capture. Recently, layered oxides emerged as highly tunable semiconductors. For example, by introducing anti-Frenkel defects, the electronic hopping conductance in hexagonal manganites was increased locally by orders of magnitude. Here, we demonstrate local acceptor and donor doping in Er(Mn,Ti)O$_3$, facilitated",
+    "claim": {
+      "material": "Er(Mn,Ti)O$_3$",
+      "metric": null,
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Simulating charging characteristics of lithium iron phosphate by electro-ionic optimization on a quantum annealer",
+    "published": "2025-03-13T17:32:03Z",
+    "url": "http://arxiv.org/abs/2503.10581v1",
+    "summary": "The rapid evolution of quantum computing hardware opens up new avenues in the simulation of energy materials. Today's quantum annealers are able to tackle complex combinatorial optimization problems. A formidable challenge of this type is posed by materials with site-occupational disorder for which atomic arrangements with a low, or lowest, energy must be found. In this article, a method is presented for the identification of the correlated ground-state distribution of both lithium ions and redo",
+    "claim": {
+      "material": "lithium iron phosphate",
+      "metric": null,
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Synergistic Role of Transition Metals and Polyanionic Frameworks in Phosphate-Based Cathode Materials for Sodium-Ion Batteries",
+    "published": "2025-04-27T16:40:17Z",
+    "url": "http://arxiv.org/abs/2504.19299v1",
+    "summary": "Ongoing research in the area of advanced cathode materials for sodium-ion batteries (SIBs) is expected to reduce reliance on lithium-ion batteries (LIBs), providing more affordable and sustainable energy storage solutions. Polyanionic compounds have emerged as promising options due to their stable structure and ability to withstand high-voltage conditions as well as fast charging capabilities. This review offers a thorough discussion of phosphate-based polyanionic cathodes for SIBs, exploring th",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Magnetic order and Li-diffusion in the 1/3-filled Kagome layers of antiperovskite Lithium-ion battery materials (Li$_2$Fe)SO and (Li$_2$Fe)SeO",
+    "published": "2025-04-28T09:05:46Z",
+    "url": "http://arxiv.org/abs/2504.19603v1",
+    "summary": "The recently discovered lithium-rich antiperovskites (Li$_2$Fe)SeO and (Li$_2$Fe)SO host lithium and iron ions on the same atomic position which octahedrally coordinates to central oxygens. In a cubic antiperovskite these sites form Kagome planes stacked along the <111> directions which triangular motifs induce high geometric frustration in the diluted magnetic sublattice for antiferromagnetic interactions. Despite their compelling properties as high-capacity Li-ion battery cathode materials, ve",
+    "claim": {
+      "material": "(Li$_2$Fe)SeO and (Li$_2$Fe)SO",
+      "metric": null,
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "The meaning of Li diffusion in cathode materials for the cycling of Li-ion batteries: A case study on LiNi0.33Mn0.33Co0.33O2 thin films",
+    "published": "2025-05-14T14:01:29Z",
+    "url": "http://arxiv.org/abs/2505.09404v1",
+    "summary": "We demonstrate that for polycrystalline LiNi0.33Mn0.33Co0.33O2 c-axis textured thin film cathodes of rechargeable lithium-ion batteries, the kinetics of Li storage and release including maximum specific capacity is determined by Li diffusion. The C-rate capability and long-term cycling behavior were investigated. The films exhibited up to 30% of the expected practical capacity even at low C-rates. However, 100% capacity was achieved at very low cycling rates below 0.01C. The capacity showed a re",
+    "claim": {
+      "material": "LiNi0.33Mn0.33Co0.33O2",
+      "metric": "practical capacity",
+      "value": "100",
+      "unit": "%"
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Deep Kernel Bayesian Optimisation for Closed-Loop Electrode Microstructure Design with User-Defined Properties based on GANs",
+    "published": "2025-06-07T11:28:39Z",
+    "url": "http://arxiv.org/abs/2508.00833v1",
+    "summary": "The generation of multiphase porous electrode microstructures with optimum morphological and transport properties is essential in the design of improved electrochemical energy storage devices, such as lithium-ion batteries. Electrode characteristics directly influence battery performance by acting as the main sites where the electrochemical reactions coupled with transport processes occur. This work presents a generation-optimisation closed-loop algorithm for the design of microstructures with t",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "STEM Diffraction Pattern Analysis with Deep Learning Networks",
+    "published": "2025-07-02T16:58:09Z",
+    "url": "http://arxiv.org/abs/2507.01889v1",
+    "summary": "Accurate grain orientation mapping is essential for understanding and optimizing the performance of polycrystalline materials, particularly in energy-related applications. Lithium nickel oxide (LiNiO$_{2}$) is a promising cathode material for next-generation lithium-ion batteries, and its electrochemical behaviour is closely linked to microstructural features such as grain size and crystallographic orientations. Traditional orientation mapping methods--such as manual indexing, template matching ",
+    "claim": {
+      "material": "Lithium nickel oxide (LiNiO$_{2}$)",
+      "metric": null,
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Deciphering the interplay between wetting and chemo-mechanical fracture in lithium-ion battery cathode materials",
+    "published": "2025-07-06T23:13:24Z",
+    "url": "http://arxiv.org/abs/2507.04574v1",
+    "summary": "Crack growth in lithium-ion battery electrodes is typically detrimental and undesirable. However, recent experiments suggest that stabilized fracture of cathode active materials in liquid electrolytes can increase electrochemically active surfaces, shorten diffusion pathway, enhance (de)lithiation and improve overall capacity. To decipher the fundamental couplings between electrolyte wetting and fracture evolution and evaluate their influences on macroscopic battery performance, we conducted an ",
+    "claim": {
+      "material": "cathode active materials",
+      "metric": "overall capacity",
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Expert-Guided LLM Reasoning for Battery Discovery: From AI-Driven Hypothesis to Synthesis and Characterization",
+    "published": "2025-07-21T23:46:11Z",
+    "url": "http://arxiv.org/abs/2507.16110v1",
+    "summary": "Large language models (LLMs) leverage chain-of-thought (CoT) techniques to tackle complex problems, representing a transformative breakthrough in artificial intelligence (AI). However, their reasoning capabilities have primarily been demonstrated in solving math and coding problems, leaving their potential for domain-specific applications-such as battery discovery-largely unexplored. Inspired by the idea that reasoning mirrors a form of guided search, we introduce ChatBattery, a novel agentic fr",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Deep learning-enabled large-scale analysis of particle geometry-lithiation correlations in battery cathode materials",
+    "published": "2025-07-24T15:58:27Z",
+    "url": "http://arxiv.org/abs/2507.18530v1",
+    "summary": "A deep learning model is employed to address the challenging problem of V2O5 nanoparticle segmentation and the correlation between the chemical composition and the geometrical features of lithiated V2O5 nanoparticles as an exemplar of a phase-transforming battery cathode material. First, the deep learning-enabled segmentation model is integrated with the singular value decomposition technique and a spectral database to generate accurate composition and phase maps capturing lithiation heterogenei",
+    "claim": {
+      "material": "V2O5",
+      "metric": null,
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Short-Range Order and Li$_x$TM$_{4-x}$ Probability Maps for Disordered Rocksalt Cathodes",
+    "published": "2025-08-11T15:52:48Z",
+    "url": "http://arxiv.org/abs/2508.08112v1",
+    "summary": "Short-range order (SRO) in the cation-disordered state is a controlling factor influencing the probability of finding Li$_{4}$ tetrahedron clusters in disordered rocksalt (DRX) cathode materials. However, the prevalent Li$_4$ probability below the random limit across reported DRX compositions has not been systematically investigated, active strategies to surpass the random limit of Li$_4$ probability are lacking, and the fundamental ordering behavior on the face-centered cubic (FCC) lattice rema",
+    "claim": {
+      "material": "DRX cathode materials",
+      "metric": "Li4 probability",
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Quantum Simulation of Electron Energy Loss Spectroscopy for Battery Materials",
+    "published": "2025-08-21T20:01:16Z",
+    "url": "http://arxiv.org/abs/2508.15935v1",
+    "summary": "The dynamic structure factor (DSF) is a central quantity for interpreting a vast array of inelastic scattering experiments in chemistry and materials science, but its accurate simulation is a considerable challenge for classical computational methods. In this work, we present a quantum algorithm and an end-to-end simulation framework to compute the DSF, providing a general approach for simulating momentum-resolved spectroscopies. We apply this approach to the simulation of electron energy loss s",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Crystal Systems Classification of Phosphate-Based Cathode Materials Using Machine Learning for Lithium-Ion Battery",
+    "published": "2025-09-05T12:43:09Z",
+    "url": "http://arxiv.org/abs/2509.10532v1",
+    "summary": "The physical and chemical characteristics of cathodes used in batteries are derived from the lithium-ion phosphate cathodes crystalline arrangement, which is pivotal to the overall battery performance. Therefore, the correct prediction of the crystal system is essential to estimate the properties of cathodes. This study applies machine learning classification algorithms for predicting the crystal systems, namely monoclinic, orthorhombic, and triclinic, related to Li P (Mn, Fe, Co, Ni, V) O based",
+    "claim": {
+      "material": "LiP(Mn, Fe, Co, Ni, V)O",
+      "metric": null,
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Lithium depth profiling in NMC/Graphite commercial coin cells under high C-rate cycling",
+    "published": "2025-09-30T02:55:22Z",
+    "url": "http://arxiv.org/abs/2509.25697v2",
+    "summary": "This study examines the distribution and evolution of lithium in both anode and cathode materials of commercial lithium-ion coin cells subjected to high C-rate cycling, providing insights into the mechanisms of lithium loss, trapping, and plating. Cells were cycled at 1C to 3C rates, and post-mortem analysis was performed using Li nuclear reaction analysis (Li-NRA), x-ray diffraction (XRD), and scanning electron microscopy (SEM) equipped with energy-dispersive x-ray spectroscopy (EDS). Li-NRA, u",
+    "claim": {
+      "material": "Lithium",
+      "metric": "loss",
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Toward Multi-Fidelity Machine Learning Force Field for Cathode Materials",
+    "published": "2025-11-14T14:46:07Z",
+    "url": "http://arxiv.org/abs/2511.11361v1",
+    "summary": "Machine learning force fields (MLFFs), which employ neural networks to map atomic structures to system energies, effectively combine the high accuracy of first-principles calculation with the computational efficiency of empirical force fields. They are widely used in computational materials simulations. However, the development and application of MLFFs for lithium-ion battery cathode materials remain relatively limited. This is primarily due to the complex electronic structure characteristics of",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Screening novel cathode materials from the Energy-GNoME database using MACE machine learning force field and DFT",
+    "published": "2025-11-27T14:36:50Z",
+    "url": "http://arxiv.org/abs/2511.22504v2",
+    "summary": "The development of new battery materials, particularly novel cathode chemistries, is essential for enabling next generation energy storage technologies. In this work, we employ a multi-fidelity screening protocol combining the Energy-GNoME confident criteria, foundational MACE machine-learning force fields (MLFF), and physically motivated heuristic filters to identify novel intercalation cathodes for post-lithium batteries, namely: Na-, K-, Mg-, and Ca-ion batteries. Foundational MACE models are",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "RUL-QMoE: Multiple Non-crossing Quantile Mixture-of-Experts for Probabilistic Remaining Useful Life Predictions of Varying Battery Materials",
+    "published": "2025-12-19T06:10:33Z",
+    "url": "http://arxiv.org/abs/2512.23725v1",
+    "summary": "Lithium-ion batteries are the major type of battery used in a variety of everyday applications, including electric vehicles (EVs), mobile devices, and energy storage systems. Predicting the Remaining Useful Life (RUL) of Li-ion batteries is crucial for ensuring their reliability, safety, and cost-effectiveness in battery-powered systems. The materials used for the battery cathodes and their designs play a significant role in determining the degradation rates and RUL, as they lead to distinct ele",
+    "claim": {
+      "material": "Lithium-ion",
+      "metric": null,
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Computational discovery of cathode materials for rechargeable aqueous zinc-ion batteries",
+    "published": "2026-02-10T19:33:35Z",
+    "url": "http://arxiv.org/abs/2602.10236v2",
+    "summary": "Rechargeable aqueous zinc-ion batteries (RAZIBs) attract major interest for deployment in grid-scale energy storage due to higher safety and lower cost when compared to lithium-ion batteries. However, currently studied cathode materials suffer from capacity fade when cycling at rates appropriate for grid-scale applications ($<$ C/2). To address the present limitation on cathode material availability, more than 2000 previously synthesized oxides, chalcogenides, Prussian blue analogues, and polyan",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Direct Simulation of LiNi0.8Mn0.1Co0.1O2 Transport Properties Using an Efficient and Accurate Machine Learning Potential",
+    "published": "2026-05-19T12:16:08Z",
+    "url": "http://arxiv.org/abs/2605.19747v1",
+    "summary": "The rate capability of layered lithium nickel manganese cobalt oxide (NMC) cathode materials plays a decisive role in high-power applications such as fast charging, necessitating a detailed understanding of lithium-ion diffusion. However, the mechanisms governing lithium-ion transport in NMC remain insufficiently understood, both experimentally and computationally. In this study, we employ an advanced and efficient machine learning potential (MLP) to simulate lithium self-diffusion in LiNi0.8Mn0",
+    "claim": {
+      "material": "LiNi0.8Mn0.1Co0.1O2",
+      "metric": null,
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "BatteryMat: a hierarchical machine-learning and DFT framework for average-voltage screening of lithium-ion cathode materials",
+    "published": "2026-07-07T15:35:54Z",
+    "url": "http://arxiv.org/abs/2607.06645v1",
+    "summary": "Density functional theory (DFT) predicts cathode voltages accurately but does not scale to the combinatorial chemical spaces of modern materials databases, while pure machine-learning surrogates are fast but cannot guarantee thermodynamic consistency. We introduce BatteryMat, a three-tier framework that promotes single-pass average-voltage prediction with the Atomistic Line Graph Neural Network (ALIGNN) as the primary screening signal across JARVIS-DFT, then validates survivors with ALIGNN-FF fo",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "The relationship between the redox activity and electrochemical stability of solid electrolytes for solid-state batteries",
+    "published": "2019-08-27T11:38:30Z",
+    "url": "http://arxiv.org/abs/1908.10144v1",
+    "summary": "All-solid-state Li-ion batteries promise safer electrochemical energy storage with larger volumetric and gravimetric energy densities. A major concern is the limited electrochemical stability of solid electrolytes and related detrimental electrochemical reactions, especially because of our restricted understanding. Here we demonstrate for the argyrodite, garnet and NASICON type solid electrolytes, that the favourable decomposition pathway is indirect rather than direct, via (de)lithiated states ",
+    "claim": {
+      "material": "argyrodite, garnet and NASICON type solid electrolytes",
+      "metric": "decomposition pathway",
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Diffusion of Lithium Ions in Lithium-Argyrodite Solid-State Electrolytes from Equilibrium and Nonequilibrium Molecular Dynamics Simulations",
+    "published": "2019-12-06T04:25:36Z",
+    "url": "http://arxiv.org/abs/1912.02971v1",
+    "summary": "The use of solid-state electrolytes to provide safer, next-generation rechargeable batteries is becoming more feasible as new materials with greater stability and higher ionic diffusion coefficients are designed. However, accurate determination of diffusion coefficients in solids is problematic and reliable calculations are highly sought-after. In this paper we compare diffusion coefficients calculated using nonequilibrium and equilibrium ab initio molecular dynamics simulations for highly diffu",
+    "claim": {
+      "material": "Lithium-Argyrodite",
+      "metric": "ionic diffusion coefficient",
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Solid-state Li-ion batteries operating at room temperature using new borohydride argyrodite electrolytes",
+    "published": "2020-09-10T11:31:18Z",
+    "url": "http://arxiv.org/abs/2009.04779v1",
+    "summary": "Using a new class of (BH4)- substituted argyrodite Li6PS5Z0.83(BH4)0.17, (Z = Cl, I) solid electrolyte, Li-metal solid-state batteries operating at room temperature have been developed. The cells were made by combining the modified argyrodite with an In-Li anode and two types of cathode: an oxide, LixMO2 (M = 1/3Ni, 1/3Mn, 1/3Co; so called NMC) and a titanium disulfide, TiS2. The performance of the cells was evaluated through galvanostatic cycling and Alternating Current AC electrochemical imped",
+    "claim": {
+      "material": "Li6PS5Z0.83(BH4)0.17",
+      "metric": null,
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "An Effective Strategy to Enable Argyrodite Sulfides as Superb Solid-State Electrolytes: Safeguarding Remarkable Ionic Conductivity and Interfacial Stability with Electrodes",
+    "published": "2020-10-17T14:54:59Z",
+    "url": "http://arxiv.org/abs/2010.08805v1",
+    "summary": "The argyrodite sulfides are getting more and more attractive as highly promising solid-state electrolytes (SSEs) for high-performance all-solid-state batteries (ASSBs), owing to their high ionic conductivity, adequate plasticity, and decent mechanical strength. However, their poor incompatibility with Li metal anode and high voltage cathodes and as well as serious sensitivity to air significantly hinder their practical applications. Herein, we have devised an effective strategy to overcome these",
+    "claim": {
+      "material": "argyrodite sulfides",
+      "metric": null,
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Carbon Free High Loading Silicon Anodes Enabled by Sulfide Solid Electrolytes for Robust All Solid-State Batteries",
+    "published": "2021-03-07T01:48:35Z",
+    "url": "http://arxiv.org/abs/2103.04230v1",
+    "summary": "The development of silicon anodes to replace conventional graphite in efforts to increase energy densities of lithium-ion batteries has been largely impeded by poor interfacial stability against liquid electrolytes. Here, stable operation of 99.9 weight% micro-Si (uSi) anode is enabled by utilizing the interface passivating properties of sulfide based solid-electrolytes. Bulk to surface characterization, as well as quantification of interfacial components showed that such an approach eliminates ",
+    "claim": {
+      "material": "micro-Si",
+      "metric": "weight percentage in anode",
+      "value": "99.9",
+      "unit": "%"
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Favorable Interfacial Chemomechanics Enables Stable Cycling of High Li-Content Li-In/Sn Anodes in Sulfide Electrolyte Based Solid-State Batteries",
+    "published": "2021-07-23T01:38:40Z",
+    "url": "http://arxiv.org/abs/2108.00843v1",
+    "summary": "Solid-state batteries (SSBs) can offer a paradigm shift in battery safety and energy density. Yet, the promise hinges on the ability to integrate high-performance electrodes with state-of-the-art solid electrolytes. For example, lithium (Li) metal, the most energy-dense anode candidate, suffers from severe interfacial chemomechanical issues that lead to cell failure. Li alloys of In/Sn are attractive alternatives, but their exploration has mostly been limited to the low capacity(low Li content)a",
+    "claim": {
+      "material": "Li-In/Sn",
+      "metric": "cycling stability",
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "The Resistive Nature of Decomposing Interfaces of Solid Electrolytes with Alkali Metal Electrodes",
+    "published": "2022-05-03T01:22:57Z",
+    "url": "http://arxiv.org/abs/2205.01264v1",
+    "summary": "A crucial ingredient in lithium (Li) and sodium (Na)-ion batteries (LIBs and NIBs) is the electrolytes. The use of Li-metal (Na-metal) as anode in liquid electrolyte LIBs (NIBs) is constrained by several issues including thermal runway and flammability, electrolyte leakage, and limited chemical stability. Considerable effort has been devoted toward the development of solid electrolytes (SEs) and all-solid-state batteries, which are presumed to mitigate some of the issues of Li-metal(Na-metal) in",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Electrolyte Coatings for High Adhesion Interfaces in Solid-state Batteries from First Principles",
+    "published": "2023-03-28T23:09:36Z",
+    "url": "http://arxiv.org/abs/2303.16350v1",
+    "summary": "We introduce an adhesion parameter that enables rapid screening for materials interfaces with high adhesion. This parameter is obtained by density functional theory calculations of individual single-material slabs rather than slabs consisting of combinations of two materials, eliminating the need to calculate all configurations of a prohibitively vast space of possible interface configurations. Cleavage energy calculations are used as an upper bound for electrolyte and coating energies and imple",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Atomic Insights into the Oxidative Degradation Mechanisms of Sulfide Solid Electrolytes",
+    "published": "2023-10-01T21:12:17Z",
+    "url": "http://arxiv.org/abs/2310.00794v1",
+    "summary": "Electrochemical degradation of solid electrolytes is a major roadblock in the development of solid-state batteries, and the formed solid-solid interphase (SSI) plays a key role in the performance of solid-state batteries. In this study, by combining experimental X-ray absorption spectroscopy (XAS) measurements, first-principles simulations, and unsupervised machine learning, we have unraveled the atomic-scale oxidative degradation mechanisms of sulfide electrolytes at the interface using the bas",
+    "claim": {
+      "material": "sulfide electrolytes",
+      "metric": null,
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Disorder-dependent Li diffusion in $\\mathrm{Li_6PS_5Cl}$ investigated by machine learning potential",
+    "published": "2023-10-30T08:46:07Z",
+    "url": "http://arxiv.org/abs/2310.19350v1",
+    "summary": "Solid-state electrolytes with argyrodite structures, such as $\\mathrm{Li_6PS_5Cl}$, have attracted considerable attention due to their superior safety compared to liquid electrolytes and higher ionic conductivity than other solid electrolytes. Although experimental efforts have been made to enhance conductivity by controlling the degree of disorder, the underlying diffusion mechanism is not yet fully understood. Moreover, existing theoretical analyses based on ab initio MD simulations have limit",
+    "claim": {
+      "material": "Li_6PS_5Cl",
+      "metric": null,
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Two-step growth mechanism of the solid electrolyte interphase in argyrodyte/Li-metal contacts",
+    "published": "2024-02-06T15:51:39Z",
+    "url": "http://arxiv.org/abs/2402.04095v1",
+    "summary": "The structure and growth of the Solid Electrolyte Interphase (SEI) region between an electrolyte and an electrode is one of the most fundamental, yet less-well understood phenomena in solid-state batteries. We present a parameter-free atomistic simulation of the SEI growth for one of the currently promising solid electrolytes (Li$_6$PS$_5$Cl), based on \\textit{ab initio} trained machine learning (ML) interatomic potentials, for over 30,000 atoms during 10 ns, well-beyond the capabilities of conv",
+    "claim": {
+      "material": "Li6PS5Cl",
+      "metric": null,
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "A Pre-trained Deep Potential Model for Sulfide Solid Electrolytes with Broad Coverage and High Accuracy",
+    "published": "2024-06-26T11:23:54Z",
+    "url": "http://arxiv.org/abs/2406.18263v2",
+    "summary": "Solid electrolytes with fast ion transport are one of the key challenges for solid state lithium metal batteries. To improve ion conductivity, chemical doping has been the most effective strategy, and atomistic simulation with machine-learning potential helps find optimized doping by predicting ion conductivity for arbitrary composition. Yet most existing machine-learning models are trained on narrow chemistry, and new model has to be trained for each system, wasting transferable knowledge and i",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Optimizing ionic conductivity of lithium in Li$_7$PS$_6$ argyrodite via dopant engineering",
+    "published": "2024-07-21T20:12:14Z",
+    "url": "http://arxiv.org/abs/2407.15258v1",
+    "summary": "Li-containing argyrodites represent a promising family of Li-ion conductors with several derived compounds exhibiting room-temperature ionic conductivity > 1 mS/cm and making them attractive as potential candidates as electrolytes in solid-state Li-ion batteries. Starting from the parent phase Li7PS6, several cation and anion substitution strategies have been attempted to increase the conductivity of Li ions. Nonetheless, a detailed understanding of the thermodynamics of native defects and dopin",
+    "claim": {
+      "material": "Li7PS6",
+      "metric": "ionic conductivity",
+      "value": null,
+      "unit": "mS/cm"
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Effects of Disorder on the Energy Landscape and Motional Mechanisms Involved in Lithium Ion Dynamics and Transport in Solid Electrolytes: Li5.5PS4.5Cl1.5 Argyrodite as a Case Study",
+    "published": "2025-03-17T13:13:12Z",
+    "url": "http://arxiv.org/abs/2503.13142v1",
+    "summary": "7Li NMR diffusometry and relaxometry are combined with electrochemical impedance spectroscopy to compare the mechanisms for the dynamics and transport of lithium ions in disordered and crystalline electrolytes with argyrodite composition Li5.5PS4.5Cl1.5. The dc conductivity of a disordered sample prepared by ball milling amounts to 0.76 mScm-1 at room temperature, which is substantially lower than that of two previously studied crystalline argyrodites differing in the order of the anion sublatti",
+    "claim": {
+      "material": "Li5.5PS4.5Cl1.5",
+      "metric": "dc conductivity",
+      "value": 0.76,
+      "unit": "mS/cm"
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Microstructural Insights into Fast Ion Transport in Solid Electrolytes via Multiscale Modeling",
+    "published": "2025-10-20T15:23:35Z",
+    "url": "http://arxiv.org/abs/2510.18630v2",
+    "summary": "Improving solid electrolytes is critical for high-performance all-solid-state batteries, yet the microstructural features that enable fast ion transport remain poorly understood. Here, we use multiscale modeling to resolve polycrystalline ion transport from atomic-scale hopping at grain boundaries to continuum-scale percolation, thereby providing insights into realistic solid-electrolyte microstructures. Accurate lightweight machine-learning potentials -- developed via closed-loop active learnin",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Quantum Chemistry Simulations of Dominant Products in Lithium-Sulfur Batteries",
+    "published": "2020-01-04T19:52:41Z",
+    "url": "http://arxiv.org/abs/2001.01120v2",
+    "summary": "Quantum chemistry simulations of some industrially relevant molecules are reported, employing variational quantum algorithms for near-term quantum devices. The energies and dipole moments are calculated along the dissociation curves for lithium hydride (LiH), hydrogen sulfide, lithium hydrogen sulfide and lithium sulfide. In all cases we focus on the breaking of a single bond, to obtain information about the stability of the molecular species being investigated. We calculate energies and a varie",
+    "claim": {
+      "material": "lithium hydride (LiH)",
+      "metric": "dissociation energy",
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "First-Principles Investigation of Anchoring Behavior of WS2 and WSe2 for Lithium-Sulfur Batteries",
+    "published": "2020-01-15T17:22:45Z",
+    "url": "http://arxiv.org/abs/2001.05442v1",
+    "summary": "The commercial realization of lithium-sulfur (Li-S) batteries is obstructed because of rapid capacity fading due to lithium polysulfides (LiPSs) dissolution into the electrolyte. In order to enhance the efficiency and performance of the Li-S batteries, the transition metal dichalcogenides are reported as promising anchoring materials (AMs) as they could strongly adsorb and effectively suppress the migration of the polysulfides species. Herein, we used first-principles based density functional th",
+    "claim": {
+      "material": "WS2 and WSe2",
+      "metric": null,
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Structural and Transport Properties of Li/S Battery Electrolytes: Role of the Polysulfide Species",
+    "published": "2020-07-20T13:17:37Z",
+    "url": "http://arxiv.org/abs/2007.10076v1",
+    "summary": "Lithium--sulfur (Li/S) batteries are regarded as one of the most promising energy storage devices beyond lithium-ion batteries because of their high energy density of 2600 Wh/kg and an affordable cost of sulfur. Meanwhile, some challenges inherent to Li/S batteries remain to be tackled, for instance, the polysulfide (PS) shuttle effect, the irreversible solidification of Li$_2$S, and the volume expansion of the cathode material during discharge. On the molecular level, these issues originate fro",
+    "claim": {
+      "material": "Li/S",
+      "metric": "energy density",
+      "value": 2600,
+      "unit": "Wh/kg"
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Lithium-Metal Batteries Using Sustainable Electrolyte Media and Various Cathode Chemistries",
+    "published": "2021-07-09T13:55:00Z",
+    "url": "http://arxiv.org/abs/2107.04446v1",
+    "summary": "Lithium-metal batteries employing concentrated glyme-based electrolytes and different cathode chemistries are herein evaluated in view of a safe use of the highly energetic alkali-metal anode. Indeed, diethylene-glycol dimethyl-ether (DEGDME) and triethylene-glycol dimethyl-ether (TREGDME) dissolving lithium bis(trifluoromethanesulfonyl)imide (LiTFSI) and lithium nitrate (LiNO3) in concentration approaching the solvents saturation limit are used in lithium batteries employing either a conversion",
+    "claim": {
+      "material": "DEGDME",
+      "metric": null,
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Novel Lithium-Sulfur Polymer Battery Operating at Moderate Temperature",
+    "published": "2021-10-26T14:24:03Z",
+    "url": "http://arxiv.org/abs/2110.13727v1",
+    "summary": "A safe lithium-sulfur (Li-S) battery employs a composite polymer electrolyte based on a poly(ethylene glycol) dimethyl ether (PEGDME) solid at room temperature. The electrolyte membrane enables a stable and reversible Li-S electrochemical process already at 50\u00b0C, with low resistance at the electrode/electrolyte interphase and fast Li+ transport. The relatively low molecular weight of the PEGDME and the optimal membrane composition in terms of salts and ceramic allow a liquid-like Li-S conversion",
+    "claim": {
+      "material": "PEGDME",
+      "metric": "operating temperature",
+      "value": "50",
+      "unit": "\u00b0C"
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Towards Rigorous Validation of Li-S Battery Models",
+    "published": "2021-12-16T09:20:38Z",
+    "url": "http://arxiv.org/abs/2112.08722v1",
+    "summary": "Achieving Li-S batteries' promise of significantly higher gravimetric energy density and lower cost than Li-ion batteries requires researchers to delineate the most important factors affecting the performance of this technology. By encoding this knowledge into a mathematical model, understanding is made precise, quantitative, and predictive. However, the complex and unknown mechanisms of Li-S batteries have multiple proposed models with relatively few informative quantitative comparisons to expe",
+    "claim": {
+      "material": "Li-S",
+      "metric": null,
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Accelerating the theoretical study of Li-polysulphide adsorption on single-atom catalysts via machine learning approaches",
+    "published": "2021-12-21T21:42:22Z",
+    "url": "http://arxiv.org/abs/2112.11537v1",
+    "summary": "Unlocking the design of Li-S batteries where no shuttle effects appears, and thus their energy storage capacity does not diminish over time, would enable the manufacturing of energy storage devices more performant than the current Li-ion commercial ones. Computational screening of Li-polysulphide (LiPS) adsorption on single-atom catalyst (SAC) substrates is of great aid to the design of Li-S batteries which are robust against the LiPS shuttling from the cathode to the anode and the electrolyte. ",
+    "claim": {
+      "material": "Li-S",
+      "metric": null,
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Scalable Composites Benefiting from Transition-Metal Oxides as Cathode Materials for Efficient Lithium-Sulfur Batteries",
+    "published": "2022-06-16T12:59:08Z",
+    "url": "http://arxiv.org/abs/2206.14569v1",
+    "summary": "Composite materials achieved by including transition-metal oxides with different structures and morphologies in sulfur are suggested as scalable cathodes for high-energy lithium-sulfur (Li-S) batteries. The composites contain 80 wt.% sulfur and 20 wt.% of either MnO2 or TiO2, leading to a sulfur content in the electrode of 64 wt.% and revealing a reversible, fast, and lowly polarized conversion process in the cell with limited interphase resistance. The S-TiO2 composite exhibits an excellent rat",
+    "claim": {
+      "material": "S-TiO2 composite",
+      "metric": "sulfur content in the electrode",
+      "value": "64",
+      "unit": "wt.%"
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Nitrogen-Doped Ti$_3$C$_2$T$_x$ Coated with a Molecularly Imprinted Polymer as Efficient Cathode Material for Lithium-Sulfur Batteries",
+    "published": "2023-08-20T02:38:59Z",
+    "url": "http://arxiv.org/abs/2308.10139v1",
+    "summary": "Due to their high energy density (2600 Wh/kg), low cost, and low environmental impact, lithium-sulfur batteries are considered a promising alternative to lithium-ion batteries. However, their commercial viability remains a formidable scientific challenge mainly because of the sluggish reaction kinetics at the cathode and the so-called \"shuttling effect\" of soluble polysulfides, which results in capacity decay and a shortened lifespan. Herein, molecular imprinting with Li$_2$S$_8$ as a target mol",
+    "claim": {
+      "material": "Nitrogen-Doped Ti$_3$C$_2$T$_x$",
+      "metric": null,
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Modelling Dynamic Limitations of Lithium Transport in Lithium-Sulfur Batteries",
+    "published": "2024-01-15T16:39:02Z",
+    "url": "http://arxiv.org/abs/2401.07816v1",
+    "summary": "A common, yet unmodelled experimental phenomenon is explained first through the experimental data and then through modelling efforts. The phenomenon is a large, temporary loss in voltage during constant current discharge. This effect can be observed in several independent experimental settings, such as during low-temperature operation, under high currents, with low Electrolyte-to-Sulfur (E/S) ratios, as well as in cells with high salt concentrations. The model presented here is the first to prov",
+    "claim": {
+      "material": "Lithium-Sulfur",
+      "metric": "voltage loss",
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Nanostructured S@VACNTs Cathode with Lithium Sulfate Barrier Layer for Exceptionally Stable Cycling in Lithium-Sulfur Batteries",
+    "published": "2024-09-05T06:49:57Z",
+    "url": "http://arxiv.org/abs/2409.03286v1",
+    "summary": "Lithium-sulfur technology garners significant interest due to sulfur's higher specific capacity, cost-effectiveness, and environmentally friendly aspects. However, sulfur's insulating nature and poor cycle life hinder practical application. To address this, a simple modification to the traditional sulfur electrode configuration is implemented, aiming to achieve high capacity, long cycle life, and rapid charge rates. Binder-free sulfur cathode materials are developed using vertically aligned carb",
+    "claim": {
+      "material": "S@VACNTs",
+      "metric": "cycle life",
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "A Data-driven Framework to Accelerate the Discovery of Hybrid Cathode Materials for Metal-based Batteries",
+    "published": "2024-10-24T23:27:30Z",
+    "url": "http://arxiv.org/abs/2410.19204v1",
+    "summary": "Selecting materials for hybrid cathodes for batteries, which combine intercalation and conversion materials, has gained interest due to their unique synergistic properties, which are not achievable by homogeneous materials. Here, we present a data-driven, chemistry-agnostic, inverse material design framework to discover hybrid cathode materials (HCMs) for metal-based batteries. This framework systematically explores the material space for any working ion, evaluates the stability of candidates, a",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Polymer-based solid-state electrolytes for lithium sulfur batteries",
+    "published": "2025-01-17T21:52:21Z",
+    "url": "http://arxiv.org/abs/2501.10567v1",
+    "summary": "Lithium-sulfur (Li-S) batteries offer substantial theoretical energy density gains over Li-ion bat-teries, a crucial factor for transportation electrification. In addition, sulfur is an earth-abundant, inexpensive material obtainable from multiple resources; thus, Li-S batteries are envisioned to provide environmentally sustainable solutions to the growing demand for energy storage. A crit-ical roadblock to the realization of commercial Li-S batteries is the formation of polysulfides and their s",
+    "claim": {
+      "material": "sulfur",
+      "metric": null,
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "The surface binding and energy issues in rational design of the separation membrane of Li||S batteries",
+    "published": "2025-02-22T08:19:45Z",
+    "url": "http://arxiv.org/abs/2502.16135v1",
+    "summary": "Lithium-sulfur batteries (LSBs) represent one of the most promising next-generation energy storage technologies, offering exceptionally high energy densities. However, their widespread adoption remains hindered by challenges such as sluggish conversion reactions and the dissolution of lithium polysulfides, which lead to poor cycling stability and reduced performance. While significant efforts have been made to address these limitations, the energy storage capabilities of LSBs in practical device",
+    "claim": {
+      "material": "Lithium-sulfur",
+      "metric": null,
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "What is missing from existing Lithium-Sulfur models to capture coin-cell behaviour?",
+    "published": "2025-03-10T12:24:20Z",
+    "url": "http://arxiv.org/abs/2503.07684v1",
+    "summary": "Lithium-sulfur (Li-S) batteries offer a promising alternative to current lithium-ion (Li-ion) batteries, with a high theoretical energy density, improved safety and high abundance, low cost of materials. For Li-S to reach commercial application, it is essential to understand how the behaviour scales between cell formats; new material development is predominately completed at coin-cell level, whilst pouch-cells will be used for commercial applications. Differences such as reduced electrolyte-to-s",
+    "claim": {
+      "material": "Lithium-Sulfur",
+      "metric": "theoretical energy density",
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Phase engineering of MoS$_2$ monolayers: A pathway to enhanced lithium-polysulfide battery performance",
+    "published": "2025-05-22T15:20:48Z",
+    "url": "http://arxiv.org/abs/2505.16779v2",
+    "summary": "This study explores the potential of MoS$_2$ polymorphs, specifically the semiconducting 2H phase and the metallic 1T$^\\prime$ phase, as anchoring materials to enhance the electrochemical performance of lithium-sulfur (Li--S) batteries. Using density functional theory calculations, we show that 1T$^\\prime$-MoS$_2$ exhibits stronger Li--S interactions, greater charge transfer, and enhanced catalytic activity compared to its 2H counterpart, effectively suppressing polysulfide dissolution and facil",
+    "claim": {
+      "material": "1T'-MoS2",
+      "metric": "polysulfide dissolution suppression",
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Unravelling the Catalytic Activity of Dual-Metal Doped N6-Graphene for Sulfur Reduction via Machine Learning-Accelerated First-Principles Calculations",
+    "published": "2025-10-17T07:49:16Z",
+    "url": "http://arxiv.org/abs/2510.15397v1",
+    "summary": "Understanding and optimizing polysulfide adsorption and conversion processes are critical to mitigating shuttle effects and sluggish redox kinetics in lithium-sulfur batteries (LSBs). Here, we introduce a machine-learning-accelerated framework, Precise and Accurate Configuration Evaluation (PACE), that integrates Machine Learning Interatomic Potentials (MLIPs) with Density Functional Theory (DFT) to systematically explore adsorption configurations and energetics of a series of N6-coordinated dua",
+    "claim": {
+      "material": "Dual-Metal Doped N6-Graphene",
+      "metric": null,
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Structure Matters: A Scale-Resolved Numerical Operando Approach for Lithium-Sulfur Batteries",
+    "published": "2025-11-07T13:31:31Z",
+    "url": "http://arxiv.org/abs/2511.05233v3",
+    "summary": "Lithium-Sulfur batteries (LSBs) are believed to have a high potential for aerospace applications due to their high gravimetric energy density. However, despite decades of research and advances, they still suffer from poor rate capability and low power output, eventually preventing their practical implementation. One particular aspect we want to shed light on is the influence of the porous cathode structure on the rate performance during discharge. Therefore, we present a scale-resolved simulatio",
+    "claim": {
+      "material": "Lithium-Sulfur",
+      "metric": null,
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Synergistic effects of ferromagnetic elements and LAGP solid electrolyte in suppressing and trapping polysulfide shuttle transfers in lithium-sulfur batteries",
+    "published": "2026-01-23T08:29:46Z",
+    "url": "http://arxiv.org/abs/2601.16544v1",
+    "summary": "The large - scale commercialization of promising lithium - sulfur (Li - S) batteries remains limited by the polysulfide shuttle effect, which causes rapid capacity fading and poor cycle life. In this study, we present a scalable strategy to mitigate this challenge by modifying polyethylene (PE) separators with ferromagnetic and solid - state ionic coatings. Thin films of nickel (Ni), cobalt (Co), and the Li - ion - conducting ceramic Li1.5Al0.5Ge1.5(PO4)3 (LAGP) were deposited via ion beam sputt",
+    "claim": {
+      "material": "LAGP",
+      "metric": null,
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Machine Learning Prediction Models for Solid Electrolytes based on Lattice Dynamics Properties",
+    "published": "2024-04-22T04:14:14Z",
+    "url": "http://arxiv.org/abs/2404.13858v1",
+    "summary": "Recently, machine-learning approaches have accelerated computational materials design and the search for advanced solid electrolytes. However, the predictors are currently limited to static structural parameters, which may not fully account for the dynamic nature of ionic transport. In this study, we meticulously curated features considering dynamic properties and developed machine-learning models to predict the ionic conductivity of solid electrolytes. We compiled 14 phonon-related descriptors ",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Enhancing Ionic Conductivity of ceramic Na3Zr2Si2PO12 via NaI Substitution",
+    "published": "2024-05-03T19:14:17Z",
+    "url": "http://arxiv.org/abs/2405.02442v1",
+    "summary": "The high ionic conducting sodium superionic conductor Na3Zr2Si2PO12 -NaI composites have been prepared successfully via solid state reaction route. As the NaI content increases, the ionic conductivity significantly changes. The composites with 4% NaI show a maximum ionic conductivity of ~ 3 x 10-4 \u03a9-1cm-1 at 200oC which is one order of magnitude rise as compared to pristine sample. Further crystal structure and surface morphology also reveal the formation of a glassy phase due to the presence of",
+    "claim": {
+      "material": "Na3Zr2Si2PO12 with 4% NaI",
+      "metric": "ionic conductivity",
+      "value": "3 x 10-4",
+      "unit": "\u03a9-1cm-1"
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Improved electrochemical performance of NASICON type Na$_{3}$V$_{2-x}$Co$_x$(PO$_{4}$)$_{3}$/C ($x=$ 0--0.15) cathode for high rate and stable sodium-ion batteries",
+    "published": "2024-05-09T05:42:35Z",
+    "url": "http://arxiv.org/abs/2405.05559v1",
+    "summary": "In recent years, the Na-ion SuperIonic CONductor (NASICON) based polyanionics are considered the pertinent cathode materials in sodium-ion batteries due to their 3D open framework, which can accommodate a wide range of Na content and can offer high ionic conductivity with great structural stability. However, owing to the inferior electronic conductivity, these materials suffer from unappealing rate capability and cyclic stability for practical applications. Therefore, in this work we investigate",
+    "claim": {
+      "material": "Na$_{3}$V$_{2-x}$Co$_x$(PO$_{4}$)$_{3}$/C",
+      "metric": "rate capability",
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Designing Superionic Conductors Using Tetrahedrally Packed Structures",
+    "published": "2024-07-03T06:34:40Z",
+    "url": "http://arxiv.org/abs/2407.02838v2",
+    "summary": "In the pursuit of advanced energy storage solutions, the crystal structure of ionic conductors plays a pivotal role in facilitating ion transport. The conventional structural design principle that compounds with the body-centered cubic (BCC) anionic frameworks have high ionic conductivity is well known. We have extended the conventional design principle by uncovering that many of the anionic frameworks of Ag-ion conductors are characterized by tetrahedrally packed (TP) structures. Leveraging our",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Ab initio Study on Lithium Anode Interface Instability and Stabilization of Superionic Li3InCl6 and Li6PS5Cl Solid Electrolytes",
+    "published": "2024-12-03T13:04:32Z",
+    "url": "http://arxiv.org/abs/2412.02433v1",
+    "summary": "Emerging superionic conductors Li3InCl6 (LIC) and Li6PS5Cl (LPSC) are very promising for solid-state electrolytes (SSEs) in all-solid-state lithium batteries (ASSLBs). However, unstable lithium-anode interfaces in LIC and LPSC have been observed through experiments and ab initio calculations, while the interphases formed in determining interfacial stability remain unclear. In this study, we investigate the ab initio stability of LIC-Li and LPSC-Li interfaces and interphases. Our ab initio calcul",
+    "claim": {
+      "material": "Li3InCl6 and Li6PS5Cl",
+      "metric": null,
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Superionic Ionic Conductor Discovery via Multiscale Topological Learning",
+    "published": "2024-12-16T02:53:03Z",
+    "url": "http://arxiv.org/abs/2412.11398v1",
+    "summary": "Lithium superionic conductors (LSICs) are crucial for next-generation solid-state batteries, offering exceptional ionic conductivity and enhanced safety for renewable energy and electric vehicles. However, their discovery is extremely challenging due to the vast chemical space, limited labeled data, and the understanding of complex structure-function relationships required for optimizing ion transport. This study introduces a multiscale topological learning (MTL) framework, integrating algebraic",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Disentangling Cation-Polyanion Coupling in Solid Electrolytes: Which Anion Motion Dominates Cation Transport?",
+    "published": "2025-01-05T04:43:13Z",
+    "url": "http://arxiv.org/abs/2501.02440v1",
+    "summary": "Lithium and sodium solid electrolytes feature polyanion frameworks and highly mobile cations. Understanding and quantifying the impact of polyanion dynamics on cations will help us to unravel the complex role that anion play in superionic conductors. However, no experimental or computational method can directly extract this information, as polyanion dynamics are always coupled with other factors that affect ion mobility. Here, we present the pioneering study that combines constraint algorithm an",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Synthetic accessibility and sodium ion conductivity of the Na$_{8-x}$A$^{x}$P$_2$O$_9$ (NAP) high-temperature sodium superionic conductor framework",
+    "published": "2025-01-06T17:34:39Z",
+    "url": "http://arxiv.org/abs/2501.03165v1",
+    "summary": "Advancement of solid state electrolytes (SSEs) for all solid state batteries typically focuses on modification of a parent structural framework for improved conductivity, \\textit{e.g.} cation substitution for an immobile ion or varying the concentration of the mobile ion. Therefore, novel frameworks can be disruptive by enabling fast ion conduction aided by different structure and diffusion mechanisms, and unlocking optimal conductors with different properties (\\textit{e.g.} mechanical propertie",
+    "claim": {
+      "material": "Na8-xAxP2O9 (NAP)",
+      "metric": "sodium ion conductivity",
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Efficient First-Principles Framework for Overdamped Phonon Dynamics and Anharmonic Electron-Phonon Coupling in Superionic Materials",
+    "published": "2025-02-11T03:21:40Z",
+    "url": "http://arxiv.org/abs/2502.07217v3",
+    "summary": "Relying on the anharmonic special displacement method, we introduce an ab initio quasistatic polymorphous framework to describe local disorder, anharmonicity, and electron-phonon coupling in superionic conductors. Using the example of cubic Cu2Se, we show that positional polymorphism yields extremely overdamped anharmonic vibrations while preserving transverse acoustic phonons, consistent with experiments. We also demonstrate well-defined electronic band structures with large band gap openings d",
+    "claim": {
+      "material": "Cu2Se",
+      "metric": "band gap opening",
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Cooperative Ion Conduction Enabled by Site Percolation in Random Substitutional Crystals",
+    "published": "2025-05-01T07:22:14Z",
+    "url": "http://arxiv.org/abs/2505.00362v2",
+    "summary": "Efficient and safe energy storage technologies are essential for realizing a sustainable and electrified society. Among the key challenges, the design of superionic conductors for all-solid-state batteries often faces a fundamental trade-off between stability and ionic conductivity. Random substitutional crystals, where atomic species are randomly distributed throughout a crystal lattice, present a promising route to overcome this trade-off. Although the importance of cooperative motion in ion c",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "In-Situ Growth and Ionic Switching Behavior of Single-Crystalline Silver Iodide Nanoflakes",
+    "published": "2025-05-02T07:10:53Z",
+    "url": "http://arxiv.org/abs/2505.01062v1",
+    "summary": "Silver iodide (AgI) is a prototypical superionic conductor, undergoing a first-order phase transition at 147 Celsius that enables rapid ionic transport through its lattice, making it attractive for solid-state ionic devices. However, due to the presence of mobile Ag ions, controlled chemical vapor deposition (CVD) synthesis of high-quality AgI single crystals has remained largely unexplored. Here, we present the controllable synthesis of thin, single-crystalline \u03b2-AgI nanoflakes using a home-bui",
+    "claim": {
+      "material": "AgI",
+      "metric": "phase transition temperature",
+      "value": "147",
+      "unit": "Celsius"
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Incipient ionic conductors: Ion-constrained lattices achieving superionic-like thermal conductivity by extreme anharmonicity",
+    "published": "2025-07-04T07:45:59Z",
+    "url": "http://arxiv.org/abs/2507.03358v2",
+    "summary": "Phonon liquid-like thermal conduction in the solid state enables superionic conductors to serve as efficient thermoelectric device candidates. While liquid-like motion of ions effectively suppresses thermal conductivity (\u03ba), their high mobility concurrently triggers material degradation due to undesirable ion migration and consequent metal deposition, making it still a challenge to balancing low \u03baand high stability. Here, we report a superionic-like thermal transport alongside restricted long-ra",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Highly Efficient Functionalization of hBN with Lithium Oxalate: A Multifunctional Platform for Composites, Ion Transport, and Spin Labeling",
+    "published": "2025-10-24T21:53:51Z",
+    "url": "http://arxiv.org/abs/2510.22041v1",
+    "summary": "The development of multifunctional solid-state materials is key to advancing lithium-ion batteries with enhanced safety and simplified architectures. Here, we report a scalable, highly efficient (near $100\\%$), solvent-free mechanochemical synthesis of hexagonal boron nitride (hBN) functionalized with lithium oxalate (Li$_2$C$_2$O$_4$), yielding a novel lamellar composite that functions both as a lithium-ion conductor and separator. The high-energy milling process promotes exfoliation of hBN and",
+    "claim": {
+      "material": "hBN functionalized with lithium oxalate",
+      "metric": "efficiency",
+      "value": 100,
+      "unit": "%"
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Defect Engineered Hexagonal-Boron Nitride Enables Ionic Conduction for Lithium Metal Batteries",
+    "published": "2025-10-30T22:06:13Z",
+    "url": "http://arxiv.org/abs/2510.27021v1",
+    "summary": "The practical implementation of lithium-metal anodes has been hindered by uncontrollable dendrite formation and interfacial instability. This study presents a defect-engineering approach of a chemically stable and electrically insulating interfacial layer of hexagonal boron nitride (h-BN) that markedly enhances ionic conductivity through argon ion irradiation. Initially, the electrochemical performance from commercially available, large-area chemical vapor deposition (CVD)-grown h-BN films with ",
+    "claim": {
+      "material": "hexagonal boron nitride (h-BN)",
+      "metric": "ionic conductivity",
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Hierarchical high-throughput screening of alkaline-stable lithium-ion conductors combining machine learning and first-principles calculations",
+    "published": "2025-11-26T01:33:15Z",
+    "url": "http://arxiv.org/abs/2511.20964v2",
+    "summary": "Solid-state batteries require lithium-ion conductors that combine high ionic conductivity with stability under harsh electrochemical and chemical conditions. Here, we investigate the chemical factors governing the stability of NASICON-type and garnet-type Li-ion conductors in highly alkaline environments. This is particularly relevant to solid-state Li-air cells operated under humidified air where alkaline conditions arise due to the formation of LiOH discharge products. We implement a hierarchi",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Novel fast Li-ion conductors for solid-state electrolytes from first-principles",
+    "published": "2026-01-06T16:22:59Z",
+    "url": "http://arxiv.org/abs/2601.03151v1",
+    "summary": "We present a high-throughput computational screening for fast lithium-ion conductors to identify promising materials for application in all solid-state electrolytes. Starting from more than 30,000 Li-containing experimental structures sourced from Crystallography Open Database, Inorganic Crystal Structure Database and Materials Platform for Data Science, we perform highly automated calculations to identify electronic insulators. On these ~1000 structures, we use molecular dynamics simulations to",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "NASICON solid-electrolyte modification and analysis using ion and neutron beams",
+    "published": "2026-01-22T10:51:33Z",
+    "url": "http://arxiv.org/abs/2601.15845v1",
+    "summary": "Solid electrolytes (SEs) for sodium-based superionic conductors (NaSICON) are widely recognized for their excellent ionic conductivity and application in sodium based energy storage systems. While considerable effort has been made to develop thin electrolytes for all-solid-state batteries (ASSBs) for lithium ions, only a few sodium-based SEs have been successfully fabricated as thin films. These thin films are particularly desirable for their reduced electrical resistance, which typically increa",
+    "claim": {
+      "material": "NaSICON",
+      "metric": null,
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Probing Anharmonic and Heterogeneous Carrier Dynamics Across Sublattice Melting in a Minimal Model Superionic Conductor",
+    "published": "2026-02-05T11:05:17Z",
+    "url": "http://arxiv.org/abs/2602.05545v3",
+    "summary": "Despite decades of research, the microscopic origin of sublattice melting and fast ion transport in superionic conductors remains elusive. Here, we introduce a chemically neutral minimal binary model consisting of a rigid host lattice stabilized by short-range steric repulsion and a soft carrier sublattice interacting via long-range Wigner-type forces. This contrast naturally produces distinct melting temperatures and an intermediate sublattice-melting phase in which carriers become fluidlike wh",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Synthesis and Structural Analysis of an Emissive Colloidal Argyrodite Nanocrystal: Canfieldite Ag8SnS6",
+    "published": "2026-02-27T15:54:07Z",
+    "url": "http://arxiv.org/abs/2602.24114v1",
+    "summary": "We resolve a phase identification controversy in the Ag-Sn-S material system by unraveling the polymorphic structure of nanocrystals within the argyrodite material family. Argyrodites are a class of superionic materials used in their bulk form for applications in solid-state batteries and thermoelectrics, where their advantageous properties relate to their polymorphism. However, despite their well-studied bulk applications, the limited exploration at the nanoscale has left considerable potential",
+    "claim": {
+      "material": "Ag8SnS6",
+      "metric": null,
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Microscopic Theory of Superionic Phase Transitions: Nonadiabatic Dynamics and Many-Body Effects",
+    "published": "2026-04-01T09:11:26Z",
+    "url": "http://arxiv.org/abs/2604.00665v1",
+    "summary": "Superionic phase transitions have attracted extensive interest for decades due to their promising applications and rich underlying physics. In particular, complicated many-body effects and nonadiabatic dynamics are believed to play essential roles, limiting the explanatory power of phenomenological approaches and obscuring the microscopic mechanisms at play. In this work, we develop a unified theoretical framework for describing solid-state ionic conduction. After reviewing the conventional appr",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Exploring Multi-Transition-Metal NASICON Frameworks as High-Performance Cathodes for Sodium-Ion Batteries",
+    "published": "2026-05-24T19:06:08Z",
+    "url": "http://arxiv.org/abs/2605.25219v1",
+    "summary": "The search for sustainable, high-performance cathodes has driven a growing interest in sodium superionic conductor (NASICON)-type phosphates for sodium-ion batteries (SIBs). To identify promising NASICONs containing earth-abundant transition metals (TMs) and to systematically examine the role of multiple TMs in influencing the various properties of NASICON cathodes, we employ density functional theory calculations to investigate nine NASICON compositions containing Mn, Cr, and/or Fe, and spannin",
+    "claim": {
+      "material": "NASICON-type phosphates",
+      "metric": null,
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "AQVolt26: High-Temperature r$^2$SCAN Halide Dataset for Universal ML Potentials and Solid-State Batteries",
+    "published": "2026-04-02T21:23:47Z",
+    "url": "http://arxiv.org/abs/2604.02524v1",
+    "summary": "The demand for safe, high-energy-density batteries has spotlighted halide solid-state electrolytes, which offer the potential for enhanced ionic mobility, electrochemical stability, and interfacial deformability. Accelerating their discovery requires extensive molecular dynamics, which has been increasingly enabled by universal machine learning interatomic potentials trained on foundational datasets. However, the dynamic softness of halides poses a stringent test of whether general-purpose model",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Unveiling Mechanisms of SEI Formation and Sodium Loss in Sodium Batteries via Interface Reactor Sampling",
+    "published": "2026-04-08T13:34:33Z",
+    "url": "http://arxiv.org/abs/2604.07077v1",
+    "summary": "The solid electrolyte interphase SEI critically dictates the cyclability and Coulombic efficiency of sodium-metal batteries, yet its dynamic formation mechanisms and atomic-scale evolution during electrochemical cycling remain elusive due to the spatiotemporal limitations of existing techniques. Here, an \"Interface Reactor\" sampling strategy is proposed to construct a charge-aware neuroevolution potential (qNEP). This approach overcomes the instability bottlenecks of conventional machine learnin",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Theory-Guided Discovery of Pressure-Induced Transitions in Fast-Ion Conductor BaSnF4",
+    "published": "2026-04-09T15:38:27Z",
+    "url": "http://arxiv.org/abs/2604.08376v1",
+    "summary": "Fast-ion conductors such as BaSnF4 are of significant interest for next-generation solid-state battery technologies due to their high ionic conductivity and chemical stability. However, the behaviour of these materials under extreme conditions remains poorly understood, despite the relevance of pressure-induced modifications for tuning functional properties. In this study, we combine density functional theory (DFT) calculations with high-pressure experiments to investigate the structural evoluti",
+    "claim": {
+      "material": "BaSnF4",
+      "metric": null,
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Linking Calendar and Cycle Ageing in Lithium-Ion Batteries through Consistent Parameterisation of an Electrochemical-Thermal-Degradation Model",
+    "published": "2026-04-10T11:21:30Z",
+    "url": "http://arxiv.org/abs/2604.09217v1",
+    "summary": "Parameterisation of coupled degradation mechanisms in lithium-ion batteries is a major challenge. Interactions between the mechanisms depend on usage conditions: C-rate, rest state-of-charge (SoC), depth-of-discharge (DoD) and temperature. This work presents a framework to consistently parameterise key degradation modes--solid-electrolyte interphase (SEI) growth, lithium plating, and active material loss in both electrodes--using insights derived from degradation mode analysis data. The work pre",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Electrochemical stability and lithium insertion at the Li|Li3OCl solid electrolyte interface",
+    "published": "2026-04-12T13:15:04Z",
+    "url": "http://arxiv.org/abs/2604.10630v1",
+    "summary": "Solid-state lithium batteries have attracted considerable attention due to their potential to provide improved safety and higher energy density compared with conventional liquid electrolyte batteries. However, the stability of the interface between Li metal anodes and solid electrolytes remains a critical issue that strongly influences battery performance. In this work, first-principles density functional theory calculations are performed to investigate the interfacial properties of a solid-stat",
+    "claim": {
+      "material": "Li3OCl",
+      "metric": null,
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Multi-Persona Debate System for Automated Scientific Hypothesis Generation",
+    "published": "2026-04-14T16:57:12Z",
+    "url": "http://arxiv.org/abs/2605.23917v1",
+    "summary": "Modern scientific discovery is bottlenecked not by data scarcity, but by the inability to synthesize fragmented knowledge into actionable hypotheses. This challenge is especially acute in battery materials research, where electrochemical performance, interfacial behavior, and manufacturing feasibility must be optimized simultaneously. Here, we present the Multi-Persona Debate System (MPDS), a literature-grounded framework for automated scientific hypothesis generation that combines literature re",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Modern Solid Electrolytes for All-Solid-State Batteries: Materials Chemistry, Structure, and Transport",
+    "published": "2026-04-19T11:11:24Z",
+    "url": "http://arxiv.org/abs/2604.17380v1",
+    "summary": "In this review, from crystallographic symmetry to amorphous local polyhedra arrangement and combinations, we examine inorganic solid state electrolytes through the lens of structure property relationships, with oxides, sulfides, and halides representing three major framework chemistries. Halide solid electrolytes and their derivatives, including mixed anion halides and antiperovskite related materials, have expanded this landscape further by introducing new ways to regulate local coordination ch",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Operando Characterization of Volume Changes in Lithium-Ion Battery Electrodes during Cycling using Isotope Multilayers",
+    "published": "2026-04-21T14:40:40Z",
+    "url": "http://arxiv.org/abs/2604.19519v1",
+    "summary": "This study reports on advancements in operando characterization of volume changes in lithium-ion battery (LIB) electrode materials during electrochemical cycling. Volume changes are crucial for LIB operation because they are related to the amount of stored energy as well as LIB integrity, performance, and safety. The study introduces a method based on isotope multilayers as active material to track the intrinsic modification of electrode volume in real time under operating conditions with operan",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Interfacial breathing as a dynamic failure law in all-solid-state batteries: amplitude, phase lag and dual-timescale memory as design principles",
+    "published": "2026-04-27T06:00:15Z",
+    "url": "http://arxiv.org/abs/2604.24075v1",
+    "summary": "All-solid-state batteries fail not only by bulk transport limits, but by a reactive interface that evolves during cycling. We show that degradation is governed by two coupled processes: interfacial breathing, the cycle-scale oscillation of lithium contact, and reactive memory, the slow accumulation of electrolyte decomposition. Four descriptors capture breathing, together with a memory metric based on decomposed interphase thickness. A reduced electrochemical benchmark shows that ionic conductiv",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "All-organic self-separating three-dimensionally nanoarchitected electrochemical energy storage devices",
+    "published": "2026-04-29T02:00:38Z",
+    "url": "http://arxiv.org/abs/2604.26222v1",
+    "summary": "This work realizes a three-dimensionally (3D) nanoarchitected, all organic, \"self-separating\" lithium-ion electrochemical energy storage (EES) device that is cycled as a solid-state full cell. The device is enabled by a monolithic carbon anode with a co-continuous pore network, derived from the structure direction of resols by an ultra-large molar mass block copolymer (BCP), poly(styrene-block-2-dimethylaminoethyl methacrylate) (SA). Electropolymerization of a single-phase conductive and redox-a",
+    "claim": {
+      "material": "poly(styrene-block-2-dimethylaminoethyl methacrylate)",
+      "metric": null,
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Physics-based modeling of cyclic and calendar aging of LIBs with Si-Gr composite anodes",
+    "published": "2026-04-29T11:25:29Z",
+    "url": "http://arxiv.org/abs/2604.26545v1",
+    "summary": "Higher energy density and longer lifetime are the requirements for next-generation lithium-ion batteries. A promising anode material is silicon, which offers high specific capacity, but its significant volume change during lithiation and delithiation enormously reduces battery lifetime. A physical understanding of the processes degrading the battery is key to mitigate this effect and advance in the field. We develop a physics-based model to describe degradation during battery cycling under vario",
+    "claim": {
+      "material": "Silicon",
+      "metric": "specific capacity",
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Strain-Dependent Ionic Transport in Li3YCl6 Solid Electrolytes",
+    "published": "2026-05-07T02:38:40Z",
+    "url": "http://arxiv.org/abs/2605.05603v1",
+    "summary": "Solid-state batteries require electrolytes that sustain high ionic conductivity under the mechanical environment of a functioning cell. Lattice strain, arising from stack pressure, thermal cycling, or lattice mismatch at interfaces, can either enhance or suppress Li+ transport in solid electrolytes, yet how it couples to the underlying diffusion mechanism remains poorly understood. Using Li3YCl6 halide superionic conductor, we address this with large-scale molecular dynamics simulations driven b",
+    "claim": {
+      "material": "Li3YCl6",
+      "metric": null,
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T08:02:38.101186+00:00",
+    "type": "literature",
+    "title": "Parabolic-growth universality and its nucleation-driven breakdown across lithium-battery anode chemistries",
+    "published": "2026-05-11T08:58:22Z",
+    "url": "http://arxiv.org/abs/2605.10217v1",
+    "summary": "Solid-electrolyte interphase (SEI) growth is widely modeled cell-by-cell with chemistry-specific closures, yet its underlying kinetic scaling is rarely tested across chemistries. By compiling cycle-resolved data from public long-cycle datasets covering four anode configurations -- graphite, silicon composite, lithium metal, and anode-free -- we show that the cumulative interphase-loss index Lambda_int obeys the parabolic law Lambda_int = A_chem * sqrt(1 - Theta_Li) in three of the four chemistri",
+    "claim": {
+      "material": "graphite",
+      "metric": "interphase-loss index",
+      "value": null,
+      "unit": null
+    }
+  },
+  {
     "timestamp": "2026-07-14T06:50:46.504929+00:00",
     "type": "champion",
     "spec": "durability",
