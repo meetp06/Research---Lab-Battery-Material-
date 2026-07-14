@@ -1,0 +1,109 @@
+{
+  "champions": {
+    "charging_speed": {
+      "material_id": "mp-2251",
+      "formula": "Li3N",
+      "density": 1.3296,
+      "energy_above_hull": 0.0,
+      "min_li_hop_angstrom": 2.0841,
+      "space_group": "P6/mmm",
+      "score_description": "Shorter hop = faster charging",
+      "llm_verdict": {
+        "verdict": "The literature does not broadly support Li3N for enhanced charging speed, as the provided papers focus on other materials such as garnet-type solid electrolytes and redox-active halide materials, with no mention of Li3N.",
+        "confidence": "low",
+        "sources": [
+          "http://arxiv.org/abs/2606.31669v1",
+          "http://arxiv.org/abs/2606.07815v1",
+          "http://arxiv.org/abs/2606.07772v1",
+          "http://arxiv.org/abs/2606.15279v1",
+          "http://arxiv.org/abs/2606.12664v1"
+        ]
+      }
+    },
+    "capacity": {
+      "material_id": "mp-557964",
+      "formula": "Li9S3N",
+      "density": 1.7656,
+      "energy_above_hull": 0.007899,
+      "formation_energy": -1.1734,
+      "li_fraction": 0.6923,
+      "s_fraction": 0.2308,
+      "capacity_proxy_mAh_g": 5029.02,
+      "score_description": "Higher capacity_proxy = more energy",
+      "llm_verdict": {
+        "verdict": "The literature does not broadly support Li9S3N for high capacity battery applications, as the provided papers focus on other materials such as garnet-type solid electrolytes and redox-active halides, with no mention of Li9S3N.",
+        "confidence": "low",
+        "sources": [
+          "http://arxiv.org/abs/2606.31669v1",
+          "http://arxiv.org/abs/2606.07815v1",
+          "http://arxiv.org/abs/2606.07772v1",
+          "http://arxiv.org/abs/2606.12664v1",
+          "http://arxiv.org/abs/2606.15279v1"
+        ]
+      }
+    },
+    "lifespan": {
+      "material_id": "mp-561430",
+      "formula": "LiLuF4",
+      "density": 6.4472,
+      "formation_energy": -4.0765,
+      "band_gap_eV": 7.7576,
+      "space_group": "C2/c",
+      "score_description": "More negative formation energy = harder to decompose",
+      "llm_verdict": {
+        "verdict": "The literature does not broadly support LiLuF4 for enhanced lifespan, as there is no direct mention of this material in the provided papers, which focus on other compounds like LLZO.",
+        "confidence": "low",
+        "sources": [
+          "http://arxiv.org/abs/2606.31669v1",
+          "http://arxiv.org/abs/2606.07815v1",
+          "http://arxiv.org/abs/2606.12664v1",
+          "http://arxiv.org/abs/2606.07772v1",
+          "http://arxiv.org/abs/2606.24480v1"
+        ]
+      }
+    },
+    "form_factor": {
+      "material_id": "mp-995393",
+      "formula": "LiS4",
+      "density_g_cm3": 0.2123,
+      "volume_A3": 2115.08,
+      "energy_above_hull": 0.0,
+      "band_gap_eV": 2.1585,
+      "space_group": "P1",
+      "score_description": "Lower density = lighter & thinner battery",
+      "llm_verdict": {
+        "verdict": "The literature does not broadly support LiS4 for this use, as none of the provided papers directly discuss LiS4, and the focus is on other materials like garnet-type solid electrolytes and redox-active halide materials.",
+        "confidence": "low",
+        "sources": [
+          "http://arxiv.org/abs/2606.31669v1",
+          "http://arxiv.org/abs/2606.07815v1",
+          "http://arxiv.org/abs/2606.07772v1",
+          "http://arxiv.org/abs/2606.12664v1",
+          "http://arxiv.org/abs/2606.15279v1"
+        ]
+      }
+    },
+    "durability": {
+      "material_id": "mp-8204",
+      "formula": "LiAlB14",
+      "bulk_modulus_GPa": 194.26,
+      "shear_modulus_GPa": 188.17,
+      "strength_score": 382.43,
+      "density": 2.5168,
+      "space_group": "Imma",
+      "score_description": "Higher bulk+shear modulus = more durable",
+      "llm_verdict": {
+        "verdict": "The literature does not broadly support LiAlB14 for durability, as there is no direct mention of this material in the provided papers, which focus on other solid electrolytes like LLZO.",
+        "confidence": "low",
+        "sources": [
+          "http://arxiv.org/abs/2606.31669v1",
+          "http://arxiv.org/abs/2606.07815v1",
+          "http://arxiv.org/abs/2606.07772v1",
+          "http://arxiv.org/abs/2606.12664v1",
+          "http://arxiv.org/abs/2606.15279v1"
+        ]
+      }
+    }
+  },
+  "last_scan": "2026-07-14T06:50:46.504929+00:00"
+}

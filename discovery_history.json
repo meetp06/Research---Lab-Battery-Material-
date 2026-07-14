@@ -1,0 +1,200 @@
+[
+  {
+    "timestamp": "2026-07-14T06:50:46.504929+00:00",
+    "type": "champion",
+    "spec": "durability",
+    "label": "\ud83d\udee1\ufe0f Durability",
+    "formula": "LiAlB14",
+    "material_id": "mp-8204",
+    "metric": "strength_score",
+    "value": 382.43,
+    "unit": "GPa",
+    "previous": "none yet",
+    "llm_verdict": {
+      "verdict": "The literature does not broadly support LiAlB14 for durability, as there is no direct mention of this material in the provided papers, which focus on other solid electrolytes like LLZO.",
+      "confidence": "low",
+      "sources": [
+        "http://arxiv.org/abs/2606.31669v1",
+        "http://arxiv.org/abs/2606.07815v1",
+        "http://arxiv.org/abs/2606.07772v1",
+        "http://arxiv.org/abs/2606.12664v1",
+        "http://arxiv.org/abs/2606.15279v1"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-14T06:50:46.504929+00:00",
+    "type": "champion",
+    "spec": "form_factor",
+    "label": "\ud83d\udcd0 Form Factor",
+    "formula": "LiS4",
+    "material_id": "mp-995393",
+    "metric": "density_g_cm3",
+    "value": 0.2123,
+    "unit": "g/cm\u00b3",
+    "previous": "none yet",
+    "llm_verdict": {
+      "verdict": "The literature does not broadly support LiS4 for this use, as none of the provided papers directly discuss LiS4, and the focus is on other materials like garnet-type solid electrolytes and redox-active halide materials.",
+      "confidence": "low",
+      "sources": [
+        "http://arxiv.org/abs/2606.31669v1",
+        "http://arxiv.org/abs/2606.07815v1",
+        "http://arxiv.org/abs/2606.07772v1",
+        "http://arxiv.org/abs/2606.12664v1",
+        "http://arxiv.org/abs/2606.15279v1"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-14T06:50:46.504929+00:00",
+    "type": "champion",
+    "spec": "lifespan",
+    "label": "\u267b\ufe0f Lifespan",
+    "formula": "LiLuF4",
+    "material_id": "mp-561430",
+    "metric": "formation_energy",
+    "value": -4.0765,
+    "unit": "eV/atom",
+    "previous": "none yet",
+    "llm_verdict": {
+      "verdict": "The literature does not broadly support LiLuF4 for enhanced lifespan, as there is no direct mention of this material in the provided papers, which focus on other compounds like LLZO.",
+      "confidence": "low",
+      "sources": [
+        "http://arxiv.org/abs/2606.31669v1",
+        "http://arxiv.org/abs/2606.07815v1",
+        "http://arxiv.org/abs/2606.12664v1",
+        "http://arxiv.org/abs/2606.07772v1",
+        "http://arxiv.org/abs/2606.24480v1"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-14T06:50:46.504929+00:00",
+    "type": "champion",
+    "spec": "capacity",
+    "label": "\ud83d\udd0b Capacity",
+    "formula": "Li9S3N",
+    "material_id": "mp-557964",
+    "metric": "capacity_proxy_mAh_g",
+    "value": 5029.02,
+    "unit": "mAh/g",
+    "previous": "none yet",
+    "llm_verdict": {
+      "verdict": "The literature does not broadly support Li9S3N for high capacity battery applications, as the provided papers focus on other materials such as garnet-type solid electrolytes and redox-active halides, with no mention of Li9S3N.",
+      "confidence": "low",
+      "sources": [
+        "http://arxiv.org/abs/2606.31669v1",
+        "http://arxiv.org/abs/2606.07815v1",
+        "http://arxiv.org/abs/2606.07772v1",
+        "http://arxiv.org/abs/2606.12664v1",
+        "http://arxiv.org/abs/2606.15279v1"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-14T06:50:46.504929+00:00",
+    "type": "champion",
+    "spec": "charging_speed",
+    "label": "\u26a1 Charging Speed",
+    "formula": "Li3N",
+    "material_id": "mp-2251",
+    "metric": "min_li_hop_angstrom",
+    "value": 2.0841,
+    "unit": "\u00c5 hop",
+    "previous": "none yet",
+    "llm_verdict": {
+      "verdict": "The literature does not broadly support Li3N for enhanced charging speed, as the provided papers focus on other materials such as garnet-type solid electrolytes and redox-active halide materials, with no mention of Li3N.",
+      "confidence": "low",
+      "sources": [
+        "http://arxiv.org/abs/2606.31669v1",
+        "http://arxiv.org/abs/2606.07815v1",
+        "http://arxiv.org/abs/2606.07772v1",
+        "http://arxiv.org/abs/2606.15279v1",
+        "http://arxiv.org/abs/2606.12664v1"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-14T06:50:32.615677+00:00",
+    "type": "literature",
+    "title": "Machine learning assisted molecular dynamics of charge-transfer mechanisms at Li/Ga-doped Li$_7$La$_3$Zr$_2$O$_{12}$ (LLZO) interfaces",
+    "published": "2026-06-05T18:29:55Z",
+    "url": "http://arxiv.org/abs/2606.07772v1",
+    "summary": "Interfacial charge transfer between solid electrolytes (SEs) and Li metal is a key factor limiting all-solid-state battery performance. Conventional density functional theory and nudged elastic band calculations neglect many-body correlations and finite-temperature effects, which can lead to inaccurate activation barriers. Here, we trained moment tensor potentials (MTPs) for garnet LLZO systems (t-LLZO, c-LLZO, and Ga-LLZO) and Li metal, enabling machine-learning molecular dynamics (MLMD) simula",
+    "claim": {
+      "material": "LLZO",
+      "metric": null,
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T06:50:32.615677+00:00",
+    "type": "literature",
+    "title": "Redox-Active Halide Materials for Cathode Applications",
+    "published": "2026-06-05T19:48:18Z",
+    "url": "http://arxiv.org/abs/2606.07815v1",
+    "summary": "Electrochemically redox-active halide (eREAL) materials are an emerging class of materials that combine high Li-ion conductivity with transition-metal redox activity, making them promising candidates for cathode or catholyte applications. As a redox-active catholyte, they could significantly increase the energy density of solid-state batteries. In this work, we perform first-principles calculations on Li-M-Cl (M = 3d transition metals) ternaries to establish such a theoretical foundation for the",
+    "claim": {
+      "material": "Li-M-Cl",
+      "metric": null,
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T06:50:32.615677+00:00",
+    "type": "literature",
+    "title": "Modeling and Estimation of Solid Electrolyte Interphase during Formation in Battery Manufacturing",
+    "published": "2026-06-10T20:47:18Z",
+    "url": "http://arxiv.org/abs/2606.12664v1",
+    "summary": "The solid electrolyte interphase (SEI) - a critical passivation layer that governs the longevity, safety, and efficiency of lithium-ion batteries - is created during the last step in cell manufacturing called cell formation. Conventional cell formation protocols are largely empirical, resulting in long processing times and limited control over the SEI growth rate that influences SEI quality and lifetime performance. This paper develops a control-oriented, semi-empirical model to estimate SEI thi",
+    "claim": {
+      "material": "lithium-ion",
+      "metric": null,
+      "value": null,
+      "unit": null
+    }
+  },
+  {
+    "timestamp": "2026-07-14T06:50:32.615677+00:00",
+    "type": "literature",
+    "title": "On the flow of electrically charged particles in an elastic solid",
+    "published": "2026-06-13T12:36:34Z",
+    "url": "http://arxiv.org/abs/2606.15279v1",
+    "summary": "This paper is a specialization of a broad and complicated continuum theory [arXiv:2403.07582] to a relatively simple and useful case so that it is more reader friendly. A continuum theory of the flow of charged particles in an elastic solid is presented. It can describe the behavior of soft solid electrolytes and elastic semiconductors. It is nonlinear and is valid for large deformation and strong fields. The theory is derived from a three-continuum mixture model including a charged lattice cont",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T06:50:32.615677+00:00",
+    "type": "literature",
+    "title": "Breaking Bottlenecks in Solid Electrolyte Discovery with Large Artificial Intelligence Models",
+    "published": "2026-06-23T12:16:41Z",
+    "url": "http://arxiv.org/abs/2606.24480v1",
+    "summary": "Solid electrolytes (SEs) are central to next-generation metal batteries, yet their discovery remains constrained by fragmented data, limited transferability of simulations, and slow experimental iteration. Unlike catalysis, where surface reactivity dominates, SEs require simultaneous optimization of bulk ion transport, defect chemistry, mechanical integrity, and interfacial stability. Here, we outline a framework for autonomous SE discovery enabled by large artificial intelligence (AI) models, i",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T06:50:32.615677+00:00",
+    "type": "literature",
+    "title": "Kinetic Monte Carlo-Ising Machine Optimization for Atomistic Inverse Design of Solid Electrolytes",
+    "published": "2026-06-30T07:38:54Z",
+    "url": "http://arxiv.org/abs/2606.31261v1",
+    "summary": "Maximizing ionic conductivity remains a fundamental challenge in the atomistic design of solid electrolytes. To this end, we present a framework that combines kinetic Monte Carlo (KMC) and factorization machine with quadratic-optimization annealing (FMQA), an Ising-machine-based black-box optimization algorithm for large-scale combinatorial optimization. KMC evaluates the ionic conductivity for a given dopant configuration, whereas FMQA iteratively learns a surrogate model from a small configura",
+    "claim": {}
+  },
+  {
+    "timestamp": "2026-07-14T06:50:32.615677+00:00",
+    "type": "literature",
+    "title": "Optimizing Ti substitution for the enhanced densification, ionic conductivity, and microstructure of garnet-type Li$_7$La$_3$Zr$_2$O$_{12}$ solid electrolytes",
+    "published": "2026-06-30T13:50:34Z",
+    "url": "http://arxiv.org/abs/2606.31669v1",
+    "summary": "Garnet-type lithium lanthanum zirconium oxide Li$_7$La$_3$Zr$_2$O$_{12}$ (LLZO) is a favorable solid electrolyte for all-solid-state Li-ion batteries due to its wide electrochemical stability, compatible ionic conductivity, and good safety. However, further improvement in ionic conductivity is required for its practical applications. In this work, titanium (Ti) is doped into LLZO to enhance its Li-ion transport properties and structural stability. The series Li$_7$La$_3$Zr$_{2-x}$Ti$_x$O$_{12}$ ",
+    "claim": {
+      "material": "Li$_7$La$_3$Zr$_{2-x}$Ti$_x$O$_{12}$",
+      "metric": "ionic conductivity",
+      "value": null,
+      "unit": null
+    }
+  }
+]

@@ -1,0 +1,926 @@
+{
+  "charging_speed": [
+    {
+      "material_id": "mp-2251",
+      "formula": "Li3N",
+      "density": 1.3296,
+      "energy_above_hull": 0.0,
+      "min_li_hop_angstrom": 2.0841,
+      "space_group": "P6/mmm",
+      "score_description": "Shorter hop = faster charging"
+    },
+    {
+      "material_id": "mp-1222516",
+      "formula": "Li8CuN3",
+      "density": 2.0344,
+      "energy_above_hull": 0.0,
+      "min_li_hop_angstrom": 2.0902,
+      "space_group": "C2/m",
+      "score_description": "Shorter hop = faster charging"
+    },
+    {
+      "material_id": "mp-530933",
+      "formula": "Li5P2N5",
+      "density": 2.3235,
+      "energy_above_hull": 0.009697,
+      "min_li_hop_angstrom": 2.0999,
+      "space_group": "Pnma",
+      "score_description": "Shorter hop = faster charging"
+    },
+    {
+      "material_id": "mp-1222572",
+      "formula": "Li7Cu2N3",
+      "density": 2.8209,
+      "energy_above_hull": 0.0,
+      "min_li_hop_angstrom": 2.1012,
+      "space_group": "R-3m",
+      "score_description": "Shorter hop = faster charging"
+    },
+    {
+      "material_id": "mp-690979",
+      "formula": "Li9Nd6Sb3TeO24",
+      "density": 5.6503,
+      "energy_above_hull": 0.021311,
+      "min_li_hop_angstrom": 2.1185,
+      "space_group": "P1",
+      "score_description": "Shorter hop = faster charging"
+    },
+    {
+      "material_id": "mp-676829",
+      "formula": "Li49Cu8N19",
+      "density": 2.2149,
+      "energy_above_hull": 0.018296,
+      "min_li_hop_angstrom": 2.1232,
+      "space_group": "P6/mmm",
+      "score_description": "Shorter hop = faster charging"
+    },
+    {
+      "material_id": "mp-532007",
+      "formula": "Li47Cu7N18",
+      "density": 2.1285,
+      "energy_above_hull": 0.014997,
+      "min_li_hop_angstrom": 2.1249,
+      "space_group": "P6/mmm",
+      "score_description": "Shorter hop = faster charging"
+    },
+    {
+      "material_id": "mp-677490",
+      "formula": "Li4Nd3SbTeO12",
+      "density": 5.6865,
+      "energy_above_hull": 0.012101,
+      "min_li_hop_angstrom": 2.1295,
+      "space_group": "P1",
+      "score_description": "Shorter hop = faster charging"
+    },
+    {
+      "material_id": "mp-31468",
+      "formula": "LiCaN",
+      "density": 2.3721,
+      "energy_above_hull": 0.0,
+      "min_li_hop_angstrom": 2.1555,
+      "space_group": "Pnma",
+      "score_description": "Shorter hop = faster charging"
+    },
+    {
+      "material_id": "mp-1210761",
+      "formula": "Li2NiN",
+      "density": 3.4058,
+      "energy_above_hull": 0.017222,
+      "min_li_hop_angstrom": 2.1568,
+      "space_group": "P6/mmm",
+      "score_description": "Shorter hop = faster charging"
+    },
+    {
+      "material_id": "mp-686208",
+      "formula": "Li5SiN3",
+      "density": 2.1904,
+      "energy_above_hull": 0.0,
+      "min_li_hop_angstrom": 2.1625,
+      "space_group": "P1",
+      "score_description": "Shorter hop = faster charging"
+    },
+    {
+      "material_id": "mp-973793",
+      "formula": "Li8SeN2",
+      "density": 2.2159,
+      "energy_above_hull": 0.0,
+      "min_li_hop_angstrom": 2.1645,
+      "space_group": "I4_1md",
+      "score_description": "Shorter hop = faster charging"
+    },
+    {
+      "material_id": "mp-2341",
+      "formula": "Li3N",
+      "density": 1.7182,
+      "energy_above_hull": 0.003927,
+      "min_li_hop_angstrom": 2.1659,
+      "space_group": "P6_3/mmc",
+      "score_description": "Shorter hop = faster charging"
+    },
+    {
+      "material_id": "mp-772521",
+      "formula": "Li8TiO6",
+      "density": 2.3554,
+      "energy_above_hull": 0.003524,
+      "min_li_hop_angstrom": 2.1663,
+      "space_group": "P6_3cm",
+      "score_description": "Shorter hop = faster charging"
+    },
+    {
+      "material_id": "mp-28548",
+      "formula": "Li8GeO6",
+      "density": 2.71,
+      "energy_above_hull": 0.000638,
+      "min_li_hop_angstrom": 2.1732,
+      "space_group": "P6_3cm",
+      "score_description": "Shorter hop = faster charging"
+    },
+    {
+      "material_id": "mp-531553",
+      "formula": "Li5GeN3",
+      "density": 2.9386,
+      "energy_above_hull": 0.0,
+      "min_li_hop_angstrom": 2.1752,
+      "space_group": "P1",
+      "score_description": "Shorter hop = faster charging"
+    },
+    {
+      "material_id": "mp-675918",
+      "formula": "Li9CrN5",
+      "density": 2.2138,
+      "energy_above_hull": 0.01,
+      "min_li_hop_angstrom": 2.1776,
+      "space_group": "P-1",
+      "score_description": "Shorter hop = faster charging"
+    },
+    {
+      "material_id": "mp-28549",
+      "formula": "Li8SiO6",
+      "density": 2.262,
+      "energy_above_hull": 0.0,
+      "min_li_hop_angstrom": 2.1834,
+      "space_group": "P6_3cm",
+      "score_description": "Shorter hop = faster charging"
+    },
+    {
+      "material_id": "mp-780493",
+      "formula": "Li8CrO6",
+      "density": 2.4519,
+      "energy_above_hull": 0.003892,
+      "min_li_hop_angstrom": 2.189,
+      "space_group": "P6_3cm",
+      "score_description": "Shorter hop = faster charging"
+    },
+    {
+      "material_id": "mp-1190809",
+      "formula": "Li8TeN2",
+      "density": 2.6239,
+      "energy_above_hull": 0.014442,
+      "min_li_hop_angstrom": 2.1934,
+      "space_group": "I4_1md",
+      "score_description": "Shorter hop = faster charging"
+    }
+  ],
+  "capacity": [
+    {
+      "material_id": "mp-557964",
+      "formula": "Li9S3N",
+      "density": 1.7656,
+      "energy_above_hull": 0.007899,
+      "formation_energy": -1.1734,
+      "li_fraction": 0.6923,
+      "s_fraction": 0.2308,
+      "capacity_proxy_mAh_g": 5029.02,
+      "score_description": "Higher capacity_proxy = more energy"
+    },
+    {
+      "material_id": "mp-1125",
+      "formula": "Li2S",
+      "density": 1.7858,
+      "energy_above_hull": 0.061509,
+      "formation_energy": -1.4419,
+      "li_fraction": 0.6667,
+      "s_fraction": 0.3333,
+      "capacity_proxy_mAh_g": 4199.84,
+      "score_description": "Higher capacity_proxy = more energy"
+    },
+    {
+      "material_id": "mp-1153",
+      "formula": "Li2S",
+      "density": 1.6739,
+      "energy_above_hull": 0.0,
+      "formation_energy": -1.5035,
+      "li_fraction": 0.6667,
+      "s_fraction": 0.3333,
+      "capacity_proxy_mAh_g": 4199.84,
+      "score_description": "Higher capacity_proxy = more energy"
+    },
+    {
+      "material_id": "mp-32899",
+      "formula": "Li2S",
+      "density": 1.6512,
+      "energy_above_hull": 0.075129,
+      "formation_energy": -1.4283,
+      "li_fraction": 0.6667,
+      "s_fraction": 0.3333,
+      "capacity_proxy_mAh_g": 4199.84,
+      "score_description": "Higher capacity_proxy = more energy"
+    },
+    {
+      "material_id": "mp-723352",
+      "formula": "Li2S",
+      "density": 1.6512,
+      "energy_above_hull": 0.08199,
+      "formation_energy": -1.4215,
+      "li_fraction": 0.6667,
+      "s_fraction": 0.3333,
+      "capacity_proxy_mAh_g": 4199.84,
+      "score_description": "Higher capacity_proxy = more energy"
+    },
+    {
+      "material_id": "mp-1211324",
+      "formula": "Li7PS6",
+      "density": 1.803,
+      "energy_above_hull": 0.03253,
+      "formation_energy": -1.2871,
+      "li_fraction": 0.5,
+      "s_fraction": 0.4286,
+      "capacity_proxy_mAh_g": 2483.52,
+      "score_description": "Higher capacity_proxy = more energy"
+    },
+    {
+      "material_id": "mp-4556",
+      "formula": "Li2SO4",
+      "density": 2.2661,
+      "energy_above_hull": 0.0,
+      "formation_energy": -2.3113,
+      "li_fraction": 0.2857,
+      "s_fraction": 0.1429,
+      "capacity_proxy_mAh_g": 1755.16,
+      "score_description": "Higher capacity_proxy = more energy"
+    },
+    {
+      "material_id": "mp-1001069",
+      "formula": "Li48P16S61",
+      "density": 1.743,
+      "energy_above_hull": 0.018982,
+      "formation_energy": -1.1653,
+      "li_fraction": 0.384,
+      "s_fraction": 0.488,
+      "capacity_proxy_mAh_g": 1663.11,
+      "score_description": "Higher capacity_proxy = more energy"
+    },
+    {
+      "material_id": "mp-985583",
+      "formula": "Li3PS4",
+      "density": 1.8543,
+      "energy_above_hull": 0.0,
+      "formation_energy": -1.1818,
+      "li_fraction": 0.375,
+      "s_fraction": 0.5,
+      "capacity_proxy_mAh_g": 1607.58,
+      "score_description": "Higher capacity_proxy = more energy"
+    },
+    {
+      "material_id": "mp-1097036",
+      "formula": "Li3PS4",
+      "density": 1.8647,
+      "energy_above_hull": 0.01383,
+      "formation_energy": -1.1679,
+      "li_fraction": 0.375,
+      "s_fraction": 0.5,
+      "capacity_proxy_mAh_g": 1607.58,
+      "score_description": "Higher capacity_proxy = more energy"
+    },
+    {
+      "material_id": "mp-2646995",
+      "formula": "Li3PS4",
+      "density": 1.8744,
+      "energy_above_hull": 0.007421,
+      "formation_energy": -1.1744,
+      "li_fraction": 0.375,
+      "s_fraction": 0.5,
+      "capacity_proxy_mAh_g": 1607.58,
+      "score_description": "Higher capacity_proxy = more energy"
+    },
+    {
+      "material_id": "mp-641703",
+      "formula": "Li7P3S11",
+      "density": 1.8721,
+      "energy_above_hull": 0.019883,
+      "formation_energy": -1.0881,
+      "li_fraction": 0.3333,
+      "s_fraction": 0.5238,
+      "capacity_proxy_mAh_g": 1366.58,
+      "score_description": "Higher capacity_proxy = more energy"
+    },
+    {
+      "material_id": "mp-1020013",
+      "formula": "Li2S2O7",
+      "density": 2.2891,
+      "energy_above_hull": 0.0,
+      "formation_energy": -2.0959,
+      "li_fraction": 0.1818,
+      "s_fraction": 0.1818,
+      "capacity_proxy_mAh_g": 1015.59,
+      "score_description": "Higher capacity_proxy = more energy"
+    },
+    {
+      "material_id": "mp-995393",
+      "formula": "LiS4",
+      "density": 0.2123,
+      "energy_above_hull": 0.0,
+      "formation_energy": -0.6122,
+      "li_fraction": 0.2,
+      "s_fraction": 0.8,
+      "capacity_proxy_mAh_g": 713.64,
+      "score_description": "Higher capacity_proxy = more energy"
+    }
+  ],
+  "lifespan": [
+    {
+      "material_id": "mp-1196169",
+      "formula": "LiThF5",
+      "density": 5.9309,
+      "formation_energy": -4.123,
+      "band_gap_eV": 7.4228,
+      "space_group": "I4_1/a",
+      "score_description": "More negative formation energy = harder to decompose = longer life"
+    },
+    {
+      "material_id": "mp-561430",
+      "formula": "LiLuF4",
+      "density": 6.4472,
+      "formation_energy": -4.0765,
+      "band_gap_eV": 7.7576,
+      "space_group": "C2/c",
+      "score_description": "More negative formation energy = harder to decompose = longer life"
+    },
+    {
+      "material_id": "mp-1210006",
+      "formula": "NaLiTm2F8",
+      "density": 5.714,
+      "formation_energy": -4.039,
+      "band_gap_eV": 7.3096,
+      "space_group": "Cmcm",
+      "score_description": "More negative formation energy = harder to decompose = longer life"
+    },
+    {
+      "material_id": "mp-3700",
+      "formula": "LiYF4",
+      "density": 4.0224,
+      "formation_energy": -4.031,
+      "band_gap_eV": 7.8341,
+      "space_group": "I4_1/a",
+      "score_description": "More negative formation energy = harder to decompose = longer life"
+    },
+    {
+      "material_id": "mp-1209986",
+      "formula": "NaLiEr2F8",
+      "density": 5.5114,
+      "formation_energy": -4.0286,
+      "band_gap_eV": 7.4719,
+      "space_group": "Cmcm",
+      "score_description": "More negative formation energy = harder to decompose = longer life"
+    },
+    {
+      "material_id": "mp-1210003",
+      "formula": "NaLiHo2F8",
+      "density": 5.5366,
+      "formation_energy": -4.0216,
+      "band_gap_eV": 7.5674,
+      "space_group": "Cmcm",
+      "score_description": "More negative formation energy = harder to decompose = longer life"
+    },
+    {
+      "material_id": "mp-16577",
+      "formula": "Li2CaHfF8",
+      "density": 4.743,
+      "formation_energy": -3.8826,
+      "band_gap_eV": 6.9952,
+      "space_group": "I-4",
+      "score_description": "More negative formation energy = harder to decompose = longer life"
+    },
+    {
+      "material_id": "mp-6591",
+      "formula": "SrLiAlF6",
+      "density": 3.4697,
+      "formation_energy": -3.8758,
+      "band_gap_eV": 7.3154,
+      "space_group": "P-31c",
+      "score_description": "More negative formation energy = harder to decompose = longer life"
+    },
+    {
+      "material_id": "mp-6134",
+      "formula": "LiCaAlF6",
+      "density": 2.8617,
+      "formation_energy": -3.8698,
+      "band_gap_eV": 7.6448,
+      "space_group": "P-31c",
+      "score_description": "More negative formation energy = harder to decompose = longer life"
+    },
+    {
+      "material_id": "mp-543044",
+      "formula": "BaLiAlF6",
+      "density": 3.9124,
+      "formation_energy": -3.8596,
+      "band_gap_eV": 7.3026,
+      "space_group": "P2_1/c",
+      "score_description": "More negative formation energy = harder to decompose = longer life"
+    },
+    {
+      "material_id": "mp-2897115",
+      "formula": "LiZr5TlF22",
+      "density": 4.8303,
+      "formation_energy": -3.8538,
+      "band_gap_eV": 5.6152,
+      "space_group": "P4/nbm",
+      "score_description": "More negative formation energy = harder to decompose = longer life"
+    },
+    {
+      "material_id": "mp-1211625",
+      "formula": "KLiYbF5",
+      "density": 5.0525,
+      "formation_energy": -3.8416,
+      "band_gap_eV": 8.2432,
+      "space_group": "P2_1/c",
+      "score_description": "More negative formation energy = harder to decompose = longer life"
+    },
+    {
+      "material_id": "mp-29040",
+      "formula": "Li3Zr4F19",
+      "density": 3.6384,
+      "formation_energy": -3.8396,
+      "band_gap_eV": 5.6198,
+      "space_group": "P-1",
+      "score_description": "More negative formation energy = harder to decompose = longer life"
+    },
+    {
+      "material_id": "mp-1222537",
+      "formula": "LiZr5TlF22",
+      "density": 4.5692,
+      "formation_energy": -3.8364,
+      "band_gap_eV": 5.2244,
+      "space_group": "Pnc2",
+      "score_description": "More negative formation energy = harder to decompose = longer life"
+    },
+    {
+      "material_id": "mp-1211480",
+      "formula": "KLiLuF5",
+      "density": 5.1177,
+      "formation_energy": -3.8177,
+      "band_gap_eV": 8.2681,
+      "space_group": "P2_1/c",
+      "score_description": "More negative formation energy = harder to decompose = longer life"
+    },
+    {
+      "material_id": "mp-1195868",
+      "formula": "LiCeF5",
+      "density": 4.5679,
+      "formation_energy": -3.8125,
+      "band_gap_eV": 2.6981,
+      "space_group": "I4_1/a",
+      "score_description": "More negative formation energy = harder to decompose = longer life"
+    },
+    {
+      "material_id": "mp-1211461",
+      "formula": "KLiDyF5",
+      "density": 4.6809,
+      "formation_energy": -3.8085,
+      "band_gap_eV": 8.1976,
+      "space_group": "P2_1/c",
+      "score_description": "More negative formation energy = harder to decompose = longer life"
+    },
+    {
+      "material_id": "mp-1211585",
+      "formula": "KLiGdF5",
+      "density": 4.4488,
+      "formation_energy": -3.7667,
+      "band_gap_eV": 6.4852,
+      "space_group": "P2_1/c",
+      "score_description": "More negative formation energy = harder to decompose = longer life"
+    },
+    {
+      "material_id": "mp-1193222",
+      "formula": "LiMgAlF6",
+      "density": 3.0253,
+      "formation_energy": -3.7142,
+      "band_gap_eV": 7.5696,
+      "space_group": "P321",
+      "score_description": "More negative formation energy = harder to decompose = longer life"
+    },
+    {
+      "material_id": "mp-542219",
+      "formula": "Li2ZrF6",
+      "density": 3.8707,
+      "formation_energy": -3.6836,
+      "band_gap_eV": 6.0773,
+      "space_group": "P2_1/c",
+      "score_description": "More negative formation energy = harder to decompose = longer life"
+    }
+  ],
+  "form_factor": [
+    {
+      "material_id": "mp-995393",
+      "formula": "LiS4",
+      "density_g_cm3": 0.2123,
+      "volume_A3": 2115.08,
+      "energy_above_hull": 0.0,
+      "band_gap_eV": 2.1585,
+      "space_group": "P1",
+      "score_description": "Lower density = lighter & thinner battery"
+    },
+    {
+      "material_id": "mp-1063005",
+      "formula": "Li",
+      "density_g_cm3": 0.5643,
+      "volume_A3": 61.27,
+      "energy_above_hull": 0.015671,
+      "band_gap_eV": 0,
+      "space_group": "P6/mmm",
+      "score_description": "Lower density = lighter & thinner battery"
+    },
+    {
+      "material_id": "mp-1018134",
+      "formula": "Li",
+      "density_g_cm3": 0.5649,
+      "volume_A3": 61.21,
+      "energy_above_hull": 0.0,
+      "band_gap_eV": 0,
+      "space_group": "R-3m",
+      "score_description": "Lower density = lighter & thinner battery"
+    },
+    {
+      "material_id": "mp-976411",
+      "formula": "Li",
+      "density_g_cm3": 0.5659,
+      "volume_A3": 81.46,
+      "energy_above_hull": 0.005889,
+      "band_gap_eV": 0,
+      "space_group": "P6_3/mmc",
+      "score_description": "Lower density = lighter & thinner battery"
+    },
+    {
+      "material_id": "mp-51",
+      "formula": "Li",
+      "density_g_cm3": 0.5665,
+      "volume_A3": 20.35,
+      "energy_above_hull": 0.001672,
+      "band_gap_eV": 0,
+      "space_group": "Fm-3m",
+      "score_description": "Lower density = lighter & thinner battery"
+    },
+    {
+      "material_id": "mp-135",
+      "formula": "Li",
+      "density_g_cm3": 0.5666,
+      "volume_A3": 20.34,
+      "energy_above_hull": 0.009651,
+      "band_gap_eV": 0,
+      "space_group": "Im-3m",
+      "score_description": "Lower density = lighter & thinner battery"
+    },
+    {
+      "material_id": "mp-567337",
+      "formula": "Li",
+      "density_g_cm3": 0.57,
+      "volume_A3": 161.75,
+      "energy_above_hull": 0.008819,
+      "band_gap_eV": 0,
+      "space_group": "I-43d",
+      "score_description": "Lower density = lighter & thinner battery"
+    },
+    {
+      "material_id": "mp-10173",
+      "formula": "Li",
+      "density_g_cm3": 0.5733,
+      "volume_A3": 40.21,
+      "energy_above_hull": 0.005988,
+      "band_gap_eV": 0,
+      "space_group": "P6_3/mmc",
+      "score_description": "Lower density = lighter & thinner battery"
+    },
+    {
+      "material_id": "mp-2659898",
+      "formula": "LiBH4",
+      "density_g_cm3": 0.6374,
+      "volume_A3": 113.51,
+      "energy_above_hull": 0.027563,
+      "band_gap_eV": 6.8235,
+      "space_group": "P6_3mc",
+      "score_description": "Lower density = lighter & thinner battery"
+    },
+    {
+      "material_id": "mp-707454",
+      "formula": "Li(H3N)4",
+      "density_g_cm3": 0.6388,
+      "volume_A3": 1561.09,
+      "energy_above_hull": 0.02814,
+      "band_gap_eV": 0,
+      "space_group": "I-43d",
+      "score_description": "Lower density = lighter & thinner battery"
+    },
+    {
+      "material_id": "mp-1203555",
+      "formula": "LiBH7N",
+      "density_g_cm3": 0.6478,
+      "volume_A3": 397.95,
+      "energy_above_hull": 0.04461,
+      "band_gap_eV": 5.643,
+      "space_group": "Pnma",
+      "score_description": "Lower density = lighter & thinner battery"
+    },
+    {
+      "material_id": "mp-1211100",
+      "formula": "LiB3H8",
+      "density_g_cm3": 0.659,
+      "volume_A3": 239.05,
+      "energy_above_hull": 0.028457,
+      "band_gap_eV": 0,
+      "space_group": "Cmcm",
+      "score_description": "Lower density = lighter & thinner battery"
+    },
+    {
+      "material_id": "mp-1192133",
+      "formula": "LiBH4",
+      "density_g_cm3": 0.6911,
+      "volume_A3": 209.37,
+      "energy_above_hull": 0.0,
+      "band_gap_eV": 6.8574,
+      "space_group": "Pnma",
+      "score_description": "Lower density = lighter & thinner battery"
+    },
+    {
+      "material_id": "mp-1079676",
+      "formula": "LiBeH3",
+      "density_g_cm3": 0.6986,
+      "volume_A3": 90.22,
+      "energy_above_hull": 0.007903,
+      "band_gap_eV": 5.1053,
+      "space_group": "C2",
+      "score_description": "Lower density = lighter & thinner battery"
+    },
+    {
+      "material_id": "mp-644223",
+      "formula": "LiBH4",
+      "density_g_cm3": 0.7125,
+      "volume_A3": 101.53,
+      "energy_above_hull": 0.047101,
+      "band_gap_eV": 6.6855,
+      "space_group": "P6_3mc",
+      "score_description": "Lower density = lighter & thinner battery"
+    },
+    {
+      "material_id": "mp-24818",
+      "formula": "LiBeH3",
+      "density_g_cm3": 0.7193,
+      "volume_A3": 175.24,
+      "energy_above_hull": 0.005289,
+      "band_gap_eV": 4.8836,
+      "space_group": "P-1",
+      "score_description": "Lower density = lighter & thinner battery"
+    },
+    {
+      "material_id": "mp-1095543",
+      "formula": "LiBH4",
+      "density_g_cm3": 0.7201,
+      "volume_A3": 100.47,
+      "energy_above_hull": 0.021087,
+      "band_gap_eV": 5.4225,
+      "space_group": "Ama2",
+      "score_description": "Lower density = lighter & thinner battery"
+    },
+    {
+      "material_id": "mp-30209",
+      "formula": "LiBH4",
+      "density_g_cm3": 0.7248,
+      "volume_A3": 199.62,
+      "energy_above_hull": 0.000148,
+      "band_gap_eV": 6.8115,
+      "space_group": "Pnma",
+      "score_description": "Lower density = lighter & thinner battery"
+    },
+    {
+      "material_id": "mp-973316",
+      "formula": "NaLi3",
+      "density_g_cm3": 0.7271,
+      "volume_A3": 200.12,
+      "energy_above_hull": 0.04066,
+      "band_gap_eV": 0,
+      "space_group": "P6_3/mmc",
+      "score_description": "Lower density = lighter & thinner battery"
+    },
+    {
+      "material_id": "mp-1186151",
+      "formula": "NaLi3",
+      "density_g_cm3": 0.7296,
+      "volume_A3": 99.71,
+      "energy_above_hull": 0.043195,
+      "band_gap_eV": 0,
+      "space_group": "I4/mmm",
+      "score_description": "Lower density = lighter & thinner battery"
+    }
+  ],
+  "durability": [
+    {
+      "material_id": "mp-8204",
+      "formula": "LiAlB14",
+      "bulk_modulus_GPa": 194.26,
+      "shear_modulus_GPa": 188.17,
+      "strength_score": 382.43,
+      "density": 2.5168,
+      "space_group": "Imma",
+      "score_description": "Higher bulk+shear modulus = more durable"
+    },
+    {
+      "material_id": "mp-569450",
+      "formula": "LiB6C",
+      "bulk_modulus_GPa": 196.32,
+      "shear_modulus_GPa": 184.08,
+      "strength_score": 380.4,
+      "density": 2.3441,
+      "space_group": "Amm2",
+      "score_description": "Higher bulk+shear modulus = more durable"
+    },
+    {
+      "material_id": "mp-865933",
+      "formula": "LiSiIr2",
+      "bulk_modulus_GPa": 230.97,
+      "shear_modulus_GPa": 127.92,
+      "strength_score": 358.88,
+      "density": 14.4324,
+      "space_group": "Fm-3m",
+      "score_description": "Higher bulk+shear modulus = more durable"
+    },
+    {
+      "material_id": "mp-30738",
+      "formula": "LiIr3",
+      "bulk_modulus_GPa": 242.52,
+      "shear_modulus_GPa": 112.94,
+      "strength_score": 355.46,
+      "density": 17.7267,
+      "space_group": "Imm2",
+      "score_description": "Higher bulk+shear modulus = more durable"
+    },
+    {
+      "material_id": "mp-867927",
+      "formula": "LiVIr2",
+      "bulk_modulus_GPa": 223.05,
+      "shear_modulus_GPa": 108.22,
+      "strength_score": 331.26,
+      "density": 14.3662,
+      "space_group": "Fm-3m",
+      "score_description": "Higher bulk+shear modulus = more durable"
+    },
+    {
+      "material_id": "mp-977561",
+      "formula": "LiTaIr2",
+      "bulk_modulus_GPa": 222.45,
+      "shear_modulus_GPa": 100.91,
+      "strength_score": 323.36,
+      "density": 16.5547,
+      "space_group": "Fm-3m",
+      "score_description": "Higher bulk+shear modulus = more durable"
+    },
+    {
+      "material_id": "mp-530399",
+      "formula": "LiAl5O8",
+      "bulk_modulus_GPa": 196.08,
+      "shear_modulus_GPa": 120.44,
+      "strength_score": 316.52,
+      "density": 3.6377,
+      "space_group": "P4_332",
+      "score_description": "Higher bulk+shear modulus = more durable"
+    },
+    {
+      "material_id": "mp-861882",
+      "formula": "LiGeIr2",
+      "bulk_modulus_GPa": 206.94,
+      "shear_modulus_GPa": 107.15,
+      "strength_score": 314.09,
+      "density": 15.0595,
+      "space_group": "Fm-3m",
+      "score_description": "Higher bulk+shear modulus = more durable"
+    },
+    {
+      "material_id": "mp-861666",
+      "formula": "LiRu2W",
+      "bulk_modulus_GPa": 221.99,
+      "shear_modulus_GPa": 82.09,
+      "strength_score": 304.08,
+      "density": 12.0085,
+      "space_group": "Fm-3m",
+      "score_description": "Higher bulk+shear modulus = more durable"
+    },
+    {
+      "material_id": "mp-8864",
+      "formula": "Li(Co3P2)2",
+      "bulk_modulus_GPa": 202.47,
+      "shear_modulus_GPa": 100.91,
+      "strength_score": 303.38,
+      "density": 6.6787,
+      "space_group": "P-6m2",
+      "score_description": "Higher bulk+shear modulus = more durable"
+    },
+    {
+      "material_id": "mp-977563",
+      "formula": "LiNbIr2",
+      "bulk_modulus_GPa": 209.56,
+      "shear_modulus_GPa": 85.65,
+      "strength_score": 295.21,
+      "density": 13.8568,
+      "space_group": "Fm-3m",
+      "score_description": "Higher bulk+shear modulus = more durable"
+    },
+    {
+      "material_id": "mp-30765",
+      "formula": "LiPt7",
+      "bulk_modulus_GPa": 217.92,
+      "shear_modulus_GPa": 77.09,
+      "strength_score": 295.01,
+      "density": 19.2092,
+      "space_group": "Fm-3m",
+      "score_description": "Higher bulk+shear modulus = more durable"
+    },
+    {
+      "material_id": "mp-38280",
+      "formula": "LiTiO2",
+      "bulk_modulus_GPa": 170.85,
+      "shear_modulus_GPa": 122.65,
+      "strength_score": 293.5,
+      "density": 4.1853,
+      "space_group": "I4_1/amd",
+      "score_description": "Higher bulk+shear modulus = more durable"
+    },
+    {
+      "material_id": "mp-867293",
+      "formula": "LiCo2Si",
+      "bulk_modulus_GPa": 171.87,
+      "shear_modulus_GPa": 117.44,
+      "strength_score": 289.3,
+      "density": 6.4144,
+      "space_group": "Fm-3m",
+      "score_description": "Higher bulk+shear modulus = more durable"
+    },
+    {
+      "material_id": "mp-867902",
+      "formula": "LiSiRh2",
+      "bulk_modulus_GPa": 186.51,
+      "shear_modulus_GPa": 102.23,
+      "strength_score": 288.74,
+      "density": 8.4172,
+      "space_group": "Fm-3m",
+      "score_description": "Higher bulk+shear modulus = more durable"
+    },
+    {
+      "material_id": "mp-9244",
+      "formula": "LiBC",
+      "bulk_modulus_GPa": 153.13,
+      "shear_modulus_GPa": 133.26,
+      "strength_score": 286.4,
+      "density": 2.1834,
+      "space_group": "P6_3/mmc",
+      "score_description": "Higher bulk+shear modulus = more durable"
+    },
+    {
+      "material_id": "mp-5853",
+      "formula": "LiSi2N3",
+      "bulk_modulus_GPa": 158.09,
+      "shear_modulus_GPa": 121.47,
+      "strength_score": 279.56,
+      "density": 3.0077,
+      "space_group": "Cmc2_1",
+      "score_description": "Higher bulk+shear modulus = more durable"
+    },
+    {
+      "material_id": "mp-861931",
+      "formula": "LiPt3",
+      "bulk_modulus_GPa": 182.43,
+      "shear_modulus_GPa": 85.61,
+      "strength_score": 268.05,
+      "density": 17.1879,
+      "space_group": "Pm-3m",
+      "score_description": "Higher bulk+shear modulus = more durable"
+    },
+    {
+      "material_id": "mp-864930",
+      "formula": "LiTiIr2",
+      "bulk_modulus_GPa": 190.48,
+      "shear_modulus_GPa": 77.22,
+      "strength_score": 267.71,
+      "density": 13.5005,
+      "space_group": "Fm-3m",
+      "score_description": "Higher bulk+shear modulus = more durable"
+    },
+    {
+      "material_id": "mp-1001581",
+      "formula": "LiC6",
+      "bulk_modulus_GPa": 150.19,
+      "shear_modulus_GPa": 115.67,
+      "strength_score": 265.86,
+      "density": 2.2377,
+      "space_group": "P6/mmm",
+      "score_description": "Higher bulk+shear modulus = more durable"
+    }
+  ]
+}

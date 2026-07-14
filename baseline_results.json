@@ -1,0 +1,365 @@
+{
+  "standard_features": [
+    {
+      "category": "Voltage Output",
+      "standard_spec": "3.0 - 4.5V Nominal",
+      "description": "Sufficient voltage to power modern electronics",
+      "how_we_check": "Electrochemical window analysis"
+    },
+    {
+      "category": "Energy Density",
+      "standard_spec": "> 150 Wh/kg",
+      "description": "Minimum energy stored per unit weight",
+      "how_we_check": "Gravimetric capacity \u00d7 voltage"
+    },
+    {
+      "category": "Cycle Life",
+      "standard_spec": "> 500 Charge Cycles",
+      "description": "Minimum usable charge/discharge cycles",
+      "how_we_check": "Thermodynamic stability (formation energy)"
+    },
+    {
+      "category": "Thermal Stability",
+      "standard_spec": "Safe up to 150\u00b0C",
+      "description": "No thermal runaway or decomposition under heat",
+      "how_we_check": "Energy above hull + decomposition analysis"
+    },
+    {
+      "category": "Coulombic Efficiency",
+      "standard_spec": "> 99.5%",
+      "description": "Ratio of charge extracted vs. charge inserted",
+      "how_we_check": "Electrochemical window width (parasitic reactions)"
+    },
+    {
+      "category": "Internal Resistance",
+      "standard_spec": "< 100 m\u03a9",
+      "description": "Low resistance for efficient power delivery",
+      "how_we_check": "Ion hop distance + band gap analysis"
+    },
+    {
+      "category": "Operating Temperature",
+      "standard_spec": "-20\u00b0C to 60\u00b0C",
+      "description": "Must function in real-world temperature range",
+      "how_we_check": "Phase stability across temperature range"
+    },
+    {
+      "category": "Self-Discharge Rate",
+      "standard_spec": "< 3% per month",
+      "description": "Battery should hold charge when not in use",
+      "how_we_check": "Electrolyte band gap (electronic insulation)"
+    }
+  ],
+  "baseline_thresholds": {
+    "thermodynamic_stability": {
+      "metric": "energy_above_hull",
+      "threshold": 0.025,
+      "unit": "eV/atom",
+      "rule": "\u2264",
+      "description": "Material must sit on or near the thermodynamic convex hull"
+    },
+    "formation_energy": {
+      "metric": "formation_energy_per_atom",
+      "threshold": 0,
+      "unit": "eV/atom",
+      "rule": "<",
+      "description": "Negative formation energy confirms the material naturally wants to form"
+    },
+    "density_range": {
+      "metric": "density",
+      "threshold_min": 0.1,
+      "threshold_max": 10.0,
+      "unit": "g/cm\u00b3",
+      "rule": "range",
+      "description": "Density must be within practical manufacturing range"
+    },
+    "structural_symmetry": {
+      "metric": "space_group",
+      "rule": "exists",
+      "description": "Must have a well-defined crystal structure with known symmetry"
+    },
+    "volume_reasonable": {
+      "metric": "volume",
+      "threshold_max": 5000,
+      "unit": "\u0173",
+      "rule": "\u2264",
+      "description": "Unit cell volume must be reasonable for synthesis"
+    }
+  },
+  "candidate_checks": [
+    {
+      "material_id": "mp-2251",
+      "formula": "Li\u2083N",
+      "checks": {
+        "thermodynamic_stability": {
+          "passed": true,
+          "value": 0.0,
+          "threshold": "\u2264 0.025 eV/atom",
+          "label": "\u2705 PASS"
+        },
+        "formation_energy": {
+          "passed": true,
+          "value": -0.4825,
+          "threshold": "< 0 eV/atom",
+          "label": "\u2705 PASS"
+        },
+        "band_gap": {
+          "passed": true,
+          "value": 0.984,
+          "threshold": "Defined (> 1 eV for electrolyte, \u2248 0 for electrode)",
+          "label": "\u2705 0.98 eV"
+        },
+        "density_range": {
+          "passed": true,
+          "value": 1.3296,
+          "threshold": "0.1 - 10.0 g/cm\u00b3",
+          "label": "\u2705 PASS"
+        },
+        "volume_reasonable": {
+          "passed": true,
+          "value": 43.5,
+          "threshold": "\u2264 5000 \u0173",
+          "label": "\u2705 PASS"
+        },
+        "structural_symmetry": {
+          "passed": true,
+          "value": "P6/mmm",
+          "threshold": "Must have defined space group",
+          "label": "\u2705 P6/mmm"
+        },
+        "ion_mobility": {
+          "passed": "True",
+          "value": 2.0841,
+          "threshold": "< 4.0 \u00c5 Li-Li hop",
+          "label": "\u2705 PASS"
+        }
+      },
+      "pass_count": 7,
+      "fail_count": 0,
+      "total_checks": 7,
+      "overall": "\u2705 ALL PASS",
+      "spec": "\u26a1 Charging Speed"
+    },
+    {
+      "material_id": "mp-557964",
+      "formula": "Li\u2089S\u2083N",
+      "checks": {
+        "thermodynamic_stability": {
+          "passed": true,
+          "value": 0.007899,
+          "threshold": "\u2264 0.025 eV/atom",
+          "label": "\u2705 PASS"
+        },
+        "formation_energy": {
+          "passed": true,
+          "value": -1.1734,
+          "threshold": "< 0 eV/atom",
+          "label": "\u2705 PASS"
+        },
+        "band_gap": {
+          "passed": true,
+          "value": 2.4272,
+          "threshold": "Defined (> 1 eV for electrolyte, \u2248 0 for electrode)",
+          "label": "\u2705 2.43 eV"
+        },
+        "density_range": {
+          "passed": true,
+          "value": 1.7656,
+          "threshold": "0.1 - 10.0 g/cm\u00b3",
+          "label": "\u2705 PASS"
+        },
+        "volume_reasonable": {
+          "passed": true,
+          "value": 162.39,
+          "threshold": "\u2264 5000 \u0173",
+          "label": "\u2705 PASS"
+        },
+        "structural_symmetry": {
+          "passed": true,
+          "value": "Pm-3m",
+          "threshold": "Must have defined space group",
+          "label": "\u2705 Pm-3m"
+        },
+        "ion_mobility": {
+          "passed": "True",
+          "value": 2.3663,
+          "threshold": "< 4.0 \u00c5 Li-Li hop",
+          "label": "\u2705 PASS"
+        }
+      },
+      "pass_count": 7,
+      "fail_count": 0,
+      "total_checks": 7,
+      "overall": "\u2705 ALL PASS",
+      "spec": "\ud83d\udd0b Capacity"
+    },
+    {
+      "material_id": "mp-1196169",
+      "formula": "LiThF\u2085",
+      "checks": {
+        "thermodynamic_stability": {
+          "passed": true,
+          "value": 0.0,
+          "threshold": "\u2264 0.025 eV/atom",
+          "label": "\u2705 PASS"
+        },
+        "formation_energy": {
+          "passed": true,
+          "value": -4.123,
+          "threshold": "< 0 eV/atom",
+          "label": "\u2705 PASS"
+        },
+        "band_gap": {
+          "passed": true,
+          "value": 7.4228,
+          "threshold": "Defined (> 1 eV for electrolyte, \u2248 0 for electrode)",
+          "label": "\u2705 7.42 eV"
+        },
+        "density_range": {
+          "passed": true,
+          "value": 5.9309,
+          "threshold": "0.1 - 10.0 g/cm\u00b3",
+          "label": "\u2705 PASS"
+        },
+        "volume_reasonable": {
+          "passed": true,
+          "value": 748.05,
+          "threshold": "\u2264 5000 \u0173",
+          "label": "\u2705 PASS"
+        },
+        "structural_symmetry": {
+          "passed": true,
+          "value": "I4_1/a",
+          "threshold": "Must have defined space group",
+          "label": "\u2705 I4_1/a"
+        },
+        "ion_mobility": {
+          "passed": "True",
+          "value": 2.8797,
+          "threshold": "< 4.0 \u00c5 Li-Li hop",
+          "label": "\u2705 PASS"
+        }
+      },
+      "pass_count": 7,
+      "fail_count": 0,
+      "total_checks": 7,
+      "overall": "\u2705 ALL PASS",
+      "spec": "\u267b\ufe0f Lifespan"
+    },
+    {
+      "material_id": "mp-995393",
+      "formula": "LiS\u2084",
+      "checks": {
+        "thermodynamic_stability": {
+          "passed": true,
+          "value": 0.0,
+          "threshold": "\u2264 0.025 eV/atom",
+          "label": "\u2705 PASS"
+        },
+        "formation_energy": {
+          "passed": true,
+          "value": -0.6122,
+          "threshold": "< 0 eV/atom",
+          "label": "\u2705 PASS"
+        },
+        "band_gap": {
+          "passed": true,
+          "value": 2.1585,
+          "threshold": "Defined (> 1 eV for electrolyte, \u2248 0 for electrode)",
+          "label": "\u2705 2.16 eV"
+        },
+        "density_range": {
+          "passed": true,
+          "value": 0.2123,
+          "threshold": "0.1 - 10.0 g/cm\u00b3",
+          "label": "\u2705 PASS"
+        },
+        "volume_reasonable": {
+          "passed": true,
+          "value": 2115.08,
+          "threshold": "\u2264 5000 \u0173",
+          "label": "\u2705 PASS"
+        },
+        "structural_symmetry": {
+          "passed": true,
+          "value": "P1",
+          "threshold": "Must have defined space group",
+          "label": "\u2705 P1"
+        },
+        "ion_mobility": {
+          "passed": "True",
+          "value": 2.6967,
+          "threshold": "< 4.0 \u00c5 Li-Li hop",
+          "label": "\u2705 PASS"
+        }
+      },
+      "pass_count": 7,
+      "fail_count": 0,
+      "total_checks": 7,
+      "overall": "\u2705 ALL PASS",
+      "spec": "\ud83d\udcd0 Form Factor"
+    },
+    {
+      "material_id": "mp-8204",
+      "formula": "LiAlB\u2081\u2084",
+      "checks": {
+        "thermodynamic_stability": {
+          "passed": true,
+          "value": 0.0,
+          "threshold": "\u2264 0.025 eV/atom",
+          "label": "\u2705 PASS"
+        },
+        "formation_energy": {
+          "passed": true,
+          "value": -0.191,
+          "threshold": "< 0 eV/atom",
+          "label": "\u2705 PASS"
+        },
+        "band_gap": {
+          "passed": true,
+          "value": 1.2527,
+          "threshold": "Defined (> 1 eV for electrolyte, \u2248 0 for electrode)",
+          "label": "\u2705 1.25 eV"
+        },
+        "density_range": {
+          "passed": true,
+          "value": 2.5168,
+          "threshold": "0.1 - 10.0 g/cm\u00b3",
+          "label": "\u2705 PASS"
+        },
+        "volume_reasonable": {
+          "passed": true,
+          "value": 244.49,
+          "threshold": "\u2264 5000 \u0173",
+          "label": "\u2705 PASS"
+        },
+        "structural_symmetry": {
+          "passed": true,
+          "value": "Imma",
+          "threshold": "Must have defined space group",
+          "label": "\u2705 Imma"
+        },
+        "ion_mobility": {
+          "passed": "True",
+          "value": 3.3428,
+          "threshold": "< 4.0 \u00c5 Li-Li hop",
+          "label": "\u2705 PASS"
+        }
+      },
+      "pass_count": 7,
+      "fail_count": 0,
+      "total_checks": 7,
+      "overall": "\u2705 ALL PASS",
+      "spec": "\ud83d\udee1\ufe0f Durability"
+    },
+    {
+      "material_id": "mp-2859",
+      "formula": "NbAs",
+      "checks": {},
+      "pass_count": 0,
+      "fail_count": 0,
+      "total_checks": 0,
+      "overall": "NOT_FOUND",
+      "spec": "\ud83d\udd0c Passive Power"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+mp-api>=0.46.0
+pymatgen>=2026.0.0
+python-dotenv>=1.0.0
+defusedxml>=0.7.1
+# Optional LLM + RAG layer (auto-detected; pipeline runs without them)
+groq>=0.11.0
+chromadb>=0.5.0
+sentence-transformers>=3.0.0

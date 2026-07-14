@@ -1,0 +1,1644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solid-State Battery Informatics & Simulation Dashboard</title>
+    <!-- Include 3Dmol.js library for WebGL crystal lattice rendering -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/3Dmol/2.4.2/3Dmol-min.js"></script>
+    <!-- marked.js for rendering the Our Research markdown -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #ffffff;
+            color: #111111;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            max-width: 1150px;
+            width: 100%;
+        }
+        h1 {
+            font-weight: 700;
+            font-size: 26px;
+            margin-bottom: 6px;
+            letter-spacing: -0.5px;
+        }
+        .subtitle {
+            color: #666666;
+            margin-bottom: 24px;
+            font-size: 15px;
+        }
+        
+        /* Tab Bar Styles */
+        .tabs-header {
+            display: flex;
+            border-bottom: 1px solid #eaeaea;
+            margin-bottom: 30px;
+            gap: 16px;
+        }
+        .tab-btn {
+            background: none;
+            border: none;
+            padding: 10px 4px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #666666;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s;
+        }
+        .tab-btn:hover {
+            color: #111111;
+        }
+        .tab-btn.active {
+            color: #111111;
+            border-bottom-color: #111111;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        
+        /* Two column layout */
+        .layout-grid {
+            display: grid;
+            grid-template-columns: 1.3fr 1fr;
+            gap: 32px;
+            align-items: start;
+        }
+        .main-column {
+            width: 100%;
+        }
+        .visualizer-column {
+            position: sticky;
+            top: 40px;
+            width: 100%;
+        }
+        
+        .presets-bar {
+            background-color: #f7f7f7;
+            border: 1px solid #eaeaea;
+            border-radius: 6px;
+            padding: 12px 16px;
+            margin-bottom: 24px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .presets-label {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666666;
+        }
+        .preset-btn {
+            background-color: #ffffff;
+            border: 1px solid #cccccc;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 13px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .preset-btn:hover {
+            border-color: #111111;
+            background-color: #f9f9f9;
+        }
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+            color: #444444;
+        }
+        input {
+            padding: 10px 14px;
+            border: 1px solid #cccccc;
+            border-radius: 6px;
+            font-size: 15px;
+            background-color: #ffffff;
+            transition: border-color 0.2s;
+        }
+        input:focus {
+            outline: none;
+            border-color: #111111;
+        }
+        select.dropdown-select {
+            padding: 10px 14px;
+            border: 1px solid #cccccc;
+            border-radius: 6px;
+            font-size: 15px;
+            background-color: #ffffff;
+            margin-bottom: 8px;
+            transition: border-color 0.2s;
+            cursor: pointer;
+        }
+        select.dropdown-select:focus {
+            outline: none;
+            border-color: #111111;
+        }
+        button.submit-btn {
+            background-color: #111111;
+            color: #ffffff;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.2s;
+        }
+        button.submit-btn:hover {
+            background-color: #333333;
+        }
+        button.submit-btn:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 30px;
+            font-size: 15px;
+            color: #666666;
+            border: 1px dashed #cccccc;
+            border-radius: 8px;
+            margin-top: 24px;
+        }
+        .error-message {
+            display: none;
+            color: #d32f2f;
+            background-color: #ffebee;
+            padding: 14px;
+            border-radius: 6px;
+            margin-top: 24px;
+            font-size: 14px;
+            border: 1px solid #ffcdd2;
+        }
+        
+        /* 3D Visualizer styles */
+        .visualizer-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            background-color: #fafafa;
+        }
+        .visualizer-title {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .visualizer-meta {
+            font-size: 12px;
+            color: #666666;
+            margin-bottom: 16px;
+        }
+        .mol-container {
+            width: 100%;
+            height: 380px;
+            position: relative;
+            background-color: #ffffff;
+            border: 1px solid #eaeaea;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        
+        .result-section {
+            margin-top: 40px;
+        }
+        .section-header {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            border-bottom: 1px solid #eeeeee;
+            padding-bottom: 8px;
+        }
+        .result-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 24px;
+            background-color: #fafafa;
+        }
+        .result-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        .result-title {
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .badge {
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .badge-stable {
+            background-color: #e8f5e9;
+            color: #2e7d32;
+        }
+        .badge-unstable {
+            background-color: #ffebee;
+            color: #c62828;
+        }
+        .energy {
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+        .energy span {
+            font-weight: 600;
+        }
+        .reactions-list {
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            padding: 14px;
+            font-family: monospace;
+            font-size: 13px;
+            overflow-x: auto;
+        }
+        .reaction-item {
+            margin-bottom: 6px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .reaction-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .view-3d-btn {
+            background: none;
+            border: none;
+            color: #0066cc;
+            font-size: 11px;
+            cursor: pointer;
+            text-decoration: underline;
+            padding: 0;
+            margin-left: 10px;
+        }
+        .view-3d-btn:hover {
+            color: #0044b3;
+        }
+        
+        /* Grid table for performance data */
+        .metric-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+        .metric-item {
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            padding: 14px 18px;
+        }
+        .metric-label {
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #666666;
+            margin-bottom: 4px;
+        }
+        .metric-value {
+            font-size: 18px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Solid-State Battery Informatics & Simulation</h1>
+        <div class="subtitle">Query, screen, and calculate key performance properties for next-generation batteries.</div>
+        
+        <!-- The Target Specifications Blueprint (its own tab; hidden until selected) -->
+        <div id="blueprintTab" class="tab-content" style="background-color: #fafafa; border: 1px solid #eaeaea; border-radius: 8px; padding: 20px; margin-bottom: 30px;">
+            
+            <!-- LAYER 1: Standard Battery Requirements -->
+            <div style="font-weight: 700; font-size: 15px; margin-bottom: 12px; letter-spacing: -0.3px; color: #111111;">
+                🔋 Layer 1: Standard Battery Requirements (Foundation)
+            </div>
+            <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 13px; margin-bottom: 24px;">
+                <thead>
+                    <tr style="border-bottom: 2px solid #eaeaea; color: #666666;">
+                        <th style="padding: 8px 12px; font-weight: 600;">Requirement</th>
+                        <th style="padding: 8px 12px; font-weight: 600;">Standard Specification</th>
+                        <th style="padding: 8px 12px; font-weight: 600;">How We Verify It</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="border-bottom: 1px solid #eaeaea;">
+                        <td style="padding: 10px 12px; font-weight: 600; color: #111111;">Voltage Output</td>
+                        <td style="padding: 10px 12px; color: #333333;">3.0 – 4.5V Nominal</td>
+                        <td style="padding: 10px 12px; color: #555555; font-style: italic;">Electrochemical window analysis</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #eaeaea;">
+                        <td style="padding: 10px 12px; font-weight: 600; color: #111111;">Energy Density</td>
+                        <td style="padding: 10px 12px; color: #333333;">&gt; 150 Wh/kg</td>
+                        <td style="padding: 10px 12px; color: #555555; font-style: italic;">Gravimetric capacity × voltage</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #eaeaea;">
+                        <td style="padding: 10px 12px; font-weight: 600; color: #111111;">Cycle Life</td>
+                        <td style="padding: 10px 12px; color: #333333;">&gt; 500 Charge Cycles</td>
+                        <td style="padding: 10px 12px; color: #555555; font-style: italic;">Thermodynamic stability (formation energy)</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #eaeaea;">
+                        <td style="padding: 10px 12px; font-weight: 600; color: #111111;">Thermal Stability</td>
+                        <td style="padding: 10px 12px; color: #333333;">Safe up to 150°C</td>
+                        <td style="padding: 10px 12px; color: #555555; font-style: italic;">Energy above hull + decomposition analysis</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #eaeaea;">
+                        <td style="padding: 10px 12px; font-weight: 600; color: #111111;">Coulombic Efficiency</td>
+                        <td style="padding: 10px 12px; color: #333333;">&gt; 99.5%</td>
+                        <td style="padding: 10px 12px; color: #555555; font-style: italic;">Electrochemical window width</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #eaeaea;">
+                        <td style="padding: 10px 12px; font-weight: 600; color: #111111;">Internal Resistance</td>
+                        <td style="padding: 10px 12px; color: #333333;">&lt; 100 mΩ</td>
+                        <td style="padding: 10px 12px; color: #555555; font-style: italic;">Ion hop distance + band gap analysis</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #eaeaea;">
+                        <td style="padding: 10px 12px; font-weight: 600; color: #111111;">Operating Temperature</td>
+                        <td style="padding: 10px 12px; color: #333333;">-20°C to 60°C</td>
+                        <td style="padding: 10px 12px; color: #555555; font-style: italic;">Phase stability across temperature range</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #eaeaea;">
+                        <td style="padding: 10px 12px; font-weight: 600; color: #111111;">Self-Discharge Rate</td>
+                        <td style="padding: 10px 12px; color: #333333;">&lt; 3% per month</td>
+                        <td style="padding: 10px 12px; color: #555555; font-style: italic;">Electrolyte band gap (electronic insulation)</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <!-- LAYER 2: Insane Specifications -->
+            <div style="font-weight: 700; font-size: 15px; margin-bottom: 12px; letter-spacing: -0.3px; color: #111111;">
+                🚀 Layer 2: Insane Specifications (Our Innovation)
+            </div>
+            <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 13px; margin-bottom: 24px;">
+                <thead>
+                    <tr style="border-bottom: 2px solid #eaeaea; color: #666666;">
+                        <th style="padding: 8px 12px; font-weight: 600;">Feature Category</th>
+                        <th style="padding: 8px 12px; font-weight: 600;">The Insane Specification</th>
+                        <th style="padding: 8px 12px; font-weight: 600;">The Technology Behind It</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="border-bottom: 1px solid #eaeaea;">
+                        <td style="padding: 10px 12px; font-weight: 600; color: #111111;">Charging Speed</td>
+                        <td style="padding: 10px 12px; color: #333333;">100% in &lt; 60 Seconds</td>
+                        <td style="padding: 10px 12px; color: #555555; font-style: italic;">Graphene Super-highways</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #eaeaea;">
+                        <td style="padding: 10px 12px; font-weight: 600; color: #111111;">Capacity</td>
+                        <td style="padding: 10px 12px; color: #333333;">5 to 10 Days Runtime</td>
+                        <td style="padding: 10px 12px; color: #555555; font-style: italic;">Lithium-Sulfur (Li-S)</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #eaeaea;">
+                        <td style="padding: 10px 12px; font-weight: 600; color: #111111;">Lifespan</td>
+                        <td style="padding: 10px 12px; color: #333333;">10+ Years (Immortal)</td>
+                        <td style="padding: 10px 12px; color: #555555; font-style: italic;">Self-Healing Polymers</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #eaeaea;">
+                        <td style="padding: 10px 12px; font-weight: 600; color: #111111;">Form Factor</td>
+                        <td style="padding: 10px 12px; color: #333333;">Transparent &amp; Credit-Card Thin</td>
+                        <td style="padding: 10px 12px; color: #555555; font-style: italic;">Structural Battery Composites</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #eaeaea;">
+                        <td style="padding: 10px 12px; font-weight: 600; color: #111111;">Durability</td>
+                        <td style="padding: 10px 12px; color: #333333;">Bends, Flexes, &amp; Bulletproof</td>
+                        <td style="padding: 10px 12px; color: #555555; font-style: italic;">Shear-Thickening Solid Electrolytes</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #eaeaea;">
+                        <td style="padding: 10px 12px; font-weight: 600; color: #111111;">Passive Power</td>
+                        <td style="padding: 10px 12px; color: #333333;">Charges while walking/tapping</td>
+                        <td style="padding: 10px 12px; color: #555555; font-style: italic;">Piezoelectric Nanogenerators</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <!-- BASELINE VALIDATION RESULTS -->
+            <div style="font-weight: 700; font-size: 15px; margin-bottom: 12px; letter-spacing: -0.3px; color: #111111;">
+                ✅ Baseline Validation: Winning Candidates
+            </div>
+            <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 13px;">
+                <thead>
+                    <tr style="border-bottom: 2px solid #eaeaea; color: #666666;">
+                        <th style="padding: 8px 12px; font-weight: 600;">Spec</th>
+                        <th style="padding: 8px 12px; font-weight: 600;">Winner</th>
+                        <th style="padding: 8px 12px; font-weight: 600;">Key Metric</th>
+                        <th style="padding: 8px 12px; font-weight: 600;">Baseline</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="border-bottom: 1px solid #eaeaea;">
+                        <td style="padding: 10px 12px; font-weight: 600; color: #111111;">⚡ Charging Speed</td>
+                        <td style="padding: 10px 12px; color: #333333;">Li₃N (mp-2251)</td>
+                        <td style="padding: 10px 12px; color: #555555;">2.08 Å hop — ultrafast</td>
+                        <td style="padding: 10px 12px; color: #16a34a; font-weight: 600;">✅ 7/7 PASS</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #eaeaea;">
+                        <td style="padding: 10px 12px; font-weight: 600; color: #111111;">🔋 Capacity</td>
+                        <td style="padding: 10px 12px; color: #333333;">Li₉S₃N (mp-557964)</td>
+                        <td style="padding: 10px 12px; color: #555555;">5,029 mAh/g — 20× current</td>
+                        <td style="padding: 10px 12px; color: #16a34a; font-weight: 600;">✅ 7/7 PASS</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #eaeaea;">
+                        <td style="padding: 10px 12px; font-weight: 600; color: #111111;">♻️ Lifespan</td>
+                        <td style="padding: 10px 12px; color: #333333;">LiThF₅ (mp-1196169)</td>
+                        <td style="padding: 10px 12px; color: #555555;">-4.12 eV/atom — indestructible</td>
+                        <td style="padding: 10px 12px; color: #16a34a; font-weight: 600;">✅ 7/7 PASS</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #eaeaea;">
+                        <td style="padding: 10px 12px; font-weight: 600; color: #111111;">📐 Form Factor</td>
+                        <td style="padding: 10px 12px; color: #333333;">LiS₄ (mp-995393)</td>
+                        <td style="padding: 10px 12px; color: #555555;">0.21 g/cm³ — lighter than air</td>
+                        <td style="padding: 10px 12px; color: #16a34a; font-weight: 600;">✅ 7/7 PASS</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #eaeaea;">
+                        <td style="padding: 10px 12px; font-weight: 600; color: #111111;">🛡️ Durability</td>
+                        <td style="padding: 10px 12px; color: #333333;">LiAlB₁₄ (mp-8204)</td>
+                        <td style="padding: 10px 12px; color: #555555;">382 GPa — 2× steel</td>
+                        <td style="padding: 10px 12px; color: #16a34a; font-weight: 600;">✅ 7/7 PASS</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #eaeaea;">
+                        <td style="padding: 10px 12px; font-weight: 600; color: #111111;">🔌 Passive Power</td>
+                        <td style="padding: 10px 12px; color: #333333;">NbAs (mp-2859)</td>
+                        <td style="padding: 10px 12px; color: #555555;">119 C/m² piezoelectric</td>
+                        <td style="padding: 10px 12px; color: #16a34a; font-weight: 600;">✅ PASS</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- WHAT WE ACTUALLY ACHIEVED (HONEST) -->
+            <div style="font-weight: 700; font-size: 15px; margin-top: 28px; margin-bottom: 6px; letter-spacing: -0.3px; color: #111111;">
+                📊 Target vs. What We Actually Achieved
+            </div>
+            <div style="font-size: 12px; color: #888888; margin-bottom: 12px; line-height: 1.5;">
+                Honest scorecard. The "Insane Target" is the marketing dream. "Achieved" = the best real,
+                already-known material our pipeline screened from the Materials Project database, with its
+                <em>computed (DFT / theoretical)</em> property — not a lab-measured cell and not a new element.
+                "Reality Gap" is what still stands between a database hit and a working battery.
+            </div>
+            <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 13px;">
+                <thead>
+                    <tr style="border-bottom: 2px solid #eaeaea; color: #666666;">
+                        <th style="padding: 8px 12px; font-weight: 600;">Feature</th>
+                        <th style="padding: 8px 12px; font-weight: 600;">Insane Target</th>
+                        <th style="padding: 8px 12px; font-weight: 600;">Achieved (screened candidate)</th>
+                        <th style="padding: 8px 12px; font-weight: 600;">Reality Gap</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="border-bottom: 1px solid #eaeaea;">
+                        <td style="padding: 10px 12px; font-weight: 600; color: #111111;">⚡ Charging Speed</td>
+                        <td style="padding: 10px 12px; color: #333333;">100% in &lt; 60 s</td>
+                        <td style="padding: 10px 12px; color: #16a34a;">Li₃N — 2.08 Å Li hop (fast-ion conductor found)</td>
+                        <td style="padding: 10px 12px; color: #b45309;">Short hop ≠ full-pack in 60 s. MW-scale power delivery + heat + Li plating still block it.</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #eaeaea;">
+                        <td style="padding: 10px 12px; font-weight: 600; color: #111111;">🔋 Capacity</td>
+                        <td style="padding: 10px 12px; color: #333333;">5–10 days runtime</td>
+                        <td style="padding: 10px 12px; color: #16a34a;">Li₉S₃N — 5,029 mAh/g theoretical</td>
+                        <td style="padding: 10px 12px; color: #b45309;">Theoretical gravimetric max. Real cells lose to cathode, packaging, S shuttling. Days only for low-draw devices.</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #eaeaea;">
+                        <td style="padding: 10px 12px; font-weight: 600; color: #111111;">♻️ Lifespan</td>
+                        <td style="padding: 10px 12px; color: #333333;">10+ yrs / immortal</td>
+                        <td style="padding: 10px 12px; color: #16a34a;">LiThF₅ — −4.12 eV/atom formation (very stable)</td>
+                        <td style="padding: 10px 12px; color: #b45309;">Thermodynamic stability ≠ cycle life. And LiThF₅ contains thorium (radioactive) — not shippable.</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #eaeaea;">
+                        <td style="padding: 10px 12px; font-weight: 600; color: #111111;">📐 Form Factor</td>
+                        <td style="padding: 10px 12px; color: #333333;">Transparent, card-thin</td>
+                        <td style="padding: 10px 12px; color: #16a34a;">LiS₄ — 0.21 g/cm³ (ultra-low density)</td>
+                        <td style="padding: 10px 12px; color: #b45309;">Low density is one number; thin/transparent needs full device stack (current collectors, seals) not modeled here.</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #eaeaea;">
+                        <td style="padding: 10px 12px; font-weight: 600; color: #111111;">🛡️ Durability</td>
+                        <td style="padding: 10px 12px; color: #333333;">Bends &amp; bulletproof</td>
+                        <td style="padding: 10px 12px; color: #16a34a;">LiAlB₁₄ — 382 GPa stiffness score</td>
+                        <td style="padding: 10px 12px; color: #b45309;">High modulus = stiff, not flexible. Stiff + bendable are opposite. Bulletproof is a pack-level claim.</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #eaeaea;">
+                        <td style="padding: 10px 12px; font-weight: 600; color: #111111;">🔌 Passive Power</td>
+                        <td style="padding: 10px 12px; color: #333333;">Charge while walking</td>
+                        <td style="padding: 10px 12px; color: #16a34a;">NbAs — 119 C/m² piezo tensor</td>
+                        <td style="padding: 10px 12px; color: #b45309;">Piezo harvest = µW–mW, trickle only. Won't meaningfully charge a phone. Contains arsenic.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div style="font-size: 12px; color: #6b7280; margin-top: 12px; padding: 10px 12px; background:#f9fafb; border-left:3px solid #d1d5db; line-height:1.55;">
+                <strong>Bottom line:</strong> the pipeline succeeded at what it's built for — it found real, computed
+                candidate materials that top each metric in a database. It did <em>not</em> discover a new element,
+                and it did not build or measure a battery. A working cell needs synthesis, electrode/interface
+                engineering, and physical cycle testing — the "Reality Gap" column.
+            </div>
+        </div>
+
+        <!-- Navigation Tabs -->
+        <div class="tabs-header">
+            <button class="tab-btn" onclick="switchTab('blueprintTab')">📋 Blueprint &amp; Results</button>
+            <button class="tab-btn active" onclick="switchTab('stabilityTab')">Interface Stability</button>
+            <button class="tab-btn" onclick="switchTab('performanceTab')">Electrode Performance</button>
+            <button class="tab-btn" onclick="switchTab('diffusionTab')">Diffusion Pathways</button>
+            <button class="tab-btn" onclick="switchTab('windowTab')">Electrochemical Window</button>
+            <button class="tab-btn" onclick="switchTab('sandboxTab')">MatterGen Sandbox</button>
+            <button class="tab-btn" onclick="switchTab('piezoTab')">Piezoelectric Power</button>
+            <button class="tab-btn" onclick="switchTab('synthesisTab')">Synthesis Prep</button>
+            <button class="tab-btn" onclick="switchTab('discoveryTab')">Auto-Discovery</button>
+            <button class="tab-btn" onclick="switchTab('researchTab')">🔬 Our Research</button>
+            <button class="tab-btn" onclick="switchTab('chatbotTab')">💬 Chatbot</button>
+        </div>
+        
+        <div class="layout-grid" id="mainGrid">
+            <!-- Left Column: Variable Content -->
+            <div class="main-column">
+                
+                <!-- TAB 1: INTERFACE STABILITY -->
+                <div id="stabilityTab" class="tab-content active">
+                    <div class="presets-bar">
+                        <span class="presets-label">Presets:</span>
+                        <button class="preset-btn" onclick="applyPreset('LiS4', 'Li', 'S')">LiS₄ (Stable)</button>
+                        <button class="preset-btn" onclick="applyPreset('LiBH4', 'Li', 'S')">LiBH₄ (Unstable)</button>
+                        <button class="preset-btn" onclick="applyPreset('Li2BeH4', 'Li', 'S')">Li₂BeH₄ (Unstable)</button>
+                    </div>
+                    
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="electrolyte">Electrolyte Formula</label>
+                            <select id="electrolyteSelect" class="dropdown-select" onchange="syncElectrolyte(this.value)">
+                                <option value="Li2BeH4">Li₂BeH₄ (Default)</option>
+                            </select>
+                            <input type="text" id="electrolyte" value="Li2BeH4" placeholder="e.g. LiS4, LiBH4">
+                        </div>
+                        <div class="form-group">
+                            <label for="anode">Anode Formula</label>
+                            <select id="anodeSelect" class="dropdown-select" onchange="syncAnode(this.value)">
+                                <option value="Li">Li (Default)</option>
+                            </select>
+                            <input type="text" id="anode" value="Li" placeholder="e.g. Li">
+                        </div>
+                        <div class="form-group">
+                            <label for="cathode">Cathode Formula</label>
+                            <select id="cathodeSelect" class="dropdown-select" onchange="syncCathode(this.value)">
+                                <option value="S">S (Default)</option>
+                            </select>
+                            <input type="text" id="cathode" value="S" placeholder="e.g. S, CoO2">
+                        </div>
+                    </div>
+                    
+                    <button id="submitBtn" class="submit-btn" onclick="runAnalysis()">Run Interface Analysis</button>
+                    
+                    <div class="loading" id="loader">Computing phase diagrams and interface reactions...</div>
+                    <div class="error-message" id="errorDiv"></div>
+                    
+                    <div class="result-section" id="resultsDiv">
+                        <div class="section-header">Interface Stability Results</div>
+                        <div class="result-card">
+                            <div class="result-header">
+                                <div class="result-title" id="anodeTitle">Electrolyte vs Anode</div>
+                                <span class="badge" id="anodeBadge">Stable</span>
+                            </div>
+                            <div class="energy">Thermodynamic Driving Force: <span id="anodeEnergy">0.000</span> eV/atom</div>
+                            <div class="reactions-list" id="anodeReactions"></div>
+                        </div>
+                        <div class="result-card">
+                            <div class="result-header">
+                                <div class="result-title" id="cathodeTitle">Electrolyte vs Cathode</div>
+                                <span class="badge" id="cathodeBadge">Stable</span>
+                            </div>
+                            <div class="energy">Thermodynamic Driving Force: <span id="cathodeEnergy">0.000</span> eV/atom</div>
+                            <div class="reactions-list" id="cathodeReactions"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- TAB 2: ELECTRODE PERFORMANCE -->
+                <div id="performanceTab" class="tab-content">
+                    <div style="margin-bottom: 24px; display:flex; gap:16px; align-items:flex-end;">
+                        <div class="form-group" style="flex:1;">
+                            <label for="perfElectrode">Electrode Composition</label>
+                            <input type="text" id="perfElectrode" value="Li15Si4" placeholder="e.g. Li15Si4, LiCoO2, S">
+                        </div>
+                        <button class="submit-btn" style="width:auto; padding:12px 24px;" onclick="runPerformance()">Calculate Performance</button>
+                    </div>
+                    
+                    <div class="loading" id="perfLoader">Fetching precomputed battery details...</div>
+                    <div class="error-message" id="perfError"></div>
+                    
+                    <div class="result-section" id="perfResults" style="display:none;">
+                        <div class="section-header" id="perfTitle">Performance Metrics</div>
+                        <div class="metric-grid">
+                            <div class="metric-item">
+                                <div class="metric-label">Specific Capacity (Gravimetric)</div>
+                                <div class="metric-value" id="perfGrav">0.0 mAh/g</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-label">Volumetric Capacity</div>
+                                <div class="metric-value" id="perfVol">0.0 Ah/L</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-label">Average Voltage vs. Li/Li+</div>
+                                <div class="metric-value" id="perfVoltage">0.00 V</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-label">Volume Expansion (Delta Volume)</div>
+                                <div class="metric-value" id="perfExp">0.0%</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-label">Specific Energy Density</div>
+                                <div class="metric-value" id="perfEnergy">0.0 Wh/kg</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-label">Reaction Mechanism Type</div>
+                                <div class="metric-value" id="perfType">Unknown</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- TAB 3: DIFFUSION PATHWAYS -->
+                <div id="diffusionTab" class="tab-content">
+                    <div style="margin-bottom: 24px; display:flex; gap:16px; align-items:flex-end;">
+                        <div class="form-group" style="flex:1;">
+                            <label for="diffMaterial">Electrolyte Material</label>
+                            <select id="diffSelect" class="dropdown-select" onchange="document.getElementById('diffMaterial').value = candidateIdMap[this.value] || ''">
+                                <option value="Li2BeH4">Li₂BeH₄ (Default)</option>
+                            </select>
+                            <input type="text" id="diffMaterial" value="mp-1180666">
+                        </div>
+                        <button class="submit-btn" style="width:auto; padding:12px 24px;" onclick="runDiffusion()">Analyze Diffusion Paths</button>
+                    </div>
+                    
+                    <div class="loading" id="diffLoader">Analyzing Lithium hopping topology...</div>
+                    <div class="error-message" id="diffError"></div>
+                    
+                    <div class="result-section" id="diffResults" style="display:none;">
+                        <div class="section-header" id="diffTitle">Lithium Hopping Topology</div>
+                        <div class="metric-grid" style="margin-bottom: 24px;">
+                            <div class="metric-item">
+                                <div class="metric-label">Number of Li sites in Unit Cell</div>
+                                <div class="metric-value" id="diffCount">0</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-label">3D Network Connectivity</div>
+                                <div class="metric-value" id="diffPercolation">No</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-label">Minimum Hopping Distance</div>
+                                <div class="metric-value" id="diffMin">0.00 Å</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-label">Average Hopping Distance</div>
+                                <div class="metric-value" id="diffAvg">0.00 Å</div>
+                            </div>
+                        </div>
+                        <div class="result-card">
+                            <div class="result-title">Hopping Analysis Remarks</div>
+                            <div style="font-size:14px; margin-top:8px; line-height:1.4;" id="diffRemarks">No comments.</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- TAB 4: ELECTROCHEMICAL WINDOW -->
+                <div id="windowTab" class="tab-content">
+                    <div style="margin-bottom: 24px; display:flex; gap:16px; align-items:flex-end;">
+                        <div class="form-group" style="flex:1;">
+                            <label for="windowElectrolyte">Electrolyte Formula</label>
+                            <input type="text" id="windowElectrolyte" value="Li2BeH4" placeholder="e.g. Li2BeH4, LiS4">
+                        </div>
+                        <button class="submit-btn" style="width:auto; padding:12px 24px;" onclick="runWindow()">Compute Voltage Limits</button>
+                    </div>
+                    
+                    <div class="loading" id="windowLoader">Constructing grand potential phase diagrams...</div>
+                    <div class="error-message" id="windowError"></div>
+                    
+                    <div class="result-section" id="windowResults" style="display:none;">
+                        <div class="section-header" id="windowTitle">Voltage Stability Range</div>
+                        <div class="metric-grid" style="margin-bottom: 24px;">
+                            <div class="metric-item">
+                                <div class="metric-label">Thermodynamic Reduction Limit</div>
+                                <div class="metric-value" id="windowReduction">0.00 V</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-label">Thermodynamic Oxidation Limit</div>
+                                <div class="metric-value" id="windowOxidation">0.00 V</div>
+                            </div>
+                        </div>
+                        <div class="result-card">
+                            <div class="result-header">
+                                <div class="result-title">Lithium Grand Potential Voltage Profile</div>
+                            </div>
+                            <div class="reactions-list" id="windowReactions"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- TAB 5: MATTERGEN SANDBOX (CUSTOM CIF SCREENING) -->
+                <div id="sandboxTab" class="tab-content">
+                    <div style="margin-bottom: 24px;">
+                        <div class="form-group" style="margin-bottom: 16px;">
+                            <label for="cifInput">Paste Custom CIF (e.g. from MatterGen)</label>
+                            <textarea id="cifInput" style="width: 97%; height: 180px; font-family: monospace; font-size: 12px; padding: 12px; border: 1px solid #cccccc; border-radius: 6px; resize: vertical;" placeholder="Paste raw CIF file contents here..."></textarea>
+                        </div>
+                        <div style="display: flex; gap: 16px;">
+                            <button class="submit-btn" style="flex: 1;" onclick="runSandbox()">Screen Custom Structure</button>
+                            <button class="preset-btn" style="flex: 0 0 auto;" onclick="loadSampleCif()">Load Sample CIF</button>
+                        </div>
+                    </div>
+                    
+                    <div class="loading" id="sandboxLoader">Parsing CIF and screening Li+ diffusion network...</div>
+                    <div class="error-message" id="sandboxError"></div>
+                    
+                    <div class="result-section" id="sandboxResults" style="display:none;">
+                        <div class="section-header" id="sandboxTitle">Custom Structure Screening Results</div>
+                        <div class="metric-grid" style="margin-bottom: 24px;">
+                            <div class="metric-item">
+                                <div class="metric-label">Parsed Chemical Formula</div>
+                                <div class="metric-value" id="sandboxFormula">-</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-label">Calculated Mass Density</div>
+                                <div class="metric-value" id="sandboxDensity">0.00 g/cm³</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-label">Lithium Sites Count</div>
+                                <div class="metric-value" id="sandboxLiCount">0</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-label">3D Network Connectivity</div>
+                                <div class="metric-value" id="sandboxPercolation">No</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-label">Min Hopping Distance</div>
+                                <div class="metric-value" id="sandboxMin">0.00 Å</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-label">Avg Hopping Distance</div>
+                                <div class="metric-value" id="sandboxAvg">0.00 Å</div>
+                            </div>
+                        </div>
+                        <div class="result-card">
+                            <div class="result-title">Diffusion Screening Remarks</div>
+                            <div style="font-size:14px; margin-top:8px; line-height:1.4;" id="sandboxRemarks">No comments.</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- TAB 6: PIEZOELECTRIC POWER -->
+                <div id="piezoTab" class="tab-content">
+                    <div style="margin-bottom: 24px;">
+                        <button class="submit-btn" onclick="runPiezo()">Query Top Piezoelectric Candidates</button>
+                    </div>
+                    
+                    <div class="loading" id="piezoLoader">Querying supercomputer and downloading Piezoelectric tensor dataset...</div>
+                    <div class="error-message" id="piezoError"></div>
+                    
+                    <div class="result-section" id="piezoResults" style="display:none;">
+                        <div class="section-header">Top Piezoelectric Materials (Ranked by Max Tensor e_ij)</div>
+                        <div class="result-card">
+                            <div class="reactions-list" id="piezoList"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- TAB 7: SYNTHESIS PREP -->
+                <div id="synthesisTab" class="tab-content">
+                    <p style="margin-top:0; color:#555;">Ready to physically build your material? Paste your winning CIF structure below to auto-generate a Technical Synthesis Dossier and Request for Quotation (RFQ) to send to a Contract Research Organization (CRO).</p>
+                    <textarea id="rfqCifInput" style="width:100%; height:150px; font-family:monospace; padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:4px;" placeholder="Paste CIF string here..."></textarea>
+                    
+                    <div style="margin-bottom: 24px;">
+                        <button class="submit-btn" onclick="runSynthesisPrep()">Generate CRO RFQ & Technical Dossier</button>
+                    </div>
+                    
+                    <div class="loading" id="rfqLoader">Parsing CIF and generating RFQ dossier...</div>
+                    <div class="error-message" id="rfqError"></div>
+                    
+                    <div class="result-section" id="rfqResults" style="display:none;">
+                        <div class="section-header" id="rfqTitle">RFQ Generated</div>
+                        
+                        <div class="result-card" style="margin-bottom:20px;">
+                            <div class="result-title">Email Template</div>
+                            <textarea id="rfqEmail" style="width:100%; height:200px; font-family:monospace; padding:10px; background:#f5f5f5; border:1px solid #ddd; border-radius:4px;" readonly></textarea>
+                        </div>
+                        
+                        <div class="result-card">
+                            <div class="result-title">Technical Synthesis Dossier (Attach to Email)</div>
+                            <textarea id="rfqDossier" style="width:100%; height:300px; font-family:monospace; padding:10px; background:#f5f5f5; border:1px solid #ddd; border-radius:4px;" readonly></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 8: AUTO-DISCOVERY -->
+                <div id="discoveryTab" class="tab-content">
+                    <p style="margin-top:0; color:#555;">
+                        Automated watcher. It re-screens the Materials Project for all 5 specs on a
+                        schedule (GitHub Actions cron), auto-rejects toxic/radioactive candidates, and
+                        crowns a new champion only when a better <em>known</em> material appears. It also
+                        mines recent arXiv papers as literature signals. Numbers are computed/DFT values —
+                        this surfaces better existing materials, it does not discover new elements or build cells.
+                    </p>
+                    <div style="margin-bottom: 20px;">
+                        <button class="submit-btn" onclick="loadDiscovery()">Refresh Discovery Feed</button>
+                        <span id="discoveryLastScan" style="margin-left:12px; color:#888; font-size:13px;"></span>
+                    </div>
+
+                    <div class="error-message" id="discoveryError"></div>
+
+                    <div class="result-section" id="discoveryChampions" style="display:none;">
+                        <div class="section-header">Current Champions</div>
+                        <div class="result-card">
+                            <div class="reactions-list" id="discoveryChampionsList"></div>
+                        </div>
+                    </div>
+
+                    <div class="result-section" id="discoveryHistory" style="display:none; margin-top:20px;">
+                        <div class="section-header">Discovery Feed (newest first)</div>
+                        <div class="result-card">
+                            <div class="reactions-list" id="discoveryHistoryList"></div>
+                        </div>
+                    </div>
+
+                    <p style="color:#999; font-size:12px; margin-top:16px;">
+                        Empty? Run a scan first: <code>python3 run_monitor.py --papers</code>
+                        (or <code>python3 run.py --cli --scan</code>).
+                    </p>
+                </div>
+
+                <!-- TAB 9: OUR RESEARCH -->
+                <div id="researchTab" class="tab-content">
+                    <p style="margin-top:0; color:#555;">
+                        What is genuinely ours — the contribution a reader can't get by just
+                        browsing a public database. Edit <code>RESEARCH.md</code> to update this
+                        (it's also fed to the chatbot).
+                    </p>
+                    <div class="error-message" id="researchError"></div>
+                    <div class="result-card">
+                        <div id="researchContent" style="line-height:1.6; color:#222;">Loading…</div>
+                    </div>
+                </div>
+
+                <!-- TAB 10: CHATBOT -->
+                <div id="chatbotTab" class="tab-content">
+                    <p style="margin-top:0; color:#555;">
+                        Ask about this project — champions, results, our research. Answers are
+                        grounded in the project data + indexed papers (RAG via Groq). Needs
+                        <code>GROQ_API_KEY</code> in <code>.env</code>.
+                    </p>
+                    <div id="chatLog" style="border:1px solid #eee; border-radius:6px; padding:12px; min-height:180px; max-height:360px; overflow-y:auto; background:#fafafa; margin-bottom:12px; font-size:14px;">
+                        <div style="color:#999;">No messages yet. Try: "Which material is our charging-speed champion and is it safe?"</div>
+                    </div>
+                    <div style="display:flex; gap:8px;">
+                        <input id="chatInput" type="text" placeholder="Ask a question about the project…"
+                            style="flex:1; padding:10px; border:1px solid #ccc; border-radius:4px; font-size:14px;"
+                            onkeydown="if(event.key==='Enter'){sendChat();}">
+                        <button class="submit-btn" onclick="sendChat()">Send</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right Column: 3D Crystal Lattice Visualizer -->
+            <div class="visualizer-column">
+                <div class="visualizer-card">
+                    <div class="visualizer-title">3D Crystal Lattice Visualizer</div>
+                    <div class="visualizer-meta" id="visualizerMeta">No material selected</div>
+                    <div id="gdis" class="mol-container"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let candidateIdMap = {};
+        let currentViewer = null;
+
+        window.addEventListener("DOMContentLoaded", () => {
+            loadCandidates();
+            // Load default 3D lattice
+            visualizeMaterial("mp-1180666", "Li2BeH4");
+        });
+
+        function switchTab(tabId) {
+            // Hide all tab content
+            document.querySelectorAll(".tab-content").forEach(el => el.classList.remove("active"));
+            document.querySelectorAll(".tab-btn").forEach(el => el.classList.remove("active"));
+            
+            // Show selected tab content
+            document.getElementById(tabId).classList.add("active");
+
+            // Blueprint is a full-width reference panel that lives ABOVE the
+            // grid — hide the grid (charts + 3D viewer) while it is shown.
+            const grid = document.getElementById("mainGrid");
+            if (grid) grid.style.display = (tabId === "blueprintTab") ? "none" : "";
+
+            // Find the trigger button and highlight it
+            const buttons = document.querySelectorAll(".tab-btn");
+            buttons.forEach(btn => {
+                if (btn.getAttribute("onclick").includes(tabId)) {
+                    btn.classList.add("active");
+                }
+            });
+            
+            // Auto trigger visualization for active inputs of new tab
+            if (tabId === 'diffusionTab') {
+                const matId = document.getElementById("diffMaterial").value;
+                const selectVal = document.getElementById("diffSelect").value;
+                if (matId) visualizeMaterial(matId, selectVal);
+            }
+            if (tabId === 'discoveryTab') {
+                loadDiscovery();
+            }
+            if (tabId === 'researchTab') {
+                loadResearch();
+            }
+        }
+
+        async function loadResearch() {
+            const el = document.getElementById("researchContent");
+            const err = document.getElementById("researchError");
+            err.textContent = "";
+            try {
+                const res = await fetch("/api/research");
+                const data = await res.json();
+                if (data.error) throw new Error(data.error);
+                el.innerHTML = (window.marked)
+                    ? marked.parse(data.markdown)
+                    : "<pre style='white-space:pre-wrap'>" + data.markdown + "</pre>";
+            } catch (e) {
+                err.textContent = "Failed to load research: " + e.message;
+            }
+        }
+
+        function appendChat(who, text, cls) {
+            const log = document.getElementById("chatLog");
+            const div = document.createElement("div");
+            div.style.margin = "8px 0";
+            div.innerHTML = `<strong style="color:${cls}">${who}:</strong> ` +
+                text.replace(/</g, "&lt;");
+            log.appendChild(div);
+            log.scrollTop = log.scrollHeight;
+        }
+
+        async function sendChat() {
+            const input = document.getElementById("chatInput");
+            const q = input.value.trim();
+            if (!q) return;
+            input.value = "";
+            appendChat("You", q, "#111");
+            appendChat("Assistant", "thinking…", "#888");
+            const log = document.getElementById("chatLog");
+            const thinking = log.lastChild;
+            try {
+                const res = await fetch("/api/chat", {
+                    method: "POST",
+                    headers: {"Content-Type": "application/json"},
+                    body: JSON.stringify({question: q}),
+                });
+                const data = await res.json();
+                log.removeChild(thinking);
+                if (data.error) { appendChat("Assistant", "Error: " + data.error, "#c00"); return; }
+                appendChat("Assistant", data.answer || "(no answer)", "#0a7");
+                if (data.sources && data.sources.length) {
+                    appendChat("Sources", data.sources.join("  ·  "), "#888");
+                }
+            } catch (e) {
+                log.removeChild(thinking);
+                appendChat("Assistant", "Request failed: " + e.message, "#c00");
+            }
+        }
+
+        async function loadDiscovery() {
+            const errEl = document.getElementById("discoveryError");
+            errEl.textContent = "";
+            try {
+                const res = await fetch("/api/discovery");
+                const data = await res.json();
+                if (data.error) throw new Error(data.error);
+
+                document.getElementById("discoveryLastScan").textContent =
+                    data.last_scan ? ("Last scan: " + data.last_scan) : "No scan run yet.";
+
+                // Champions
+                const champs = data.champions || {};
+                const cKeys = Object.keys(champs);
+                const cListEl = document.getElementById("discoveryChampionsList");
+                if (cKeys.length) {
+                    cListEl.innerHTML = cKeys.map(k => {
+                        const c = champs[k];
+                        const metric = Object.keys(c).find(x =>
+                            !["material_id","formula","space_group","score_description"].includes(x)
+                            && typeof c[x] === "number");
+                        return `<div style="padding:8px 0; border-bottom:1px solid #eee;">
+                            <strong>${k}</strong> — ${c.formula || "?"}
+                            <span style="color:#888;">(${c.material_id || "?"})</span>
+                            &nbsp;·&nbsp; ${metric ? metric + " = " + c[metric] : ""}
+                        </div>`;
+                    }).join("");
+                    document.getElementById("discoveryChampions").style.display = "block";
+                } else {
+                    document.getElementById("discoveryChampions").style.display = "none";
+                }
+
+                // History feed
+                const hist = data.history || [];
+                const hListEl = document.getElementById("discoveryHistoryList");
+                if (hist.length) {
+                    hListEl.innerHTML = hist.map(h => {
+                        if (h.type === "champion") {
+                            let evidence = "";
+                            if (h.llm_verdict && h.llm_verdict.verdict) {
+                                const v = h.llm_verdict;
+                                const color = v.confidence === "high" ? "#16a34a"
+                                    : (v.confidence === "medium" ? "#b45309" : "#888");
+                                evidence = `<div style="margin-top:4px; padding:6px 8px;
+                                    background:#f9fafb; border-left:3px solid ${color};
+                                    font-size:12px; color:#444;">
+                                    🧠 <strong style="color:${color};">${v.confidence} confidence</strong>
+                                    — ${v.verdict}</div>`;
+                            }
+                            return `<div style="padding:8px 0; border-bottom:1px solid #eee;">
+                                🎉 <strong>${h.label || h.spec}</strong>: new champion
+                                <strong>${h.formula}</strong> (${h.material_id}) —
+                                ${h.value} ${h.unit}
+                                <span style="color:#aaa;"> · was ${h.previous}</span>
+                                ${evidence}
+                                <div style="color:#bbb; font-size:11px;">${h.timestamp}</div>
+                            </div>`;
+                        }
+                        // literature signal
+                        let claim = "";
+                        if (h.claim && h.claim.material) {
+                            const c = h.claim;
+                            claim = `<div style="color:#555; font-size:12px; margin-top:2px;">
+                                🔬 ${c.material}${c.metric ? " · " + c.metric : ""}${c.value ? " = " + c.value + (c.unit || "") : ""}</div>`;
+                        }
+                        return `<div style="padding:8px 0; border-bottom:1px solid #eee;">
+                            📚 <a href="${h.url}" target="_blank" rel="noopener">${h.title}</a>
+                            ${claim}
+                            <div style="color:#bbb; font-size:11px;">${h.published || h.timestamp}</div>
+                        </div>`;
+                    }).join("");
+                    document.getElementById("discoveryHistory").style.display = "block";
+                } else {
+                    document.getElementById("discoveryHistory").style.display = "none";
+                }
+            } catch (e) {
+                errEl.textContent = "Failed to load discovery feed: " + e.message;
+            }
+        }
+
+        async function loadCandidates() {
+            const sseSelect = document.getElementById("electrolyteSelect");
+            const anodeSelect = document.getElementById("anodeSelect");
+            const cathodeSelect = document.getElementById("cathodeSelect");
+            const diffSelect = document.getElementById("diffSelect");
+            
+            try {
+                const response = await fetch("/api/candidates");
+                if (!response.ok) return;
+                const data = await response.json();
+                
+                // Clear existing options
+                sseSelect.innerHTML = '<option value="">-- Choose Candidate --</option>';
+                anodeSelect.innerHTML = '<option value="">-- Choose Candidate --</option>';
+                cathodeSelect.innerHTML = '<option value="">-- Choose Candidate --</option>';
+                diffSelect.innerHTML = '<option value="">-- Choose Candidate --</option>';
+                
+                const standardCathodes = [
+                    { formula: "S" },
+                    { formula: "FeS2" },
+                    { formula: "CoO2" },
+                    { formula: "LiCoO2" }
+                ];
+                
+                // Populate mappings & SSE Select
+                data.sse.forEach(c => {
+                    candidateIdMap[c.formula] = c.material_id;
+                    
+                    const opt1 = document.createElement("option");
+                    opt1.value = c.formula;
+                    opt1.textContent = `${c.formula} (Density: ${c.density.toFixed(2)} g/cm³, Eg: ${c.band_gap.toFixed(1)} eV)`;
+                    sseSelect.appendChild(opt1);
+                    
+                    const opt2 = document.createElement("option");
+                    opt2.value = c.formula;
+                    opt2.textContent = c.formula;
+                    diffSelect.appendChild(opt2);
+                });
+                
+                // Populate Anodes Select
+                data.electrodes.forEach(c => {
+                    candidateIdMap[c.formula] = c.material_id;
+                    const opt = document.createElement("option");
+                    opt.value = c.formula;
+                    opt.textContent = `${c.formula} (Density: ${c.density.toFixed(2)} g/cm³)`;
+                    anodeSelect.appendChild(opt);
+                });
+                
+                // Populate Cathodes Select
+                data.electrodes.forEach(c => {
+                    candidateIdMap[c.formula] = c.material_id;
+                    const opt = document.createElement("option");
+                    opt.value = c.formula;
+                    opt.textContent = `${c.formula} (Density: ${c.density.toFixed(2)} g/cm³)`;
+                    cathodeSelect.appendChild(opt);
+                });
+                
+                standardCathodes.forEach(c => {
+                    const opt = document.createElement("option");
+                    opt.value = c.formula;
+                    opt.textContent = `${c.formula} (Standard Cathode)`;
+                    cathodeSelect.appendChild(opt);
+                });
+                
+                // Set default selections
+                sseSelect.value = "Li2BeH4";
+                anodeSelect.value = "Li";
+                cathodeSelect.value = "S";
+                diffSelect.value = "Li2BeH4";
+                
+                // Ensure default formulas are mapped
+                candidateIdMap["LiS4"] = "mp-995393";
+                candidateIdMap["LiBH4"] = "mp-1192133";
+                candidateIdMap["Li2BeH4"] = "mp-1180666";
+                candidateIdMap["Li"] = "mp-1018134";
+                
+            } catch (err) {
+                console.error("Failed to load candidates:", err);
+            }
+        }
+
+        function syncElectrolyte(val) {
+            document.getElementById("electrolyte").value = val;
+            document.getElementById("windowElectrolyte").value = val;
+            if (candidateIdMap[val]) {
+                visualizeMaterial(candidateIdMap[val], val);
+            }
+        }
+
+        function syncAnode(val) {
+            document.getElementById("anode").value = val;
+            if (candidateIdMap[val]) {
+                visualizeMaterial(candidateIdMap[val], val);
+            }
+        }
+
+        function syncCathode(val) {
+            document.getElementById("cathode").value = val;
+            if (candidateIdMap[val]) {
+                visualizeMaterial(candidateIdMap[val], val);
+            }
+        }
+
+        function applyPreset(elec, anode, cathode) {
+            document.getElementById("electrolyte").value = elec;
+            document.getElementById("anode").value = anode;
+            document.getElementById("cathode").value = cathode;
+            document.getElementById("windowElectrolyte").value = elec;
+            
+            // Sync selects
+            document.getElementById("electrolyteSelect").value = elec;
+            document.getElementById("anodeSelect").value = anode;
+            document.getElementById("cathodeSelect").value = cathode;
+            
+            if (candidateIdMap[elec]) {
+                visualizeMaterial(candidateIdMap[elec], elec);
+            }
+            
+            runAnalysis();
+        }
+
+        async function visualizeMaterial(materialId, formula) {
+            const container = document.getElementById("gdis");
+            const meta = document.getElementById("visualizerMeta");
+            
+            if (!materialId) {
+                container.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#888;font-size:13px;text-align:center;padding:20px;">Choose a candidate or perform analysis to visualize 3D lattice</div>';
+                meta.innerText = "";
+                return;
+            }
+            
+            container.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#888;font-size:14px;">Fetching 3D crystal structure...</div>';
+            meta.innerText = `Loading ${formula} (${materialId})...`;
+            
+            try {
+                const response = await fetch(`/api/structure/${materialId}`);
+                if (!response.ok) throw new Error("API call failed");
+                const data = await response.json();
+                if (data.error) throw new Error(data.error);
+                
+                container.innerHTML = "";
+                
+                // Initialize 3Dmol viewer
+                const viewer = $3Dmol.createViewer(container, { backgroundColor: '#ffffff' });
+                viewer.addModel(data.cif, "cif");
+                
+                // Style atoms/bonds
+                viewer.setStyle({}, {
+                    sphere: { scale: 0.28, colorscheme: 'Jmol' },
+                    stick: { radius: 0.1, colorscheme: 'Jmol' }
+                });
+                
+                // Render unit cell box
+                viewer.addUnitCell();
+                viewer.zoomTo();
+                viewer.render();
+                viewer.zoom(0.82, 800);
+                
+                meta.innerText = `Visualizing unit cell of ${formula} (${materialId})`;
+                currentViewer = viewer;
+            } catch (err) {
+                container.innerHTML = `<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#d32f2f;font-size:13px;padding:20px;text-align:center;">Failed to load 3D visualizer: ${err.message}</div>`;
+                meta.innerText = "Error loading structure";
+            }
+        }
+
+        async function runAnalysis() {
+            const elec = document.getElementById("electrolyte").value.trim();
+            const anode = document.getElementById("anode").value.trim();
+            const cathode = document.getElementById("cathode").value.trim();
+            
+            if (!elec || !anode || !cathode) {
+                alert("Please fill in all formulas.");
+                return;
+            }
+            
+            const submitBtn = document.getElementById("submitBtn");
+            const loader = document.getElementById("loader");
+            const errorDiv = document.getElementById("errorDiv");
+            const resultsDiv = document.getElementById("resultsDiv");
+            
+            submitBtn.disabled = true;
+            loader.style.display = "block";
+            errorDiv.style.display = "none";
+            resultsDiv.style.display = "none";
+            
+            try {
+                const response = await fetch("/api/stability", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ electrolyte: elec, anode: anode, cathode: cathode })
+                });
+                
+                const data = await response.json();
+                if (!response.ok) throw new Error(data.error || "An error occurred on the server.");
+                
+                document.getElementById("anodeTitle").innerText = `${elec} vs. ${anode} Anode`;
+                document.getElementById("cathodeTitle").innerText = `${elec} vs. ${cathode} Cathode`;
+                
+                // Anode
+                const anodeData = data.anode;
+                document.getElementById("anodeEnergy").innerText = anodeData.driving_force.toFixed(3);
+                const anodeBadge = document.getElementById("anodeBadge");
+                if (anodeData.stable) {
+                    anodeBadge.innerText = "Stable";
+                    anodeBadge.className = "badge badge-stable";
+                    document.getElementById("anodeReactions").innerHTML = '<div class="reaction-item">No decomposition reactions. Interface is thermodynamically stable!</div>';
+                } else {
+                    anodeBadge.innerText = "Unstable";
+                    anodeBadge.className = "badge badge-unstable";
+                    document.getElementById("anodeReactions").innerHTML = anodeData.reactions.map(r => 
+                        `<div class="reaction-item">
+                            <span>At fraction ${r.ratio.toFixed(2)}: ${r.reaction} (${r.energy.toFixed(3)} eV/atom)</span>
+                         </div>`
+                    ).join("");
+                }
+                
+                // Cathode
+                const cathodeData = data.cathode;
+                document.getElementById("cathodeEnergy").innerText = cathodeData.driving_force.toFixed(3);
+                const cathodeBadge = document.getElementById("cathodeBadge");
+                if (cathodeData.stable) {
+                    cathodeBadge.innerText = "Stable";
+                    cathodeBadge.className = "badge badge-stable";
+                    document.getElementById("cathodeReactions").innerHTML = '<div class="reaction-item">No decomposition reactions. Interface is thermodynamically stable!</div>';
+                } else {
+                    cathodeBadge.innerText = "Unstable";
+                    cathodeBadge.className = "badge badge-unstable";
+                    document.getElementById("cathodeReactions").innerHTML = cathodeData.reactions.map(r => 
+                        `<div class="reaction-item">
+                            <span>At fraction ${r.ratio.toFixed(2)}: ${r.reaction} (${r.energy.toFixed(3)} eV/atom)</span>
+                         </div>`
+                    ).join("");
+                }
+                
+                resultsDiv.style.display = "block";
+            } catch (err) {
+                errorDiv.innerText = err.message;
+                errorDiv.style.display = "block";
+            } finally {
+                submitBtn.disabled = false;
+                loader.style.display = "none";
+            }
+        }
+
+        async function runPerformance() {
+            const formula = document.getElementById("perfElectrode").value.trim();
+            if (!formula) return;
+            
+            const loader = document.getElementById("perfLoader");
+            const errorDiv = document.getElementById("perfError");
+            const results = document.getElementById("perfResults");
+            
+            loader.style.display = "block";
+            errorDiv.style.display = "none";
+            results.style.display = "none";
+            
+            try {
+                const response = await fetch("/api/performance", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ formula: formula })
+                });
+                
+                const data = await response.json();
+                if (!response.ok) throw new Error(data.error || "Failed calculation");
+                
+                document.getElementById("perfTitle").innerText = `Performance Metrics: ${data.formula}`;
+                document.getElementById("perfGrav").innerText = `${data.capacity_grav.toFixed(1)} mAh/g`;
+                document.getElementById("perfVol").innerText = `${data.capacity_vol.toFixed(1)} Ah/L`;
+                document.getElementById("perfVoltage").innerText = `${data.average_voltage.toFixed(2)} V`;
+                document.getElementById("perfExp").innerText = `${data.volume_change.toFixed(1)}%`;
+                
+                // Specific energy
+                const energy = data.capacity_grav * data.average_voltage;
+                document.getElementById("perfEnergy").innerText = `${energy.toFixed(1)} Wh/kg`;
+                document.getElementById("perfType").innerText = data.type;
+                
+                results.style.display = "block";
+            } catch (err) {
+                errorDiv.innerText = err.message;
+                errorDiv.style.display = "block";
+            } finally {
+                loader.style.display = "none";
+            }
+        }
+
+        async function runDiffusion() {
+            const matId = document.getElementById("diffMaterial").value.trim();
+            const selectVal = document.getElementById("diffSelect").value;
+            if (!matId) return;
+            
+            const loader = document.getElementById("diffLoader");
+            const errorDiv = document.getElementById("diffError");
+            const results = document.getElementById("diffResults");
+            
+            loader.style.display = "block";
+            errorDiv.style.display = "none";
+            results.style.display = "none";
+            
+            try {
+                const response = await fetch("/api/diffusion", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ material_id: matId })
+                });
+                
+                const data = await response.json();
+                if (!response.ok) throw new Error(data.error || "Failed calculation");
+                
+                document.getElementById("diffTitle").innerText = `Diffusion Pathways: ${selectVal} (${data.material_id})`;
+                document.getElementById("diffCount").innerText = data.li_count;
+                document.getElementById("diffPercolation").innerText = data.connected_3d ? "Yes (Excellent Connectivity)" : "No (Isolated Channels)";
+                document.getElementById("diffMin").innerText = `${data.min_hop.toFixed(2)} Å`;
+                document.getElementById("diffAvg").innerText = `${data.avg_hop.toFixed(2)} Å`;
+                document.getElementById("diffRemarks").innerText = data.message;
+                
+                // Also trigger 3D visualizer
+                visualizeMaterial(matId, selectVal);
+                
+                results.style.display = "block";
+            } catch (err) {
+                errorDiv.innerText = err.message;
+                errorDiv.style.display = "block";
+            } finally {
+                loader.style.display = "none";
+            }
+        }
+
+        async function runWindow() {
+            const formula = document.getElementById("windowElectrolyte").value.trim();
+            if (!formula) return;
+            
+            const loader = document.getElementById("windowLoader");
+            const errorDiv = document.getElementById("windowError");
+            const results = document.getElementById("windowResults");
+            
+            loader.style.display = "block";
+            errorDiv.style.display = "none";
+            results.style.display = "none";
+            
+            try {
+                const response = await fetch("/api/voltage-window", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ formula: formula })
+                });
+                
+                const data = await response.json();
+                if (!response.ok) throw new Error(data.error || "Failed calculation");
+                
+                document.getElementById("windowTitle").innerText = `Electrochemical Stability Range: ${formula}`;
+                document.getElementById("windowReduction").innerText = `${data.reduction_limit.toFixed(2)} V`;
+                document.getElementById("windowOxidation").innerText = `${data.oxidation_limit.toFixed(2)} V`;
+                
+                // Render steps
+                document.getElementById("windowReactions").innerHTML = data.steps.map(s => 
+                    `<div class="reaction-item">
+                        <span>At ${s.voltage.toFixed(2)} V: ${s.reaction}</span>
+                     </div>`
+                ).join("");
+                
+                // Visualize if in candidate map
+                if (candidateIdMap[formula]) {
+                    visualizeMaterial(candidateIdMap[formula], formula);
+                }
+                
+                results.style.display = "block";
+            } catch (err) {
+                errorDiv.innerText = err.message;
+                errorDiv.style.display = "block";
+            } finally {
+                loader.style.display = "none";
+            }
+        }
+
+        async function loadSampleCif() {
+            const textarea = document.getElementById("cifInput");
+            textarea.value = "Fetching sample CIF...";
+            try {
+                const res = await fetch("/api/structure/mp-1180666");
+                const data = await res.json();
+                if (data.cif) {
+                    textarea.value = data.cif;
+                } else {
+                    textarea.value = "Error fetching sample CIF: " + (data.error || "unknown");
+                }
+            } catch (err) {
+                textarea.value = "Error fetching sample CIF: " + err.message;
+            }
+        }
+
+        async function runSandbox() {
+            const cif = document.getElementById("cifInput").value.trim();
+            if (!cif) {
+                alert("Please paste or load a CIF structure first.");
+                return;
+            }
+            
+            const loader = document.getElementById("sandboxLoader");
+            const errorDiv = document.getElementById("sandboxError");
+            const results = document.getElementById("sandboxResults");
+            
+            loader.style.display = "block";
+            errorDiv.style.display = "none";
+            results.style.display = "none";
+            
+            try {
+                const response = await fetch("/api/analyze-custom-cif", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ cif: cif })
+                });
+                
+                const data = await response.json();
+                if (!response.ok) throw new Error(data.error || "Failed analysis");
+                
+                document.getElementById("sandboxFormula").innerText = data.formula;
+                document.getElementById("sandboxDensity").innerText = `${data.density.toFixed(2)} g/cm³`;
+                document.getElementById("sandboxLiCount").innerText = data.li_count;
+                document.getElementById("sandboxPercolation").innerText = data.connected_3d ? "Yes (Excellent Connectivity)" : "No (Isolated Channels)";
+                document.getElementById("sandboxMin").innerText = `${data.min_hop.toFixed(2)} Å`;
+                document.getElementById("sandboxAvg").innerText = `${data.avg_hop.toFixed(2)} Å`;
+                document.getElementById("sandboxRemarks").innerText = data.message;
+                
+                // Render custom unit cell
+                const container = document.getElementById("gdis");
+                const meta = document.getElementById("visualizerMeta");
+                container.innerHTML = "";
+                
+                const viewer = $3Dmol.createViewer(container, { backgroundColor: '#ffffff' });
+                viewer.addModel(cif, "cif");
+                viewer.setStyle({}, {
+                    sphere: { scale: 0.28, colorscheme: 'Jmol' },
+                    stick: { radius: 0.1, colorscheme: 'Jmol' }
+                });
+                viewer.addUnitCell();
+                viewer.zoomTo();
+                viewer.render();
+                viewer.zoom(0.82, 800);
+                
+                meta.innerText = `Visualizing Custom Structure (${data.formula})`;
+                currentViewer = viewer;
+                
+                results.style.display = "block";
+            } catch (err) {
+                errorDiv.innerText = err.message;
+                errorDiv.style.display = "block";
+            } finally {
+                loader.style.display = "none";
+            }
+        }
+
+        async function runPiezo() {
+            const loader = document.getElementById("piezoLoader");
+            const errorDiv = document.getElementById("piezoError");
+            const results = document.getElementById("piezoResults");
+            
+            loader.style.display = "block";
+            errorDiv.style.display = "none";
+            results.style.display = "none";
+            
+            try {
+                const response = await fetch("/api/piezo");
+                const data = await response.json();
+                
+                if (!response.ok) throw new Error(data.error || "Failed fetching piezo materials");
+                
+                let html = "<table style='width:100%; text-align:left; border-collapse: collapse;'>";
+                html += "<tr style='border-bottom:1px solid #ccc;'><th style='padding:8px;'>Formula</th><th style='padding:8px;'>Max Tensor (e_ij) C/m²</th><th style='padding:8px;'>Action</th></tr>";
+                
+                data.candidates.forEach(c => {
+                    html += `<tr style='border-bottom:1px solid #eee;'>
+                        <td style='padding:8px;'><strong>${c.formula}</strong> <span style='font-size:10px;color:#888;'>(${c.material_id})</span></td>
+                        <td style='padding:8px;'>${c.e_ij_max.toFixed(4)}</td>
+                        <td style='padding:8px;'><button onclick="visualizeMaterial('${c.material_id}', '${c.formula}')" style='cursor:pointer; padding:4px 8px; font-size:11px; background:#e0f7fa; border:1px solid #00acc1; border-radius:4px; font-weight:bold;'>Visualize 3D</button></td>
+                    </tr>`;
+                });
+                html += "</table>";
+                
+                document.getElementById("piezoList").innerHTML = html;
+                results.style.display = "block";
+            } catch (err) {
+                errorDiv.innerText = err.message;
+                errorDiv.style.display = "block";
+            } finally {
+                loader.style.display = "none";
+            }
+        }
+        
+        async function runSynthesisPrep() {
+            const cif = document.getElementById("rfqCifInput").value.trim();
+            if (!cif) {
+                alert("Please paste a CIF structure to generate an RFQ.");
+                return;
+            }
+            
+            const loader = document.getElementById("rfqLoader");
+            const errorDiv = document.getElementById("rfqError");
+            const results = document.getElementById("rfqResults");
+            
+            loader.style.display = "block";
+            errorDiv.style.display = "none";
+            results.style.display = "none";
+            
+            try {
+                const response = await fetch("/api/generate-rfq", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ cif: cif })
+                });
+                
+                const data = await response.json();
+                if (!response.ok) throw new Error(data.error || "Failed generating RFQ");
+                
+                document.getElementById("rfqTitle").innerText = `RFQ Generated for ${data.formula}`;
+                document.getElementById("rfqEmail").value = data.email_body;
+                document.getElementById("rfqDossier").value = data.technical_dossier;
+                
+                results.style.display = "block";
+            } catch (err) {
+                errorDiv.innerText = err.message;
+                errorDiv.style.display = "block";
+            } finally {
+                loader.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
